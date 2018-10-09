@@ -33,6 +33,43 @@
 <!--stickey kit -->
 <!--Custom JavaScript -->
 <script src="<?php echo base_url('assets/js/custom.min.js') ?>"></script>
+<script src="<?php echo base_url('assets/plugins/moment/moment.js') ?>"></script>
+<script src="<?php echo base_url('assets/plugins/bootstrap-material-datetimepicker/js/bootstrap-material-datetimepicker.js') ?>"></script>
+<!-- Clock Plugin JavaScript -->
+<script src="<?php echo base_url('assets/plugins/clockpicker/dist/jquery-clockpicker.min.js') ?>"></script>
+
+<script>
+    // MAterial Date picker    
+    $('#mdate').bootstrapMaterialDatePicker({
+        weekStart: 0,
+        time: false
+    });
+    $('#mdate1').bootstrapMaterialDatePicker({
+        weekStart: 0,
+        time: false
+    });
+    // Clock pickers
+    $('#single-input').clockpicker({
+        placement: 'bottom',
+        align: 'left',
+        autoclose: true,
+        'default': 'now'
+    });
+    $('.clockpicker').clockpicker({
+        donetext: 'Done',
+    }).find('input').change(function() {
+        console.log(this.value);
+    });
+    $('#check-minutes').click(function(e) {
+        // Have to stop propagation here
+        e.stopPropagation();
+        input.clockpicker('show').clockpicker('toggleView', 'minutes');
+    });
+    if (/mobile/i.test(navigator.userAgent)) {
+        $('input').prop('readOnly', true);
+    }
+    </script>
+
 <!-- ============================================================== -->
 <!-- This page plugins -->
 <!-- ============================================================== -->
@@ -56,6 +93,7 @@
 <!-- <script src="https://cdn.datatables.net/1.10.19/js/dataTables.bootstrap.min.js"></script> -->
 <script src="https://cdn.datatables.net/responsive/2.2.3/js/responsive.bootstrap.min.js"></script>
 <!-- END DATATABLES -->
+
 
 
 

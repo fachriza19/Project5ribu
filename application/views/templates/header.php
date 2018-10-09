@@ -20,6 +20,10 @@
     <link href="<?php echo base_url('assets/css/colors/blue.css') ?>" id="theme" rel="stylesheet">
     <link href="<?php echo base_url('assets/DataTables/css/dataTables.bootstrap4.min.css')?>" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.datatables.net/responsive/2.2.3/css/responsive.bootstrap4.min.css">
+    <link href="<?php echo base_url('assets/plugins/bootstrap-material-datetimepicker/css/bootstrap-material-datetimepicker.css') ?>" rel="stylesheet" type="text/css" >
+    <!-- Page plugins css -->
+    <link href="<?php echo base_url('assets/plugins/clockpicker/dist/jquery-clockpicker.min.css') ?>" rel="stylesheet" type="text/css" >
+
     <script src="<?php echo base_url('assets/jquery/jquery-3.3.1.js') ?>">    </script>
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -169,8 +173,6 @@
                                 <li><a href="<?php echo base_url('profil/index') ?>">Visi & misi</a></li>
                                 <li><a href="<?php echo base_url('profil/wilker') ?>">Wilayah Kerja</a></li>
                                 <li><a href="<?php echo base_url('profil/tupoksi') ?>">Tupoksi</a></li>
-                                <li><a href="<?php echo base_url('profil/struktur') ?>">Struktur Organisasi</a></li>
-                                <li><a href="<?php echo base_url('profil/sejarah') ?>">Sejarah</a></li>
                             </ul>
                         </li>
                         <li>
