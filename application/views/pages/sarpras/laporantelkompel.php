@@ -19,7 +19,7 @@
       <div class="col-12">
         <div class="card">
           <div class="card-body">
-            <?php if ($this->session->flashdata('success')): ?>
+          <?php if ($this->session->flashdata('success')): ?>
               <div class="alert alert-icon alert-success border-success alert-dismissible fade show" role="alert">
                 <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span>
                 </button>Data Berhasil Diinput<br>Terima kasih telah menginput laporan harian
@@ -31,7 +31,7 @@
             <form action="<?php echo base_url(). 'telkompel/simpanlaporan'; ?>" class="form-horizontal form-bordered" method="post">
               <div class="form-body">
                 <div class="form-group row">
-                <label class="control-label text-left col-md-3">Nama Instansi</label>
+                <h5 class="control-label text-left col-md-3">Nama Instansi</h5>
                   <div class="col-md-3">
                     <select class="form-control custom-select" name="instansi">
                       <option value="STASIUN RADIO PANTAI CIREBON">SROP CIREBON</option>
@@ -40,63 +40,74 @@
                   </div>
                 </div>
                 <div class="form-group row">
-                  <label class="control-label text-left col-md-3">Hari</label>
+                  <h5 class="control-label text-left col-md-3">Hari</h5>
                   <div class="col-md-3">
                     <input type="text" class="form-control" name="hari1">
                   </div>
-                  <label class="control-label text-left col-md-1">s/d</label>
+                  <h5 class="control-label text-left col-md-1">s/d</h5>
                   <div class="col-md-3">
                     <input type="text" class="form-control" name="hari2">
                   </div>
                 </div>
                 <div class="form-group row">
-                  <label class="control-label text-left col-md-3">Tanggal</label>
+                  
+                  <h5 class="control-label text-left col-md-3">Tanggal</h5>
                   <div class="col-md-3">
-                    <input type="date" class="form-control" name="tgl1">
+                    <input type="text" class="form-control" placeholder="2018-09-03" name="tgl1" id="mdate" data-dtp="dtp_QCnhf"> 
                   </div>
-                  <label class="control-label text-left col-md-1">s/d</label>
+                  <h5 class="control-label text-left col-md-1">s/d</h5>
                   <div class="col-md-3">
-                    <input type="date" class="form-control" name="tgl2">
+                    <input type="text" class="form-control" placeholder="2018-09-04" name="tgl2" id="mdate1" data-dtp="dtp_QCnhf"> 
                   </div>
                 </div>
                 <div class="form-group row">
-                  <label class="control-label text-left col-md-3">Waktu</label>
+                  <h5 class="control-label text-left col-md-3">Waktu</h5>
                   <div class="col-md-3">
-                    <input type="time" class="form-control" name="jam1">
+                    <div class="input-group clockpicker">
+	                    <input type="text" class="form-control" name="jam1" value="09:30"> 
+                        <span class="input-group-addon"> 
+                            <span class="fa fa-clock-o"></span> 
+                        </span>
+                    </div>
                   </div>
-                  <label class="control-label text-left col-md-1">s/d</label>
+                  <h5 class="control-label text-left col-md-1">s/d</h5>
                   <div class="col-md-3">
-                    <input type="time" class="form-control" name="jam2">
+                    <div class="input-group clockpicker">
+	                    <input type="text" class="form-control" name="jam2" value="09:30"> 
+                        <span class="input-group-addon"> 
+                            <span class="fa fa-clock-o"></span> 
+                        </span>
+                    </div>
                   </div>
                 </div>
 
                 <h5 class="card-title">I. Lalu lintas Kapal</h5><br>
                 <div class="form-group row">
-                  <label class="control-label text-left col-md-3">Kapal Masuk</label>
+                  <h5 class="control-label text-left col-md-3">Kapal Masuk</h5>
                   <div class="col-md-3">
                     <input type="text" class="form-control" name="kmasuk">
                   </div>
                 </div>
                 <div class="form-group row">
-                  <label class="control-label text-left col-md-3">Kapal Keluar</label>
+                  <h5 class="control-label text-left col-md-3">Kapal Keluar</h5>
                   <div class="col-md-3">
                     <input type="text" class="form-control" name="kkeluar">
                   </div>
                 </div>
                 <div class="form-group row">
-                  <label class="control-label text-left col-md-3">Kapal Melintas</label>
+                  <h5 class="control-label text-left col-md-3">Kapal Melintas</h5>
                   <div class="col-md-3">
                     <input type="text" class="form-control" name="klintas">
                   </div>
                 </div>
                 <div class="form-group row">
-                  <label class="control-label text-left col-md-3">Kapal Labuh</label>
+                  <h5 class="control-label text-left col-md-3">Kapal Labuh</h5>
                   <div class="col-md-3">
                     <input type="text" class="form-control" name="klabuh">
                   </div>
                 </div>
                 <div class="form-group row">
-                  <label class="control-label text-left col-md-3">Kapal Sandar</label>
+                  <h5 class="control-label text-left col-md-3">Kapal Sandar</h5>
                   <div class="col-md-3">
                     <input type="text" class="form-control" name="ksandar">
                   </div>
@@ -104,49 +115,49 @@
 
                 <h5 class="card-title">II. Prakiraan Cuaca Wilayah Pelabuhan dari BMKG</h5><br>
                 <div class="form-group row">
-                  <label class="control-label text-left col-md-3">Cuaca</label>
+                  <h5 class="control-label text-left col-md-3">Cuaca</h5>
                   <div class="col-md-9">
                     <input type="text" class="form-control" name="cuaca">
                   </div>
                 </div>
                 <div class="form-group row">
-                  <label class="control-label text-left col-md-3">Arah Angin</label>
+                  <h5 class="control-label text-left col-md-3">Arah Angin</h5>
                   <div class="col-md-9">
                     <input type="text" class="form-control" name="araha">
                   </div>
                 </div>
                 <div class="form-group row">
-                  <label class="control-label text-left col-md-3">Kecepatan Angin</label>
+                  <h5 class="control-label text-left col-md-3">Kecepatan Angin</h5>
                   <div class="col-md-9">
                     <input type="text" class="form-control" name="kecepatana">
                   </div>
                 </div>
                 <div class="form-group row">
-                  <label class="control-label text-left col-md-3">Jarak Pandang</label>
+                  <h5 class="control-label text-left col-md-3">Jarak Pandang</h5>
                   <div class="col-md-9">
                     <input type="text" class="form-control" name="jrkpandang">
                   </div>
                 </div>
                 <div class="form-group row">
-                  <label class="control-label text-left col-md-3">Tinggi Gelombang</label>
+                  <h5 class="control-label text-left col-md-3">Tinggi Gelombang</h5>
                   <div class="col-md-9">
                     <input type="text" class="form-control" name="tgigel">
                   </div>
                 </div>
                 <div class="form-group row">
-                  <label class="control-label text-left col-md-3">Suhu Udara Maximum</label>
+                  <h5 class="control-label text-left col-md-3">Suhu Udara Maximum</h5>
                   <div class="col-md-9">
                     <input type="text" class="form-control" name="suhumax">
                   </div>
                 </div>
                 <div class="form-group row">
-                  <label class="control-label text-left col-md-3">Suhu Udara Minimum</label>
+                  <h5 class="control-label text-left col-md-3">Suhu Udara Minimum</h5>
                   <div class="col-md-9">
                     <input type="text" class="form-control" name="suhumin">
                   </div>
                 </div>
                 <div class="form-group row">
-                  <label class="control-label text-left col-md-3">Pasang Surut Maximum</label>
+                  <h5 class="control-label text-left col-md-3">Pasang Surut Maximum</h5>
                   <div class="col-md-9">
                     <input type="text" class="form-control" name="pasangmax">
                   </div>
@@ -154,19 +165,19 @@
 
                 <h5 class="card-title">III. Kondisi</h5><br>
                 <div class="form-group row">
-                  <label class="control-label text-left col-md-3">Alur Pelayaran</label>
+                  <h5 class="control-label text-left col-md-3">Alur Pelayaran</h5>
                   <div class="col-md-9">
                     <input type="text" class="form-control" name="alurpel">
                   </div>
                 </div>
                 <div class="form-group row">
-                  <label class="control-label text-left col-md-3">SBNP</label>
+                  <h5 class="control-label text-left col-md-3">SBNP</h5>
                   <div class="col-md-9">
                     <input type="text" class="form-control" name="sbnp">
                   </div>
                 </div>
                 <div class="form-group row">
-                  <label class="control-label text-left col-md-3">Peralatan</label>
+                  <h5 class="control-label text-left col-md-3">Peralatan</h5>
                   <div class="col-md-9">
                     <input type="text" class="form-control" name="peralatan">
                   </div>
@@ -174,13 +185,13 @@
 
                 <h5 class="card-title">IV. Jasa PNBP VTS/Telegram Radio</h5><br>
                 <div class="form-group row">
-                  <label class="control-label text-left col-md-3">Nota Tagih</label>
+                  <h5 class="control-label text-left col-md-3">Nota Tagih</h5>
                   <div class="col-md-2">
                     <input type="text" class="form-control" name="nota">
                   </div>
                 </div>
                 <div class="form-group row">
-                  <label class="control-label text-left col-md-3">Master Cable</label>
+                  <h5 class="control-label text-left col-md-3">Master Cable</h5>
                   <div class="col-md-6">
                     <input type="text" class="form-control" name="mastercbl">
                   </div>
@@ -188,7 +199,7 @@
 
                 <h5 class="card-title">V. Lain - lain</h5><br>
                 <div class="form-group row">
-                  <label class="control-label text-left col-md-3">Lain - lain</label>
+                  <h5 class="control-label text-left col-md-3">Lain - lain</h5>
                   <div class="col-md-9">
                     <input type="text" class="form-control" name="lain">
                   </div>
@@ -196,13 +207,13 @@
 
                 <h5 class="card-title">VI. Petugas Jaga</h5><br>
                 <div class="form-group row">
-                  <label class="control-label text-left col-md-3">Petugas 1</label>
+                  <h5 class="control-label text-left col-md-3">Petugas 1</h5>
                   <div class="col-md-6">
                     <input type="text" class="form-control" name="petugas1">
                   </div>
                 </div>
                 <div class="form-group row last">
-                  <label class="control-label text-left col-md-3">Petugas 2</label>
+                  <h5 class="control-label text-left col-md-3">Petugas 2</h5>
                   <div class="col-md-6">
                     <input type="text" class="form-control" name="petugas2">
                   </div>
@@ -213,10 +224,10 @@
                   <div class="col-md-12">
                     <div class="row">
                       <div class="offset-sm-3 col-md-9">
+                        <button type="reset" class="btn btn-danger">Cancel</button>
                         <button type="submit" class="btn btn-success">
                           <i class="fa fa-check"></i>Submit
                         </button>
-                        <button type="reset" class="btn btn-danger">Cancel</button>
                       </div>
                     </div>
                   </div>
