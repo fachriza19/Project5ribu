@@ -14,6 +14,11 @@ if (! defined('BASEPATH') ) exit('No direct script access allowed');
             $this->load->view('pages/dashboard');
             $this->load->view('templates/footer');
           }
+          function error404(){
+            $this->load->view('templates/header');
+            $this->load->view('pages/404');
+            $this->load->view('templates/footer');
+          }
           // function login()
           // {
           //   $this->load->view('halaman/login');

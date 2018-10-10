@@ -47,11 +47,11 @@ if (! defined('BASEPATH') ) exit('No direct script access allowed');
             $lain = $this->input->post('lain');
             $petugas1 = $this->input->post('petugas1');
             $petugas2 = $this->input->post('petugas2');
-            
+
             $this->m_telkompel->simpan_telkompel($instansi,$hari1,$hari2,$tgl1,$tgl2,$jam1,$jam2,$kplmasuk,$kplkeluar,$kpllintas,$kpllabuh,$kplsandar,$cuaca,$arah,$kecepatan,$jrkpandang,$tinggigel,$suhumax,$suhumin,$pasangmax,$alur,$sbnp,$peralatan,$nota,$master,$lain,$petugas1,$petugas2);
             $this->session->set_flashdata('success', 'true');
             redirect('Telkompel/index');
-          }  
+          }
 
         }
 
