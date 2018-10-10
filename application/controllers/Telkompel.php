@@ -17,6 +17,14 @@ if (! defined('BASEPATH') ) exit('No direct script access allowed');
             $this->load->view('templates/footer');
           }
 
+          function kelolatelkompel()
+          {
+            $x['data']=$this->m_telkompel->show_laporan();
+            $this->load->view('Templates/header');
+            $this->load->view('pages/sarpras/kelolatelkompel',$x);
+            $this->load->view('Templates/footer');
+          }
+
           function simpanlaporan()
           {
             $instansi = $this->input->post('instansi');
