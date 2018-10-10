@@ -207,22 +207,29 @@ if (! defined('BASEPATH') ) exit('No direct script access allowed');
 
       function tambahdata()
       {
-        $nama=$this->input->post('nama');
-        $kelompok=$this->input->post('kelompok');
+        $namasbnp=$this->input->post('namasbnp');
+        $nomordsi=$this->input->post('nomordsi');
+        $LS=$this->input->post('LS');
+        $BT=$this->input->post('BT');
         $latitude=$this->input->post('latitude');
         $longtitude=$this->input->post('longtitude');
-        $lokasi=$this->input->post('lokasi');
-        $luas=$this->input->post('luasarea');
-        $nomor=$this->input->post('nomordsi');
-        $penanggung_jawab=$this->input->post('penanggungjwb');
-        $jml_sdm=$this->input->post('jmlsdm');
-        $wktjagaopl=$this->input->post('wktjagaopl');
-        $perangkat=$this->input->post('perangkat');
-        $lampu=$this->input->post('lampu');
-        $solar_cell=$this->input->post('solarcell');
-        $battery=$this->input->post('battery');
+        $jenis=$this->input->post('jenis');
+        $wb=$this->input->post('wb');
+        $wc=$this->input->post('wc');
+        $kc=$this->input->post('kc');
+        $pc=$this->input->post('pc');
+        $tb=$this->input->post('tb');
+        $elevasi=$this->input->post('elevasi');
+        $jt=$this->input->post('jt');
+        $sp=$this->input->post('sp');
+        $bb=$this->input->post('bb');
+        $btp=$this->input->post('btp');
+        $se=$this->input->post('se');
+        $rr=$this->input->post('rr');
+        $status=$this->input->post('status');
+        $tahun=$this->input->post('tahun');
 
-          $this->m_sarpras->tambahdata($nama,$kelompok,$latitude,$longtitude,$lokasi,$luas,$nomor,$penanggung_jawab,$jml_sdm,$wktjagaopl,$perangkat,$lampu,$solar_cell,$battery);
+          $this->m_sarpras->tambahdata($namasbnp,$nomordsi,$LS,$BT,$latitude,$longtitude,$jenis,$wb,$wc,$kc,$pc,$tb,$elevasi,$jt,$sp,$bb,$btp,$se,$rr,$status,$tahun);
           redirect('adminmenu/Keldatasarpras');
         }
 
@@ -249,20 +256,27 @@ if (! defined('BASEPATH') ) exit('No direct script access allowed');
 
       function modal_edit(){
         $dataid = $this->input->post('idmodal');
-        $nama = $this->input->post('nama');
-        $kelompok = $this->input->post('kelompok');
-        $latitude = $this->input->post('latitude');
-        $longtitude = $this->input->post('longtitude');
-        $lokasi = $this->input->post('lokasi');
-        $luasarea = $this->input->post('luasarea');
-        $nomordsi = $this->input->post('nomordsi');
-        $penanggungjwb = $this->input->post('penanggungjwb');
-        $jumlahsdm = $this->input->post('jumlahsdm');
-        $wktjagaopl = $this->input->post('wktjagaopl');
-        $perangkat = $this->input->post('perangkat');
-        $lampu = $this->input->post('lampu');
-        $solarcell = $this->input->post('solarcell');
-        $battery = $this->input->post('battery');
+        $namasbnp=$this->input->post('namasbnp');
+        $nomordsi=$this->input->post('nomordsi');
+        $LS=$this->input->post('LS');
+        $BT=$this->input->post('BT');
+        $latitude=$this->input->post('latitude');
+        $longtitude=$this->input->post('longtitude');
+        $jenis=$this->input->post('jenis');
+        $wb=$this->input->post('wb');
+        $wc=$this->input->post('wc');
+        $kc=$this->input->post('kc');
+        $pc=$this->input->post('pc');
+        $tb=$this->input->post('tb');
+        $elevasi=$this->input->post('elevasi');
+        $jt=$this->input->post('jt');
+        $sp=$this->input->post('sp');
+        $bb=$this->input->post('bb');
+        $btp=$this->input->post('btp');
+        $se=$this->input->post('se');
+        $rr=$this->input->post('rr');
+        $status=$this->input->post('status');
+        $tahun=$this->input->post('tahun');
         // $data = array('nama' => $nama,
         //               'kelompok'=>$kelompok,
         //               'latitude'=>$latitude,
@@ -280,7 +294,7 @@ if (! defined('BASEPATH') ) exit('No direct script access allowed');
         //             );
         // $where = array('id' => $dataid);
         // $resut = $this->m_sarpras->edit_modal('data',$data,$where);
-        $this->m_sarpras->modal_edit($dataid,$nama,$kelompok,$latitude,$longtitude,$lokasi,$luasarea,$nomordsi,$penanggungjwb,$jumlahsdm,$wktjagaopl,$perangkat,$lampu,$solarcell,$battery);
+        $this->m_sarpras->modal_edit($dataid,$namasbnp,$nomordsi,$LS,$BT,$latitude,$longtitude,$jenis,$wb,$wc,$kc,$pc,$tb,$elevasi,$jt,$sp,$bb,$btp,$se,$rr,$status,$tahun);
         redirect('adminmenu/Keldatasarpras');
       }
 

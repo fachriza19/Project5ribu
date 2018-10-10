@@ -22,8 +22,8 @@
         return $this->db->get();
       }
 
-      function tambahdata($nama,$kelompok,$latitude,$longtitude,$lokasi,$luas,$nomor,$penanggung_jawab,$jml_sdm,$wktjagaopl,$perangkat,$lampu,$solar_cell,$battery){
-        $hsl=$this->db->query("INSERT INTO data (nama,kelompok,latitude,longtitude,lokasi,luas_area,nomordsi,penanggung_jawab,jml_sdm,wktjagaopl,perangkat,lampu,solar_cell,battery) VALUES ('$nama','$kelompok','$latitude','$longtitude','$lokasi','$luas','$nomor','$penanggung_jawab','$jml_sdm','$wktjagaopl','$perangkat','$lampu','$solar_cell','$battery') ");
+      function tambahdata($namasbnp,$nomordsi,$LS,$BT,$latitude,$longtitude,$jenis,$wb,$wc,$kc,$pc,$tb,$elevasi,$jt,$sp,$bb,$btp,$se,$rr,$status,$tahun){
+        $hsl=$this->db->query("INSERT INTO data (namasbnp,nomordsi,LS,BT,latitude,longtitude,jenis,warna_bangunan,warna_cahaya,karakteristik_cahaya,periode_cahaya,tinggi_bangunan,elevasi,jarak_tampak,sistem_pelampungan,bahan_bangunan,bentuk_tanda_puncak,sumber_energi,radar_reflektor,status,thn_pemb) VALUES ('$namasbnp','$nomordsi','$LS','$BT','$latitude','$longtitude','$jenis','$wb','$wc','$kc','$pc','$tb','$elevasi','$jt','$sp','$bb','$btp','$se','$rr','$status','$tahun') ");
         // ('$nama','$kelompok','$latitude','$longtitude','$lokasi','$luas','$nomor','$penanggung_jawab','$jml_sdm','$wktjagaopl','$perangkat','$lampu','$solar_cell','$battery')
         return $hsl;
       }
@@ -49,8 +49,8 @@
       $hsl=$this->db->query("SELECT * FROM data Where id='$codeid'");
       return $hsl;
       }
-      function modal_edit($dataid,$nama,$kelompok,$latitude,$longtitude,$lokasi,$luasarea,$nomordsi,$penanggungjwb,$jumlahsdm,$wktjagaopl,$perangkat,$lampu,$solarcell,$battery){
-        $hsl=$this->db->query("UPDATE data SET nama='$nama',kelompok='$kelompok',latitude='$latitude',longtitude='$longtitude',lokasi='$lokasi',luas_area='$luasarea',nomordsi='$nomordsi',penanggung_jawab='$penanggungjwb',jml_sdm='$jumlahsdm',wktjagaopl='$wktjagaopl',perangkat='$perangkat',lampu='$lampu',solar_cell='$solarcell',battery='$battery' WHERE id='$dataid'");
+      function modal_edit($dataid,$namasbnp,$nomordsi,$LS,$BT,$latitude,$longtitude,$jenis,$wb,$wc,$kc,$pc,$tb,$elevasi,$jt,$sp,$bb,$btp,$se,$rr,$status,$tahun){
+        $hsl=$this->db->query("UPDATE data SET namasbnp='$namasbnp',nomordsi='$nomordsi',LS='$LS',BT='$BT',latitude='$latitude',longtitude='$longtitude',jenis='$jenis',warna_bangunan='$wb',warna_cahaya='$wc',karakteristik_cahaya='$kc',periode_cahaya='$pc',tinggi_bangunan='$tb',elevasi='$elevasi',jarak_tampak='$jt',sistem_pelampungan='$sp',bahan_bangunan='$bb',bentuk_tanda_puncak='$btp',sumber_energi='$se',radar_reflektor='$rr',status='$status',thn_pemb='$tahun' WHERE id='$dataid'");
         return $hsl;
       }
       function hapusdata($blabla){

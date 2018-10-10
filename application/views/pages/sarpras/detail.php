@@ -89,7 +89,7 @@
                   $obj = json_decode($data);
                   foreach($obj->results as $item){
                     ?>
-                    [<?php echo $item->id ?>,'<?php echo $item->nama ?>','<?php echo $item->kelompok ?>',<?php echo $item->latitude ?>,<?php echo $item->longtitude ?>],
+                    [<?php echo $item->id ?>,'<?php echo $item->namasbnp ?>','<?php echo $item->jenis ?>',<?php echo $item->latitude ?>,<?php echo $item->longtitude ?>],
                     <?php
                   }
                 }
@@ -157,7 +157,7 @@
   <div class="col-12">
     <div class="card">
       <div class="card-body">
-        <h2 class="card-title text-center">INFO DETAIL </h2>
+        <h2 class="card-title text-center">INFO DETAIL</h2>
         <!-- <h6 class="card-subtitle">Create responsive tables by wrapping any <code>.table</code> in <code>.table-responsive </code></h6> -->
         <div class="table-responsive">
           <table class="table">
@@ -166,12 +166,20 @@
               <th><h2>Detail</h2></th>
             </tr>
             <tr>
-              <td>Nama</td>
-              <td><h5><?php echo $datas->nama ?></h5></td>
+              <td>Nama SBNP</td>
+              <td><h5><?php echo $datas->namasbnp ?></h5></td>
             </tr>
             <tr>
-              <td>Kelompok</td>
-              <td><h5><?php echo $datas->kelompok ?></h5></td>
+              <td>Nomor DSI</td>
+              <td><h5><?php echo $datas->nomordsi ?></h5></td>
+            </tr>
+            <tr>
+              <td>Lintang Selatan</td>
+              <td><h5><?php echo $datas->LS ?></h5></td>
+            </tr>
+            <tr>
+              <td>Bujur Timur</td>
+              <td><h5><?php echo $datas->BT ?></h5></td>
             </tr>
             <tr>
               <td>Latitude</td>
@@ -182,40 +190,64 @@
               <td><h5><?php echo $datas->longtitude ?></h5></td>
             </tr>
             <tr>
-              <td>Lokasi Luas Area</td>
-              <td><h5><?php echo $datas->luas_area ?></h5></td>
+              <td>Jenis SBNP</td>
+              <td><h5><?php echo $datas->jenis ?></h5></td>
             </tr>
             <tr>
-              <td>Nomor DSI</td>
-              <td><h5><?php echo $datas->nomordsi ?></h5></td>
+              <td>Warna Bangunan</td>
+              <td><h5><?php echo $datas->warna_bangunan ?></h5></td>
             </tr>
             <tr>
-              <td>Penanggung Jawab</td>
-              <td><h5><?php echo $datas->penanggung_jawab ?></h5></td>
+              <td>Warna Cahaya</td>
+              <td><h5><?php echo $datas->warna_cahaya ?></h5></td>
             </tr>
             <tr>
-              <td>Jumlah SDM</td>
-              <td><h5><?php echo $datas->jml_sdm ?></h5></td>
+              <td>Karakteristik Cahaya</td>
+              <td><h5><?php echo $datas->karakteristik_cahaya ?></h5></td>
             </tr>
             <tr>
-              <td>Waktu Jaga Operasional</td>
-              <td><h5><?php echo $datas->wktjagaopl ?></h5></td>
+              <td>Periode Cahaya</td>
+              <td><h5><?php echo $datas->periode_cahaya ?></h5></td>
             </tr>
             <tr>
-              <td>Perangkat Yang Terpaang</td>
-              <td><h5><?php echo $datas->perangkat ?></h5></td>
+              <td>Tinggi Bangunan</td>
+              <td><h5><?php echo $datas->tinggi_bangunan ?></h5></td>
             </tr>
             <tr>
-              <td>Lampu</td>
-              <td><h5><?php echo $datas->lampu ?></h5></td>
+              <td>Elevasi</td>
+              <td><h5><?php echo $datas->elevasi ?></h5></td>
             </tr>
             <tr>
-              <td>Solar Cell</td>
-              <td><h5><?php echo $datas->solar_cell ?></h5></td>
+              <td>Jarak Tampak</td>
+              <td><h5><?php echo $datas->jarak_tampak ?></h5></td>
             </tr>
             <tr>
-              <td>Battery</td>
-              <td><h5><?php echo $datas->battery ?></h5></td>
+              <td>Sistem PELAMPUNGAN</td>
+              <td><h5><?php echo $datas->sistem_pelampungan ?></h5></td>
+            </tr>
+            <tr>
+              <td>Bahan Bangunan</td>
+              <td><h5><?php echo $datas->bahan_bangunan ?></h5></td>
+            </tr>
+            <tr>
+              <td>Bentuk Tandan Puncak</td>
+              <td><h5><?php echo $datas->bentuk_tanda_puncak ?></h5></td>
+            </tr>
+            <tr>
+              <td>Sumber Energi</td>
+              <td><h5><?php echo $datas->sumber_energi ?></h5></td>
+            </tr>
+            <tr>
+              <td>Radar Reflektor</td>
+              <td><h5><?php echo $datas->radar_reflektor ?></h5></td>
+            </tr>
+            <tr>
+              <td>Status</td>
+              <td><h5><?php echo $datas->status ?></h5></td>
+            </tr>
+            <tr>
+              <td>Tahun Pemb/Rehab</td>
+              <td><h5><?php echo $datas->thn_pemb ?></h5></td>
             </tr>
             <tr>
             </tr>
