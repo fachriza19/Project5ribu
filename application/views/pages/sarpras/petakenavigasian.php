@@ -46,13 +46,13 @@
 
               var officeLocations = [
                 <?php
-                $data = file_get_contents('http://localhost/Disnav/Adminmenu/getdata');
+                $data = file_get_contents('http://localhost/Project5ribu/Adminmenu/getdata');
                 $no=1;
                 if(json_decode($data,true)){
                   $obj = json_decode($data);
                   foreach($obj->results as $item){
                     ?>
-                    [<?php echo $item->id ?>,'<?php echo $item->nama ?>','<?php echo $item->kelompok ?>',<?php echo $item->latitude ?>,<?php echo $item->longtitude ?>,'<?php echo $item->penanggung_jawab ?>'],
+                    [<?php echo $item->id ?>,'<?php echo $item->namasbnp ?>','<?php echo $item->jenis ?>',<?php echo $item->latitude ?>,<?php echo $item->longtitude ?>,'<?php echo $item->nomordsi ?>'],
                     <?php
                   }
                 }
@@ -76,9 +76,9 @@
                 '<div id="siteNotice">'+
                 '</div>'+
                 '<h3 id="firstHeading" align="center">'+ office[1] + '</h3>'+
-                '<h6 id="firstHeading"> Kelompok : '+ office[2] + '</h6>'+
+                '<h6 id="firstHeading"> Jenis : '+ office[2] + '</h6>'+
                 '<h6 id="firstHeading"> Koordinat : '+ office[3] + ' , '+ office[4] + '</h6>'+
-                '<h6 id="firstHeading"> Penanggung Jawab : '+ office[5] + ' </h6>'+
+                '<h6 id="firstHeading"> Nomor DSI : '+ office[5] + ' </h6>'+
                 '<div id="bodyContent" align="center">'+
                 '<a href=<?php echo base_url('adminmenu/detailpeta/') ?>'+office[0]+'>Info Detail</a>'+
                 '</div>'+

@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Oct 03, 2018 at 05:14 AM
+-- Generation Time: Oct 10, 2018 at 07:18 AM
 -- Server version: 10.1.31-MariaDB
 -- PHP Version: 7.2.4
 
@@ -30,32 +30,35 @@ SET time_zone = "+00:00";
 
 CREATE TABLE `data` (
   `id` int(11) NOT NULL,
-  `nama` varchar(30) NOT NULL,
-  `kelompok` varchar(30) NOT NULL,
+  `namasbnp` varchar(100) NOT NULL,
+  `nomordsi` varchar(30) NOT NULL,
+  `LS` varchar(30) NOT NULL,
+  `BT` varchar(30) NOT NULL,
   `latitude` varchar(30) NOT NULL,
   `longtitude` varchar(30) NOT NULL,
-  `lokasi` varchar(30) NOT NULL,
-  `luas_area` varchar(30) NOT NULL,
-  `nomordsi` varchar(30) NOT NULL,
-  `penanggung_jawab` varchar(30) NOT NULL,
-  `jml_sdm` varchar(30) NOT NULL,
-  `wktjagaopl` varchar(30) NOT NULL,
-  `perangkat` varchar(30) NOT NULL,
-  `lampu` varchar(30) NOT NULL,
-  `solar_cell` varchar(30) NOT NULL,
-  `battery` varchar(30) NOT NULL
+  `jenis` varchar(30) NOT NULL,
+  `warna_bangunan` varchar(30) NOT NULL,
+  `warna_cahaya` varchar(30) NOT NULL,
+  `karakteristik_cahaya` varchar(30) NOT NULL,
+  `periode_cahaya` varchar(30) NOT NULL,
+  `tinggi_bangunan` varchar(30) NOT NULL,
+  `elevasi` varchar(30) NOT NULL,
+  `jarak_tampak` varchar(30) NOT NULL,
+  `sistem_pelampungan` varchar(30) NOT NULL,
+  `bahan_bangunan` varchar(30) NOT NULL,
+  `bentuk_tanda_puncak` varchar(30) NOT NULL,
+  `sumber_energi` varchar(30) NOT NULL,
+  `radar_reflektor` varchar(30) NOT NULL,
+  `status` varchar(30) NOT NULL,
+  `thn_pemb` varchar(30) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `data`
 --
 
-INSERT INTO `data` (`id`, `nama`, `kelompok`, `latitude`, `longtitude`, `lokasi`, `luas_area`, `nomordsi`, `penanggung_jawab`, `jml_sdm`, `wktjagaopl`, `perangkat`, `lampu`, `solar_cell`, `battery`) VALUES
-(1, 'tanjung priok', 'test', '-6.1194908', '106.8624483', 'Jakarta', '30m', '123', 'bpk', '5', '5', '5', 'lampu a', '3', 'batre a'),
-(2, 'Tangerang', 'test', '-6.1194569', '101.8624483', 'Tangerang', '20m', '132', 'ibu', '2', '5', '2', 'lampu b ', '2', 'batre b'),
-(3, 'test', 'Pelampung Suar', '-6.1194908', '101.9624483', 'Bekasi', '40', '123123', 'bb', '30', '12', '5', '5', '5', '5'),
-(4, 'adssad', 'asdasd', '-6.3540185', '106.8176636', 'asdads', 'asdsa', 'saddsa', 'asdsa', 'asddsa', 'asdsda', 'sadsa', 'sadsda', 'sadsa', 'saddas'),
-(5, 'asda', 'asdasd', '-65468456', '65423564', 'lkj', 'lkj', 'lkj', 'lkj', 'ljk', 'lj', 'lkj', 'l', 'kjlk', 'jlkklj');
+INSERT INTO `data` (`id`, `namasbnp`, `nomordsi`, `LS`, `BT`, `latitude`, `longtitude`, `jenis`, `warna_bangunan`, `warna_cahaya`, `karakteristik_cahaya`, `periode_cahaya`, `tinggi_bangunan`, `elevasi`, `jarak_tampak`, `sistem_pelampungan`, `bahan_bangunan`, `bentuk_tanda_puncak`, `sumber_energi`, `radar_reflektor`, `status`, `thn_pemb`) VALUES
+(22, 'PULAU TIGA', '2375', '05° 49’ 10” ', '105° 32’ 42” ', '-5.819444444444445', '105.545', 'Rambu Suar', 'M-H-M', 'Putih', 'FL.(2) W. 6 s   EB', 'FL.0.5 - Ecl.1.5  /  FL.0.5 - ', '15  Meter', '-', '13 Nm', 'Lateral Mark', 'Besi Baja', '-', '2375', 'Segitiga', 'Tetap', '1978');
 
 --
 -- Indexes for dumped tables
@@ -75,7 +78,7 @@ ALTER TABLE `data`
 -- AUTO_INCREMENT for table `data`
 --
 ALTER TABLE `data`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=25;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

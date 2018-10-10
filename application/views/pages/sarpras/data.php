@@ -27,25 +27,32 @@
 
 
               <table id="table3" class=" table table-bordered table-responsive nowrap table-hover" style="width: 100%;">
-                <thead>
-                  <tr>
-                    <th class="all">ID</th>
-                    <th class="all" style="width: 250px;">NAMA</th>
-                    <th class="all">KELOMPOK</th>
-                    <th class="all" style="width: 250px;">LATITUDE</th>
-                    <th class="all" style="width: 250px;">LONGTITUDE</th>
-                    <th class="all">LOKASI</th>
-                    <th class="all">LUAS AREA</th>
-                    <th class="">Nomor DSI :</th>
-                    <th class="" style="width: 300px;">PENANGGUNG JAWAB :</th>
-                    <th class="">JUMLAH SDM : </th>
-                    <th class="">WAKTU JAGA OPERASIONAL : </th>
-                    <th class="">PERANGKAT YANG TERPASANG : </th>
-                    <th class="">LAMPU : </th>
-                    <th class="">SOLAR CELL : </th>
-                    <th class="">BATTERY : </th>
-                  </tr>
-                </thead>
+								<thead>
+									<tr>
+										<th class="all" style="width: 5%;">ID</th>
+										<th class="all" style="width: 40%;">NAMA SBNP</th>
+										<th class="all" style="width: 25%;">NOMOR DSI</th>
+										<th class="all" style="width: 20%;">JENIS</th>
+										<th class="none">LINTANG SELATAN : </th>
+										<th class="none">BUJUR TIMUR : </th>
+										<th class="none">LATITUDE : </th>
+										<th class="none">LONGTITUDE : </th>
+										<th class="none">WARNA BANGUNAN : </th>
+										<th class="none">WARNA CAHAYA : </th>
+										<th class="none">KARAKTERISTIK CAHAYA : </th>
+										<th class="none">PERIODE CAHAYA : </th>
+										<th class="none">TINGGI BANGUNAN : </th>
+										<th class="none">ELEVASI : </th>
+										<th class="none">JARAK TAMPAK : </th>
+										<th class="none">SISTEM PELAMPUNGAN : </th>
+										<th class="none">BAHAN BANGUNAN : </th>
+										<th class="none">BENTUK TANDA PUNCAK : </th>
+										<th class="none">SUMBER ENERGI : </th>
+										<th class="none">RADAR REFLEKTOR : </th>
+										<th class="none">STATUS : </th>
+										<th class="none">TAHUN PEMB/REHAB : </th>
+									</tr>
+								</thead>
 
                 <tbody id="target">
 
@@ -54,22 +61,28 @@
         <?php
         foreach ($data as $r){ ?>
           <tr>
-            <td><?= $r->id; ?> </td>
-            <td><a data-toggle="tooltip" data-placement="top" title="Klik untuk melihat lebih detail" href="<?php echo base_url('adminmenu/detailpeta/'.$r->id) ?>"><?=  $r->nama; ?></a></td>
-            <td><?= $r->kelompok; ?></td>
-            <td><?= $r->latitude; ?></td>
-            <td><?= $r->longtitude; ?></td>
-            <td><?= $r->lokasi; ?></td>
-            <td><?= $r->luas_area; ?></td>
-            <td><?= $r->nomordsi; ?></td>
-            <td><?= $r->penanggung_jawab; ?></td>
-
-            <td><?= $r->jml_sdm; ?></td>
-            <td><?= $r->wktjagaopl; ?></td>
-            <td><?= $r->perangkat; ?></td>
-            <td><?= $r->lampu; ?></td>
-            <td><?= $r->solar_cell; ?></td>
-            <td><?= $r->battery; ?></td>
+						<td><?= $r->id; ?></td>
+						<td><a data-toggle="tooltip" data-placement="top" title="Klik untuk melihat lebih detail" href="<?php echo base_url('adminmenu/detailpeta/'.$r->id) ?>"><?=  $r->namasbnp; ?></a></td>
+						<td><?= $r->nomordsi; ?></td>
+						<td><?= $r->jenis; ?></td>
+						<td><?= $r->LS; ?></td>
+						<td><?= $r->BT; ?></td>
+						<td><?= $r->latitude; ?></td>
+						<td><?= $r->longtitude; ?></td>
+						<td><?= $r->warna_bangunan; ?></td>
+						<td><?= $r->warna_cahaya; ?></td>
+						<td><?= $r->karakteristik_cahaya; ?></td>
+						<td><?= $r->periode_cahaya; ?></td>
+						<td><?= $r->tinggi_bangunan; ?></td>
+						<td><?= $r->elevasi; ?></td>
+						<td><?= $r->jarak_tampak; ?></td>
+						<td><?= $r->sistem_pelampungan; ?></td>
+						<td><?= $r->bahan_bangunan; ?></td>
+						<td><?= $r->bentuk_tanda_puncak; ?></td>
+						<td><?= $r->sumber_energi; ?></td>
+						<td><?= $r->radar_reflektor; ?></td>
+						<td><?= $r->status; ?></td>
+						<td><?= $r->thn_pemb; ?></td>
           </tr>
         <?php } ?>
 
