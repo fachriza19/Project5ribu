@@ -175,7 +175,7 @@
                                 <a class="" href="<?php echo base_url('daftarberita/index') ?>" aria-expanded="false"><i class="mdi mdi-book-open-variant"></i><span class="hide-menu">News</span></a>
                             </li>
                         <li>
-                            <a class="has-arrow " href="#" aria-expanded="false"><i class="icon-speech"></i><span class="hide-menu">Profile</span></a>
+                            <a class="has-arrow " href="#" aria-expanded="false"><i class="icon-user"></i><span class="hide-menu">Profile</span></a>
                             <ul aria-expanded="false" class="collapse">
                                 <li><a href="<?php echo base_url('profil/index') ?>">Visi & misi</a></li>
                                 <li><a href="<?php echo base_url('profil/wilker') ?>">Wilayah Kerja</a></li>
@@ -186,7 +186,7 @@
                             <a class="has-arrow" href="#" aria-expanded="false"><i class="mdi mdi-chart-bubble"></i><span class="hide-menu">Sarana & Prasarana</span></a>
                             <ul aria-expanded="false" class="collapse">
                               <li>
-                                <a class="has-arrow" href="#" aria-expanded="false">Peta Kenavigasian</a>
+                                <a class="has-arrow" href="#" aria-expanded="false">SBNP</a>
                                   <ul aria-expanded="false" class="collapse">
                                       <li><a href="<?php echo base_url('sarpras/index'); ?>">Peta</a></li>
                                       <li><a href="<?php echo base_url('sarpras/data') ?>">Data</a></li>
@@ -194,7 +194,15 @@
                                 </li>
                                 <li><a href="#">Telkompel</a></li>
                                 <li><a href="<?php echo base_url('sarpras/bengkel'); ?>">Bengkel</a></li>
-                                <li><a href="<?php echo base_url('sarpras/kapal'); ?>">Kapal Negara</a></li>
+                                <li>
+                                    <a class="has-arrow " href="#!" aria-expanded="false"><span class="hide-menu">Kapal Negara</span></a>
+                                    <ul aria-expanded="false" class="collapse">
+                                        <li><a href="<?php echo base_url('#!') ?>">KN KARAKATA</a></li>
+                                        <li><a href="<?php echo base_url('#!') ?>">KN KARAKATA</a></li>
+                                        <li><a href="<?php echo base_url('#!') ?>">KN KARAKATA</a></li>
+                                        <li><a href="<?php echo base_url('#!') ?>">KN KARAKATA</a></li>
+                                    </ul>
+                                </li>
                                 <li><a href="<?php echo base_url('sarpras/pengamatan'); ?>">Pengamatan Laut</a></li>
                             </ul>
                         </li>
