@@ -38,9 +38,28 @@ if (! defined('BASEPATH') ) exit('No direct script access allowed');
           function Kapal()
           {
             $this->load->view('templates/header');
-            $this->load->view('pages/sarpras/kapal');
+            $this->load->view('pages/sarpras/KNEdam');
             $this->load->view('templates/footer');
           }
+          function KNKARAKATA()
+          {
+            $this->load->view('templates/header');
+            $this->load->view('pages/sarpras/KNKARAKATA');
+            $this->load->view('templates/footer');
+          }
+          function KNENGGANO()
+          {
+            $this->load->view('templates/header');
+            $this->load->view('pages/sarpras/KNENGGANO');
+            $this->load->view('templates/footer');
+          }
+          function KNMIAPLACIDUS()
+          {
+            $this->load->view('templates/header');
+            $this->load->view('pages/sarpras/KNMIAPLACIDUS');
+            $this->load->view('templates/footer');
+          }
+
           function Pengamatan()
           {
             $this->load->view('templates/header');

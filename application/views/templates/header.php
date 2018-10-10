@@ -197,10 +197,10 @@
                                 <li>
                                     <a class="has-arrow " href="#!" aria-expanded="false"><span class="hide-menu">Kapal Negara</span></a>
                                     <ul aria-expanded="false" class="collapse">
-                                        <li><a href="<?php echo base_url('#!') ?>">KN KARAKATA</a></li>
-                                        <li><a href="<?php echo base_url('#!') ?>">KN KARAKATA</a></li>
-                                        <li><a href="<?php echo base_url('#!') ?>">KN KARAKATA</a></li>
-                                        <li><a href="<?php echo base_url('#!') ?>">KN KARAKATA</a></li>
+                                        <li><a href="<?php echo base_url('Sarpras/Kapal') ?>">KN EDAM</a></li>
+                                        <li><a href="<?php echo base_url('Sarpras/KNKARAKATA') ?>">KN KARAKATA</a></li>
+                                        <li><a href="<?php echo base_url('Sarpras/KNENGGANO') ?>">KN. ENGGANO</a></li>
+                                        <li><a href="<?php echo base_url('Sarpras/KNMIAPLACIDUS') ?>">KN. MIAPLACIDUS</a></li>
                                     </ul>
                                 </li>
                                 <li><a href="<?php echo base_url('sarpras/pengamatan'); ?>">Pengamatan Laut</a></li>
