@@ -11,17 +11,20 @@ if (! defined('BASEPATH') ) exit('No direct script access allowed');
           }
           function Index()
           {
+            $dataaa['dataaa'] = $this->m_sarpras->ambildata()->result();
+            $dataaa['datatel'] = $this->m_sarpras->ambildatatel()->result();
+            $dataaa['datakapal'] = $this->m_sarpras->ambildatakapal()->result();
             $this->load->view('templates/header');
-            $this->load->view('pages/sarpras/petakenavigasian');
+            $this->load->view('pages/sarpras/petakenavigasian',$dataaa);
             $this->load->view('templates/footer');
           }
-          function Data()
-          {
-            $data['data'] = $this->m_sarpras->ambildata()->result();
-            $this->load->view('templates/header');
-            $this->load->view('pages/sarpras/data',$data);
-            $this->load->view('templates/footer');
-          }
+          // function Data()
+          // {
+          //   $data['data'] = $this->m_sarpras->ambildata()->result();
+          //   $this->load->view('templates/header');
+          //   $this->load->view('pages/sarpras/data',$data);
+          //   $this->load->view('templates/footer');
+          // }
 
           function Telkompel()
           {
@@ -135,15 +138,16 @@ if (! defined('BASEPATH') ) exit('No direct script access allowed');
             $this->load->view('templates/footer');
           }
 
+          function getdatamaptelkompel(){
+            $data['results'] = $this->m_sarpras->getdatatelkompel()->result_array();
+            echo json_encode($data);
+          }
+          function getdatamapkapal(){
+            $data['results'] = $this->m_sarpras->getdatakapal()->result_array();
+            echo json_encode($data);
+          }
 
 
-
-          // function ambildata()
-          // {
-          //   $dataTempat = $this->m->ambildata('data')->result();
-          //
-          //   echo json_encode($dataTempat);
-          // }
 
 
 

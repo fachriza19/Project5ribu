@@ -19,8 +19,8 @@
       <div class="col-12">
         <div class="card">
           <div class="card-body">
-          <h4 class="card-title">WILAYAH KERJA DISTRIK NAVIGASI KELAS I TANJUNG PRIOK</h4><br />
-            <img src="<?php echo base_url('assets/images/wilker.png')?>" width="1024px" height="768px">
+          <h1 class="card-title text-center">WILAYAH KERJA DISTRIK NAVIGASI KELAS I TANJUNG PRIOK</h1><br/><br/>
+            <div class="text-center"><img src="<?php echo base_url('assets/images/wilker.png')?>" width="1024px" height="768px"></div>
             <br /><br /><br />
             <h5 class="text-justify">Distrik Navigasi Kelas I Tanjung Priok berada di wilayah Jakarta Utara Provinsi DKI Jakarta tepatnya di alur perairan Kali japat, dengan wilayah kerja meliputi Provinsi DKI Jakarta, Provinsi Banten, Provinsi Lampung, Provinsi Bengkulu, Provinsi Bangka Belitung, Provinsi Jawa Barat dan Provinsi Kalimantan Barat dan beberapa pulau besar yaitu Pulau Bangka dan Pulau Belitung dan beberapa pulau kecil yaitu Kepulauan Seribu, pulau Sangiang dan Pulau Enggano serta terdapat Alur Lintas Kepulauan Indonesia (ALKI) + 410 mil laut dalam wilayah kerja dari Selat Sunda hingga Selat Bangka/Gaspar dengan dibatasi :</h5>
             <ul class="list-icons">
@@ -39,7 +39,7 @@
             </ul>
             <br>
             <h5 class="text-justify">Distrik Navigasi Kelas I Tanjung Priok mempunyai wilayah operasional seluas 119.383 mil2 dengan panjang garis pantai sepanjang 3.418 Mil laut dengan koordinat sebagai berikut :</h5>
-            <img src="<?php echo base_url('assets/images/tabwilker.png')?>">
+            <div class="text-center"><img src="<?php echo base_url('assets/images/tabwilker.png')?>"></div>
           </div>
         </div>
       </div>
