@@ -66,7 +66,7 @@
 
                             var officeLocations = [
                               <?php
-                              $data = file_get_contents(site_url('adminmenu/getdata'));
+                              $data = file_get_contents(site_url('sarpras/getdata'));
                               $no=1;
                               if(json_decode($data,true)){
                                 $obj = json_decode($data);
@@ -100,7 +100,7 @@
                               '<h6 id="firstHeading"> Koordinat : '+ office[3] + ' , '+ office[4] + '</h6>'+
                               '<h6 id="firstHeading"> Nomor DSI : '+ office[5] + ' </h6>'+
                               '<div id="bodyContent" align="center">'+
-                              '<a href=<?php echo base_url('adminmenu/detailpeta/') ?>'+office[0]+'>Info Detail</a>'+
+                              '<a href=<?php echo base_url('sarpras/detailpeta/') ?>'+office[0]+'>Info Detail</a>'+
                               '</div>'+
                               '</div>';
 
@@ -175,7 +175,7 @@
                           foreach ($dataaa as $r){ ?>
                             <tr>
                               <td><?= $r->id; ?></td>
-                              <td><a data-toggle="tooltip" data-placement="top" title="Klik untuk melihat lebih detail" href="<?php echo base_url('adminmenu/detailpeta/'.$r->id) ?>"><?=  $r->namasbnp; ?></a></td>
+                              <td><a data-toggle="tooltip" data-placement="top" title="Klik untuk melihat lebih detail" href="<?php echo base_url('sarpras/detailpeta/'.$r->id) ?>"><?=  $r->namasbnp; ?></a></td>
                               <td><?= $r->nomordsi; ?></td>
                               <td><?= $r->jenis; ?></td>
                               <td><?= $r->LS; ?></td>
@@ -277,7 +277,7 @@
                             // '<h6 id="firstHeading"> Koordinat : '+ office[3] + ' , '+ office[4] + '</h6>'+
                             // '<h6 id="firstHeading"> Nomor DSI : '+ office[5] + ' </h6>'+
                             '<div id="bodyContent" align="center">'+
-                            // '<a href=<?php //echo base_url('adminmenu/detailpeta/') ?>'+office[0]+'>Info Detail</a>'+
+                            // '<a href=<?php //echo base_url('sarpras/detailpeta/') ?>'+office[0]+'>Info Detail</a>'+
                             '</div>'+
                             '</div>';
 
@@ -335,7 +335,7 @@
                         foreach ($datatel as $r){ ?>
                           <tr>
                             <td><?= $r->id; ?></td>
-                            <td><a data-toggle="tooltip" data-placement="top" title="Klik untuk melihat lebih detail" href="<?php //echo base_url('adminmenu/detailpeta/'.$r->id) ?>"><?=  $r->nama; ?></a></td>
+                            <td><a data-toggle="tooltip" data-placement="top" title="Klik untuk melihat lebih detail" href="<?php //echo base_url('sarpras/detailpeta/'.$r->id) ?>"><?=  $r->nama; ?></a></td>
                             <td><?= $r->jenis; ?></td>
                             <td><?= $r->latitude; ?></td>
                             <td><?= $r->longtitude; ?></td>
@@ -419,7 +419,7 @@
                             // '<h6 id="firstHeading"> Koordinat : '+ office[3] + ' , '+ office[4] + '</h6>'+
                             // '<h6 id="firstHeading"> Nomor DSI : '+ office[5] + ' </h6>'+
                             '<div id="bodyContent" align="center">'+
-                            // '<a href=<?php //echo base_url('adminmenu/detailpeta/') ?>'+office[0]+'>Info Detail</a>'+
+                            // '<a href=<?php //echo base_url('sarpras/detailpeta/') ?>'+office[0]+'>Info Detail</a>'+
                             '</div>'+
                             '</div>';
 

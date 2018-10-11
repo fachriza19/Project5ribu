@@ -166,25 +166,6 @@ if (! defined('BASEPATH') ) exit('No direct script access allowed');
       }
 
 
-      function getdata(){
-        $data['results'] = $this->m_sarpras->ambildata()->result_array();
-        echo json_encode($data);
-      }
-      function wheredata($id)
-      {
-        $where = array('id' => $id);
-        $data['results'] = $this->m_sarpras->wheredata($where)->result_array();
-        echo json_encode($data);
-      }
-
-      function detailpeta($codeid){
-        $data['datas'] = $this->m_sarpras->getdata_id($codeid)->row();
-        $this->load->view('templates/header');
-        $this->load->view('pages/sarpras/detail',$data);
-        $this->load->view('templates/footer');
-      }
-
-
       // function getdata_id(){
       //   $data['results'] = $this->m_sarpras->getdata_id()->result_array();
       //   echo json_encode($data);
@@ -207,7 +188,7 @@ if (! defined('BASEPATH') ) exit('No direct script access allowed');
 
       function tambahdata()
       {
-        
+
         $namasbnp=$this->input->post('namasbnp');
         $nomordsi=$this->input->post('nomordsi');
         $LS=$this->input->post('LS');
