@@ -14,6 +14,16 @@
 
         return $this->db->get();
       }
+      function ambildatatel(){
+        $this->db->select('*');
+        $this->db->from('maptelkompel');
+        return $this->db->get();
+      }
+      function ambildatakapal(){
+        $this->db->select('*');
+        $this->db->from('mapkapal');
+        return $this->db->get();
+      }
       function wheredata($id){
         $this->db->select('*');
         $this->db->from('data');
@@ -56,6 +66,21 @@
       function hapusdata($blabla){
         $this->db->where('id', $blabla);
         return $this->db->delete('data');
+      }
+
+      function getdatatelkompel(){
+        $this->db->select('*');
+        $this->db->from('maptelkompel');
+        // $this->db->order_by('id','desc');
+
+        return $this->db->get();
+      }
+      function getdatakapal(){
+        $this->db->select('*');
+        $this->db->from('mapkapal');
+        // $this->db->order_by('id','desc');
+
+        return $this->db->get();
       }
 
 

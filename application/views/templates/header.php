@@ -168,7 +168,7 @@
                     <ul id="sidebarnav">
                         <li class="nav-small-cap">PERSONAL</li>
                         <li>
-                            <a class="" href="<?php echo base_url('Home') ?>" aria-expanded="false"><i class="icon-home"></i><span class="hide-menu">Home </span></a>
+                            <a class="" href="<?php echo base_url('Home') ?>" aria-expanded="false"><i class="mdi mdi-home"></i><span class="hide-menu">Home </span></a>
                         </li>
                         <li>
                         <li class="nav-small-cap">PERSONAL</li>
@@ -176,7 +176,7 @@
                                 <a class="" href="<?php echo base_url('daftarberita/index') ?>" aria-expanded="false"><i class="mdi mdi-book-open-variant"></i><span class="hide-menu">News</span></a>
                             </li>
                         <li>
-                            <a class="has-arrow " href="#" aria-expanded="false"><i class="icon-user"></i><span class="hide-menu">Profile</span></a>
+                            <a class="has-arrow " href="#" aria-expanded="false"><i class="mdi mdi-account"></i><span class="hide-menu">Profile</span></a>
                             <ul aria-expanded="false" class="collapse">
                                 <li><a href="<?php echo base_url('profil/index') ?>">Visi & misi</a></li>
                                 <li><a href="<?php echo base_url('profil/wilker') ?>">Wilayah Kerja</a></li>
@@ -187,11 +187,7 @@
                             <a class="has-arrow" href="#" aria-expanded="false"><i class="mdi mdi-chart-bubble"></i><span class="hide-menu">Sarana & Prasarana</span></a>
                             <ul aria-expanded="false" class="collapse">
                               <li>
-                                <a class="has-arrow" href="#" aria-expanded="false">SBNP</a>
-                                  <ul aria-expanded="false" class="collapse">
-                                      <li><a href="<?php echo base_url('sarpras/index'); ?>">Peta</a></li>
-                                      <li><a href="<?php echo base_url('sarpras/data') ?>">Data</a></li>
-                                  </ul>
+                                <a class="" href="<?php echo base_url('sarpras/index'); ?>" aria-expanded="false">Peta Kenavigasian</a>
                                 </li>
                                 <li><a href="<?php echo base_url('Sarpras/Telkompel') ?>">Telkompel</a></li>
                                 <li><a href="<?php echo base_url('sarpras/bengkel'); ?>">Bengkel</a></li>

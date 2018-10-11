@@ -19,6 +19,7 @@
       <div class="col-12">
         <div class="card">
           <div class="card-body">
+            <h1 class="card-title text-center">TUGAS POKOK & FUNGSI</h1><br/><br/>
           <h4 class="card-title">TUGAS POKOK</h4>
             <h5 class="text-justify">Sesuai UU RI No.17 Tahun 2008 tentang Pelayaran “Kenavigasian” adalah segala sesuatu yang berkaitan dengan Sarana Bantu Navigasi Pelayaran, Telekomunikasi Pelayaran, Hidrografi dan Meteorolgy, alur dan pelintasan, pengerukan dan reklamasi, pemanduan, penanganan kerangka kapal, salvage dan pekerjaan bawah air untuk kepentingan keselamatan pelayaran kapal, sedangkan “Navigasi”  adalah proses mengarahkan gerak kapal dari satu titik ke titik yang lain dengan aman dan lancar serta untuk menghindari bahaya dan/atau rintangan pelayaran.</h5>
             <h5 class="text-justify">Sebagaimana Peraturan Menteri Perhubungan No.KM.30 Tahun 2006 tentang Organisasi dan Tata Kerja Distrik Navigasi,Distrik Navigasi adalah Unit Pelaksana Teknis (UPT) dibidang Kenavigasian dilingkungan Direktorat Jenderal Perhubungan Laut Kementerian Perhubungan yang berada dibawah dan bertanggung jawab kepada Direktur Jenderal Perhubungan Laut.</h5>
@@ -65,7 +66,7 @@
                 <h5 class="text-justify"><li>Pelaksanaan analisis dan evaluasi pengoperasian, pengawakan dan pemeliharaan Sarana Bantu Navigasi Pelayaran, Kapal Negara Kenavigasian, Fasilitas Pangkalan, Bengkel, Pengamatan Laut dan Survey Hidrografi serta Pemantauan Alur dan Perlintasan. </li></h5>
                 <h5 class="text-justify"><li>Pelaksanaan Urusan Keuangan, Kepegawaian, Ketatausahaan, Kerumahtanggaan, Hubungan Masyarakat, Pengumpulan dan Pengolahan Data, Dokumentasi serta Penyusunan Laporan.</li></h5>
               </ol>
-              
+
               <h5><li>Bagian Tata Usaha</h5></li>
               <h5 class="text-justify">Melaksanakan tugas pelaksanaan urusan keuangan, pelaksanaan urusan kepegawaian, ketatausahaan, kerumahtanggaan, hubungan masyarakat, pengumpulan data dan pengolahan data, dokumentasi serta penyusunan laporan. Bagian Tata Usaha terdiri dari :</h5>
               <ol class="list-icons" type="a">
@@ -92,7 +93,7 @@
                 <h5><li>Seksi Inventarisasi dan Penghapusan</h5></li>
                 <h5 class="text-justify">Mempunyai tugas melakukan penyusunan inventarisasi dan penyiapan penghapusan  sarana bantu navigasi pelayaran, telekomunikasi pelayaran, kapal Negara Kenavigasian, fasilitas pangkalan dan bengkel.</h5>
               </ol>
-            </ol> 
+            </ol>
           </div>
         </div>
       </div>

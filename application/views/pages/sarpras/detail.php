@@ -83,7 +83,7 @@
 
               var officeLocations = [
                 <?php
-                $data = file_get_contents(site_url('adminmenu/wheredata/'.$datas->id));
+                $data = file_get_contents(site_url('sarpras/wheredata/'.$datas->id));
                 $no=1;
                 if(json_decode($data,true)){
                   $obj = json_decode($data);
