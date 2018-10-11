@@ -40,11 +40,11 @@
                   <table id="table1" class=" table table-bordered table-responsive nowrap table-hover" style="width: 100%;">
                     <thead>
                       <tr>
-                        <th class="all" style="width: 5%;">ID</th>
-                        <th class="all" style="width: 40%;">NAMA SBNP</th>
-                        <th class="all" style="width: 25%;">NOMOR DSI</th>
-                        <th class="all" style="width: 20%;">JENIS</th>
-                        <th class="all" style="width: 10%;">AKSI</th>
+                        <th class="all text-dark" style="width: 5%;">ID</th>
+                        <th class="all text-dark" style="width: 40%;">NAMA SBNP</th>
+                        <th class="all text-dark" style="width: 25%;">NOMOR DSI</th>
+                        <th class="all text-dark" style="width: 20%;">JENIS</th>
+                        <th class="all text-dark" style="width: 10%;">AKSI</th>
                         <th class="none">LINTANG SELATAN : </th>
                         <th class="none">BUJUR TIMUR : </th>
                         <th class="none">LATITUDE : </th>
@@ -74,7 +74,7 @@
                       foreach ($data as $r){ ?>
                         <tr>
                           <td><?= $r->id; ?></td>
-                          <td><?= $r->namasbnp; ?></td>
+                          <td><a data-toggle="tooltip" data-placement="top" title="Klik untuk melihat lebih detail" href="<?php echo base_url('adminmenu/detailpeta/'.$r->id) ?>"><?=  $r->namasbnp; ?></a></td>
                           <td><?= $r->nomordsi; ?></td>
                           <td><?= $r->jenis; ?></td>
                           <td> <a href="#form" data-toggle="modal" class="btn btn-primary" data-toggle="modal" data-target="#modal_edit<?= $r->id; ?>">Edit</a>
@@ -116,129 +116,129 @@
 
 
               <div class="form-group row">
-                <label for="inputnamaSBNP" class="col-2 col-form-label">Nama SBNP</label>
+                <label for="inputnamaSBNP" class="col-2 col-form-label text-dark">Nama SBNP</label>
                 <div class="col-10">
-                  <input class="form-control" type="text" placeholder="Contoh : TG. PRIOK No.2 " name="namasbnp" id="inputnamaSBNP"required>
+                  <input class="form-control text-dark" type="text" placeholder="Contoh : TG. PRIOK No.2 " name="namasbnp" id="inputnamaSBNP"required>
                 </div>
               </div>
               <div class="form-group row">
-                <label class="col-2 col-form-label">Nomor DSI</label>
+                <label class="col-2 col-form-label text-dark">Nomor DSI</label>
                 <div class="col-10">
-                  <input class="form-control" type="text" placeholder="Contoh : 123456" name="nomordsi" required>
+                  <input class="form-control text-dark" type="text" placeholder="Contoh : 123456" name="nomordsi" required>
                 </div>
               </div>
               <div class="form-group row">
-                <label class="col-2 col-form-label">Lintang Selatan</label>
+                <label class="col-2 col-form-label text-dark">Lintang Selatan</label>
                 <div class="col-10">
-                  <input class="form-control" type="text" placeholder="" name="LS" required>
+                  <input class="form-control text-dark" type="text" placeholder="" name="LS" required>
                 </div>
               </div>
               <div class="form-group row">
-                <label class="col-2 col-form-label">Bujur Timur</label>
+                <label class="col-2 col-form-label text-dark">Bujur Timur</label>
                 <div class="col-10">
-                  <input class="form-control" type="text" placeholder="" name="BT" required>
+                  <input class="form-control text-dark" type="text" placeholder="" name="BT" required>
                 </div>
               </div>
               <div class="form-group row">
-                <label class="col-2 col-form-label">Latitude</label>
+                <label class="col-2 col-form-label text-dark">Latitude</label>
                 <div class="col-10">
-                  <input class="form-control" type="text" placeholder="Contoh : -6.1194908" name="latitude" required>
+                  <input class="form-control text-dark" type="text" placeholder="Contoh : -6.1194908" name="latitude" required>
                 </div>
               </div>
               <div class="form-group row">
-                <label class="col-2 col-form-label">Longtitude</label>
+                <label class="col-2 col-form-label text-dark">Longtitude</label>
                 <div class="col-10">
-                  <input class="form-control" type="text" placeholder="Contoh : 106.8624483" name="longtitude" required>
+                  <input class="form-control text-dark" type="text" placeholder="Contoh : 106.8624483" name="longtitude" required>
                 </div>
               </div>
               <div class="form-group row">
-                <label class="col-2 col-form-label">Jenis SBNP</label>
+                <label class="col-2 col-form-label text-dark">Jenis SBNP</label>
                 <div class="col-10">
-                  <input class="form-control" type="text" placeholder="Contoh : Pelampung Suar" name="jenis" required>
+                  <input class="form-control text-dark" type="text" placeholder="Contoh : Pelampung Suar" name="jenis" required>
                 </div>
               </div>
               <div class="form-group row">
-                <label class="col-2 col-form-label">Warna Bangunan</label>
+                <label class="col-2 col-form-label text-dark">Warna Bangunan</label>
                 <div class="col-10">
-                  <input class="form-control" type="text" placeholder="Contoh : Merah" name="wb" required>
+                  <input class="form-control text-dark" type="text" placeholder="Contoh : Merah" name="wb" required>
                 </div>
               </div>
               <div class="form-group row">
-                <label class="col-2 col-form-label">Warna Cahaya</label>
+                <label class="col-2 col-form-label text-dark">Warna Cahaya</label>
                 <div class="col-10">
-                  <input class="form-control" type="text" placeholder="Contoh : Warna Cahaya" name="wc" required>
+                  <input class="form-control text-dark" type="text" placeholder="Contoh : Warna Cahaya" name="wc" required>
                 </div>
               </div>
               <div class="form-group row">
-                <label class="col-2 col-form-label">Karateristik Cahaya</label>
+                <label class="col-2 col-form-label text-dark">Karateristik Cahaya</label>
                 <div class="col-10">
-                  <input class="form-control" type="text" placeholder="Contoh : FL.R 5s EB" name="kc" required>
+                  <input class="form-control text-dark" type="text" placeholder="Contoh : FL.R 5s EB" name="kc" required>
                 </div>
               </div>
               <div class="form-group row">
-                <label class="col-2 col-form-label">Periode Cahaya</label>
+                <label class="col-2 col-form-label text-dark">Periode Cahaya</label>
                 <div class="col-10">
-                  <input class="form-control" type="text" placeholder="Contoh : FL.1.0 - Ecl. 4.0" name="pc">
+                  <input class="form-control text-dark" type="text" placeholder="Contoh : FL.1.0 - Ecl. 4.0" name="pc">
                 </div>
               </div>
               <div class="form-group row">
-                <label class="col-2 col-form-label">Tinggi Bangunan</label>
+                <label class="col-2 col-form-label text-dark">Tinggi Bangunan</label>
                 <div class="col-10">
-                  <input class="form-control" type="text" placeholder="Contoh : 3 Meter" name="tb">
+                  <input class="form-control text-dark" type="text" placeholder="Contoh : 3 Meter" name="tb">
                 </div>
               </div>
               <div class="form-group row">
-                <label class="col-2 col-form-label">Elevasi</label>
+                <label class="col-2 col-form-label text-dark">Elevasi</label>
                 <div class="col-10">
-                  <input class="form-control" type="text" placeholder="Contoh : " name="elevasi" required>
+                  <input class="form-control text-dark" type="text" placeholder="Contoh : " name="elevasi" required>
                 </div>
               </div>
               <div class="form-group row">
-                <label class="col-2 col-form-label">Jarak Tampak</label>
+                <label class="col-2 col-form-label text-dark">Jarak Tampak</label>
                 <div class="col-10">
-                  <input class="form-control" type="text" placeholder="Contoh : 4 Nm" name="jt" required>
+                  <input class="form-control text-dark" type="text" placeholder="Contoh : 4 Nm" name="jt" required>
                 </div>
               </div>
               <div class="form-group row">
-                <label class="col-2 col-form-label">Sistem Pelampungan</label>
+                <label class="col-2 col-form-label text-dark">Sistem Pelampungan</label>
                 <div class="col-10">
-                  <input class="form-control" type="text" placeholder="Contoh : Lateral Mark" name="sp" required>
+                  <input class="form-control text-dark" type="text" placeholder="Contoh : Lateral Mark" name="sp" required>
                 </div>
               </div>
               <div class="form-group row">
-                <label class="col-2 col-form-label">Bahan Bangunan</label>
+                <label class="col-2 col-form-label text-dark">Bahan Bangunan</label>
                 <div class="col-10">
-                  <input class="form-control" type="text" placeholder="Contoh : Baja " name="bb" required>
+                  <input class="form-control text-dark" type="text" placeholder="Contoh : Baja " name="bb" required>
                 </div>
               </div>
               <div class="form-group row">
-                <label class="col-2 col-form-label">Bentuk Tanda Puncak</label>
+                <label class="col-2 col-form-label text-dark">Bentuk Tanda Puncak</label>
                 <div class="col-10">
-                  <input class="form-control" type="text" placeholder="Contoh : (Bola Merah) " name="btp" required>
+                  <input class="form-control text-dark" type="text" placeholder="Contoh : (Bola Merah) " name="btp" required>
                 </div>
               </div>
               <div class="form-group row">
-                <label class="col-2 col-form-label">Sumber Energi</label>
+                <label class="col-2 col-form-label text-dark">Sumber Energi</label>
                 <div class="col-10">
-                  <input class="form-control" type="text" placeholder="Contoh : Tenaga Surya" name="se" required>
+                  <input class="form-control text-dark" type="text" placeholder="Contoh : Tenaga Surya" name="se" required>
                 </div>
               </div>
               <div class="form-group row">
-                <label class="col-2 col-form-label">Radar Reflektor</label>
+                <label class="col-2 col-form-label text-dark">Radar Reflektor</label>
                 <div class="col-10">
-                  <input class="form-control" type="text" placeholder="Contoh : - " name="rr" required>
+                  <input class="form-control text-dark" type="text" placeholder="Contoh : - " name="rr" required>
                 </div>
               </div>
               <div class="form-group row">
-                <label class="col-2 col-form-label">Status</label>
+                <label class="col-2 col-form-label text-dark">Status</label>
                 <div class="col-10">
-                  <input class="form-control" type="text" placeholder="Contoh : Tidak Tetap " name="status" required>
+                  <input class="form-control text-dark" type="text" placeholder="Contoh : Tidak Tetap " name="status" required>
                 </div>
               </div>
               <div class="form-group row">
-                <label class="col-2 col-form-label">Tahun Pemb/rehab</label>
+                <label class="col-2 col-form-label text-dark">Tahun Pemb/rehab</label>
                 <div class="col-10">
-                  <input class="form-control" type="text" placeholder="Contoh : 2015/- " name="tahun" required>
+                  <input class="form-control text-dark" type="text" placeholder="Contoh : 2015/- " name="tahun" required>
                 </div>
               </div>
               <div class="form-group row button-group">
@@ -291,16 +291,16 @@ foreach($data as $i):
 
         <form class="form-horizontal" method="post" action="<?php echo base_url().'adminmenu/modal_edit'?>">
           <div class="modal-body">
-            <input type="text" name="idmodal" value="<?php echo $i->id;?>">
+            <input type="hidden" name="idmodal" value="<?php echo $i->id;?>">
             <div class="row">
               <div class="form-group col-md-6">
-                <label class="control-label col-xs-3" >Nama SBNP</label>
+                <label class="control-label col-xs-3 text-dark">Nama SBNP</label>
                 <div class="col-xs-8">
                   <input name="namasbnp" value="<?php echo $i->namasbnp;?>" class="form-control" type="text" placeholder="Nama SBNP..." required>
                 </div>
               </div>
               <div class="form-group col-md-6">
-                <label class="control-label col-xs-3" >Nomor DSI</label>
+                <label class="control-label col-xs-3 text-dark" >Nomor DSI</label>
                 <div class="col-xs-8">
                   <input name="nomordsi" value="<?php echo $i->nomordsi;?>" class="form-control" type="text" placeholder="Nomor DSI..." required>
                 </div>
@@ -309,13 +309,13 @@ foreach($data as $i):
 
             <div class="row">
               <div class="form-group col-md-6">
-                <label class="control-label col-xs-3" >Lintang Selatan</label>
+                <label class="control-label col-xs-3 text-dark" >Lintang Selatan</label>
                 <div class="col-xs-8">
                   <input name="LS" value="<?php echo $i->LS;?>" class="form-control" type="text" placeholder="Lintang Selatan..." required>
                 </div>
               </div>
               <div class="form-group col-md-6">
-                <label class="control-label col-xs-3" >Bujur Timur</label>
+                <label class="control-label col-xs-3 text-dark" >Bujur Timur</label>
                 <div class="col-xs-8">
                   <input name="BT" value="<?php echo $i->BT;?>" class="form-control" type="text" placeholder="Bujur Timur..." required>
                 </div>
@@ -323,13 +323,13 @@ foreach($data as $i):
             </div>
             <div class="row">
               <div class="form-group col-md-6">
-                <label class="control-label col-xs-3" >Latitude</label>
+                <label class="control-label col-xs-3 text-dark" >Latitude</label>
                 <div class="col-xs-8">
                   <input name="latitude" value="<?php echo $i->latitude;?>" class="form-control" type="text" placeholder="Latitude..." required>
                 </div>
               </div>
               <div class="form-group col-md-6">
-                <label class="control-label col-xs-3" >Longtitude</label>
+                <label class="control-label col-xs-3 text-dark" >Longtitude</label>
                 <div class="col-xs-8">
                   <input name="longtitude" value="<?php echo $i->longtitude;?>" class="form-control" type="text" placeholder="Longtitude..." required>
                 </div>
@@ -338,13 +338,13 @@ foreach($data as $i):
 
             <div class="row">
               <div class="form-group col-md-6">
-                <label class="control-label col-xs-3" >Jenis SBNP</label>
+                <label class="control-label col-xs-3 text-dark" >Jenis SBNP</label>
                 <div class="col-xs-8">
                   <input name="jenis" value="<?php echo $i->jenis;?>" class="form-control" type="text" placeholder="Jenis SBNP..." required>
                 </div>
               </div>
               <div class="form-group col-md-6">
-                <label class="control-label col-xs-3" >Warna Bangunan</label>
+                <label class="control-label col-xs-3 text-dark" >Warna Bangunan</label>
                 <div class="col-xs-8">
                   <input name="wb" value="<?php echo $i->warna_bangunan;?>" class="form-control" type="text" placeholder="Warna Bangunan..." required>
                 </div>
@@ -352,13 +352,13 @@ foreach($data as $i):
             </div>
             <div class="row">
               <div class="form-group col-md-6">
-                <label class="control-label col-xs-3" >Warna Cahaya</label>
+                <label class="control-label col-xs-3 text-dark" >Warna Cahaya</label>
                 <div class="col-xs-8">
                   <input name="wc" value="<?php echo $i->warna_cahaya;?>" class="form-control" type="text" placeholder="Warna Cahaya..." required>
                 </div>
               </div>
               <div class="form-group col-md-6">
-                <label class="control-label col-xs-3" >Karakteristik Cahaya</label>
+                <label class="control-label col-xs-3 text-dark" >Karakteristik Cahaya</label>
                 <div class="col-xs-8">
                   <input name="kc" value="<?php echo $i->karakteristik_cahaya;?>" class="form-control" type="text" placeholder="Karakteristik Cahaya..." required>
                 </div>
@@ -367,13 +367,13 @@ foreach($data as $i):
 
             <div class="row">
               <div class="form-group col-md-6">
-                <label class="control-label col-xs-3" >Periode Cahaya</label>
+                <label class="control-label col-xs-3 text-dark" >Periode Cahaya</label>
                 <div class="col-xs-8">
                   <input name="pc" value="<?php echo $i->periode_cahaya;?>" class="form-control" type="text" placeholder="Periode Cahaya..." required>
                 </div>
               </div>
               <div class="form-group col-md-6">
-                <label class="control-label col-xs-3" >Tinggi Bangunan</label>
+                <label class="control-label col-xs-3 text-dark" >Tinggi Bangunan</label>
                 <div class="col-xs-8">
                   <input name="tb" value="<?php echo $i->tinggi_bangunan;?>" class="form-control" type="text" placeholder="Tinggi Bangunan..." required>
                 </div>
@@ -381,13 +381,13 @@ foreach($data as $i):
             </div>
             <div class="row">
               <div class="form-group col-md-6">
-                <label class="control-label col-xs-3" >Elevasi</label>
+                <label class="control-label col-xs-3 text-dark" >Elevasi</label>
                 <div class="col-xs-8">
                   <input name="elevasi" value="<?php echo $i->elevasi;?>" class="form-control" type="text" placeholder="Elevasi..." required>
                 </div>
               </div>
               <div class="form-group col-md-6">
-                <label class="control-label col-xs-3" >Jarak Tampak</label>
+                <label class="control-label col-xs-3 text-dark" >Jarak Tampak</label>
                 <div class="col-xs-8">
                   <input name="jt" value="<?php echo $i->jarak_tampak;?>" class="form-control" type="text" placeholder="Jarak Tampak..." required>
                 </div>
@@ -396,13 +396,13 @@ foreach($data as $i):
 
             <div class="row">
               <div class="form-group col-md-6">
-                <label class="control-label col-xs-3" >Sistem Pelampungan</label>
+                <label class="control-label col-xs-3 text-dark" >Sistem Pelampungan</label>
                 <div class="col-xs-8">
                   <input name="sp" value="<?php echo $i->sistem_pelampungan;?>" class="form-control" type="text" placeholder="Sistem Pelampungan..." required>
                 </div>
               </div>
               <div class="form-group col-md-6">
-                <label class="control-label col-xs-3" >Bahan Bangunan</label>
+                <label class="control-label col-xs-3 text-dark" >Bahan Bangunan</label>
                 <div class="col-xs-8">
                   <input name="bb" value="<?php echo $i->bahan_bangunan;?>" class="form-control" type="text" placeholder="Bahan Bangunan..." required>
                 </div>
@@ -411,13 +411,13 @@ foreach($data as $i):
 
             <div class="row">
               <div class="form-group col-md-6">
-                <label class="control-label col-xs-3" >Bentuk Tanda Puncak</label>
+                <label class="control-label col-xs-3 text-dark" >Bentuk Tanda Puncak</label>
                 <div class="col-xs-8">
                   <input name="btp" value="<?php echo $i->bentuk_tanda_puncak;?>" class="form-control" type="text" placeholder="Bentuk Tanda Puncak..." required>
                 </div>
               </div>
               <div class="form-group col-md-6">
-                <label class="control-label col-xs-3" >Sumber Energi</label>
+                <label class="control-label col-xs-3 text-dark" >Sumber Energi</label>
                 <div class="col-xs-8">
                   <input name="se" value="<?php echo $i->nomordsi;?>" class="form-control" type="text" placeholder="Sumber Energi..." required>
                 </div>
@@ -426,19 +426,19 @@ foreach($data as $i):
 
             <div class="row">
               <div class="form-group col-md-4">
-                <label class="control-label col-xs-3" >Radar Reflektor</label>
+                <label class="control-label col-xs-3 text-dark" >Radar Reflektor</label>
                 <div class="col-xs-8">
                   <input name="rr" value=<?php echo $i->radar_reflektor;?>"" class="form-control" type="text" placeholder="Radar Reflektor..." required>
                 </div>
               </div>
               <div class="form-group col-md-4">
-                <label class="control-label col-xs-3" >Status</label>
+                <label class="control-label col-xs-3 text-dark" >Status</label>
                 <div class="col-xs-8">
                   <input name="status" value="<?php echo $i->status;?>" class="form-control" type="text" placeholder="Status..." required>
                 </div>
               </div>
               <div class="form-group col-md-4">
-                <label class="control-label col-xs-3" >Tahun Pemb/Rehab</label>
+                <label class="control-label col-xs-3 text-dark" >Tahun Pemb/Rehab</label>
                 <div class="col-xs-8">
                   <input name="tahun" value="<?php echo $i->thn_pemb;?>" class="form-control" type="text" placeholder="2000..." required>
                 </div>

@@ -72,7 +72,7 @@
             function initialize() {
               var myLatlng = new google.maps.LatLng(<?php echo $datas->latitude ?>, <?php echo $datas->longtitude ?>);
               var mapOptions = {
-                zoom: 17,
+                zoom: 10,
                 center: myLatlng  //zoom 17
                 // disableDefaultUI: true
               };
@@ -113,7 +113,7 @@
                 '<div id="siteNotice">'+
                 '</div>'+
                 '<h3 id="firstHeading" align="center">'+ office[1] + '</h3>'+
-                // '<h6 id="firstHeading"> Kelompok : '+ office[2] + '</h6>'+
+                '<h6 id="firstHeading"> Jenis : '+ office[2] + '</h6>'+
                 // '<h6 id="firstHeading"> Koordinat : '+ office[3] + ' , '+ office[4] + '</h6>'+
                 // '<h6 id="firstHeading"> Penanggung Jawab : '+ office[5] + ' </h6>'+
                 '<div id="bodyContent" align="center">'+
