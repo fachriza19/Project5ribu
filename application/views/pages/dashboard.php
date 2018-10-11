@@ -98,7 +98,23 @@
                       <div class="card">
                         <div class="card-body">
                           <div class="row">
-                                <a href="https://www.instagram.com/explore/locations/283620335095207/distrik-navigasi-klas-1-tanjung-priok-jakarta-utara/" target="blank"><i class="fa fa-instagram"></i><span class="hide-menu"></span></a>
+                                <div class="col-lg-4 text-center m-b-30">
+                                  <h6>Alamat Kantor</h6><br>
+                                  <a href=""><i class="fa fa-map-marker fa-3x"></i></a>
+                                  <p>Jalan Ancol Baru</p>
+                                </div>
+                                <div class="col-lg-4 text-center m-b-30">
+                                  <h6>Email</h6>
+                                  <i class="fa fa-map-marker fa-3x" aria-hidden="true">
+                                  </i>
+                                  <p>Jalan Ancol Baru</p>
+                                </div>
+                                <div class="col-lg-4 text-center m-b-30">
+                                  <h6>Contact </h6>
+                                  <i class="fa fa-map-marker fa-3x" aria-hidden="true">
+                                  </i>
+                                  <p>Jalan Ancol Baru</p>
+                                </div>
                           </div>
                         </div>
                       </div>

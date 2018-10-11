@@ -192,7 +192,7 @@
                                       <li><a href="<?php echo base_url('sarpras/data') ?>">Data</a></li>
                                   </ul>
                                 </li>
-                                <li><a href="#">Telkompel</a></li>
+                                <li><a href="<?php echo base_url('Sarpras/Telkompel') ?>">Telkompel</a></li>
                                 <li><a href="<?php echo base_url('sarpras/bengkel'); ?>">Bengkel</a></li>
                                 <li>
                                     <a class="has-arrow " href="#!" aria-expanded="false"><span class="hide-menu">Kapal Negara</span></a>

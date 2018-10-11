@@ -26,21 +26,68 @@ if (! defined('BASEPATH') ) exit('No direct script access allowed');
           function Telkompel()
           {
             $this->load->view('templates/header');
-            $this->load->view('pages/sarpras/telkompel');
+            $this->load->view('pages/sarpras/Telkompel/telkompel');
             $this->load->view('templates/footer');
           }
+
+          function VtsTanjungPriok()
+          {
+            $this->load->view('templates/header');
+            $this->load->view('pages/sarpras/Telkompel/VtsTanjungPriok');
+            $this->load->view('templates/footer');
+          }
+           function VtsMerak()
+          {
+            $this->load->view('templates/header');
+            $this->load->view('pages/sarpras/Telkompel/VtsMerak');
+            $this->load->view('templates/footer');
+          }
+           function VtsPanjang()
+          {
+            $this->load->view('templates/header');
+            $this->load->view('pages/sarpras/Telkompel/VtsPanjang');
+            $this->load->view('templates/footer');
+          }
+           function SROPTanjungPriok()
+          {
+            $this->load->view('templates/header');
+            $this->load->view('pages/sarpras/Telkompel/SROPTanjungPriok');
+            $this->load->view('templates/footer');
+          }
+           function SROPCirebon()
+          {
+            $this->load->view('templates/header');
+            $this->load->view('pages/sarpras/Telkompel/SROPCirebon');
+            $this->load->view('templates/footer');
+          }
+           function SROPBengkulu()
+          {
+            $this->load->view('templates/header');
+            $this->load->view('pages/sarpras/Telkompel/SROPBengkulu');
+            $this->load->view('templates/footer');
+          }
+
           function Bengkel()
           {
             $this->load->view('templates/header');
             $this->load->view('pages/sarpras/bengkel');
             $this->load->view('templates/footer');
           }
+
+          function ProfileKN()
+          {
+            $this->load->view('templates/header');
+            $this->load->view('pages/sarpras/KN/Profile');
+            $this->load->view('templates/footer');
+          }
+
           function Kapal()
           {
             $this->load->view('templates/header');
             $this->load->view('pages/sarpras/KN/KNEdam');
             $this->load->view('templates/footer');
           }
+
           function KNKARAKATA()
           {
             $this->load->view('templates/header');
