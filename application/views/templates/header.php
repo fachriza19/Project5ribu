@@ -201,6 +201,7 @@
                                         <li><a href="<?php echo base_url('Sarpras/KNKARAKATA') ?>">KN KARAKATA</a></li>
                                         <li><a href="<?php echo base_url('Sarpras/KNENGGANO') ?>">KN. ENGGANO</a></li>
                                         <li><a href="<?php echo base_url('Sarpras/KNMIAPLACIDUS') ?>">KN. MIAPLACIDUS</a></li>
+                                        <li><a href="<?php echo base_url('Sarpras/KNMOKMER') ?>">KN. MOKMER</a></li>
                                     </ul>
                                 </li>
                                 <li><a href="<?php echo base_url('sarpras/pengamatan'); ?>">Pengamatan Laut</a></li>

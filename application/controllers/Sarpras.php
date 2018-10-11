@@ -38,25 +38,31 @@ if (! defined('BASEPATH') ) exit('No direct script access allowed');
           function Kapal()
           {
             $this->load->view('templates/header');
-            $this->load->view('pages/sarpras/KNEdam');
+            $this->load->view('pages/sarpras/KN/KNEdam');
             $this->load->view('templates/footer');
           }
           function KNKARAKATA()
           {
             $this->load->view('templates/header');
-            $this->load->view('pages/sarpras/KNKARAKATA');
+            $this->load->view('pages/sarpras/KN/KNKARAKATA');
             $this->load->view('templates/footer');
           }
           function KNENGGANO()
           {
             $this->load->view('templates/header');
-            $this->load->view('pages/sarpras/KNENGGANO');
+            $this->load->view('pages/sarpras/KN/KNENGGANO');
             $this->load->view('templates/footer');
           }
           function KNMIAPLACIDUS()
           {
             $this->load->view('templates/header');
-            $this->load->view('pages/sarpras/KNMIAPLACIDUS');
+            $this->load->view('pages/sarpras/KN/KNMIAPLACIDUS');
+            $this->load->view('templates/footer');
+          }
+          function KNMOKMER()
+          {
+            $this->load->view('templates/header');
+            $this->load->view('pages/sarpras/KN/KNMOKMER');
             $this->load->view('templates/footer');
           }
 

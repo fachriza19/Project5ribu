@@ -207,6 +207,7 @@ if (! defined('BASEPATH') ) exit('No direct script access allowed');
 
       function tambahdata()
       {
+        
         $namasbnp=$this->input->post('namasbnp');
         $nomordsi=$this->input->post('nomordsi');
         $LS=$this->input->post('LS');
