@@ -26,10 +26,10 @@
                                         </ol>
                                         <div class="carousel-inner">
                                             <div class="carousel-item active">
-                                              <img class="d-block w-100" src="<?php echo base_url('assets/images/TELKOMPEL/SROPJKT/bekasi.jpg') ?>" alt="First slide">
+                                              <img class="d-block w-100" src="<?php echo base_url('assets/images/TELKOMPEL/SROPCIR/cirebon1.jpg') ?>" alt="First slide">
                                             </div>
                                             <div class="carousel-item">
-                                              <img class="d-block w-100" src="<?php echo base_url('assets/images/TELKOMPEL/SROPJKT/kantor1.jpg') ?>" alt="Second slide">
+                                              <img class="d-block w-100" src="<?php echo base_url('assets/images/TELKOMPEL/SROPCIR/cirebon2.jpg') ?>" alt="Second slide">
                                             </div>
                                           <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
                                             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -137,7 +137,7 @@
                                     </div>
                                 </div>
                                 <div class="el-card-content">
-                                   <small>RUANG MOBILE SERVICE UNTUK MELAYANI KOMUNIKASI DENGAN  KAPAL-KAPAL</small>
+                                   <small>PERALATAN RADIO GMDSS</small>
                                     <br> </div>
                             </div>
                         </div>
@@ -153,7 +153,7 @@
                                     </div>
                                 </div>
                                 <div class="el-card-content">
-                                  <small>RUANG FIXE SERVICE UNTUK MELAYANI KOMUNIKASI STASIUN-STASIUN DAERAH</small>
+                                  <small>PERALATAN SHIP REPORTING SYSTEM</small>
                                     <br> </div>
                             </div>
                         </div>
@@ -169,7 +169,7 @@
                                     </div>
                                 </div>
                                 <div class="el-card-content">
-                                  <small>DSC CONSOLE</small>
+                                  <small>PERALATAN SHIP REPORTING SYSTEM</small>
                                     <br> </div>
                             </div>
                         </div>
@@ -189,7 +189,7 @@
                       </div>
                     </div>
                     <div class="el-card-content">
-                      <small>PERALATAN RADIO GMDSS</small>
+                      <small>GENSET MERK YANMAR 10 KVA 3 PHASE 220 VOLT</small>
                       <br> </div>
                     </div>
                   </div>
@@ -205,7 +205,7 @@
                                     </div>
                                 </div>
                                 <div class="el-card-content">
-                                   <small>SERVER GMDSS</small>
+                                   <small>GENSET MERK KUBOTA  5 KVA 3 PHASE 220 VOLT</small>
                                     <br> </div>
                             </div>
                         </div>

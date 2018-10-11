@@ -69,16 +69,16 @@
                               <div class="col-lg-4 text-center m-b-30">
                                         <h4 class="card-title">PENGAMATAN LAUT</h4>
                                         <h6 class="card-subtitle">Pengamatan Laut</h6>
-                                        <img src="<?php echo base_url('assets/images/icon/kapal.png') ?>" alt="image" class="img-circle" width="300">
+                                        <a href="<?php echo base_url('Sarpras/Pengamatan') ?>"><img src="<?php echo base_url('assets/images/icon/kapal.png') ?>" alt="image" class="img-circle" width="300"></a>
                                         <p class="m-t-15 m-b-0">
-                                        <a href="#" class="btn btn-primary">Info Detail</a></p>
+                                        <a href="<?php echo base_url('Sarpras/Pengamatan') ?>" class="btn btn-primary">Info Detail</a></p>
                               </div>
                               <div class="col-lg-4 text-center m-b-30">
                                         <h4 class="card-title">TELKOMPEL</h4>
                                         <h6 class="card-subtitle">Telekomunikasi Pelayaran</h6>
-                                        <img src="<?php echo base_url('assets/images/icon/radio.png') ?>" alt="image" class="img-circle" width="300">
+                                        <a href="<?php echo base_url('Sarpras/Telkompel') ?>"><img src="<?php echo base_url('assets/images/icon/radio.png') ?>" alt="image" class="img-circle" width="300"></a>
                                         <p class="m-t-15 m-b-0">
-                                        <a href="#" class="btn btn-primary">Info Detail</a></p>
+                                        <a href="<?php echo base_url('Sarpras/Telkompel') ?>" class="btn btn-primary">Info Detail</a></p>
                               </div>
                               <div class="col-lg-4 text-center m-b-30">
                                         <h4 class="card-title">SBNP</h4>
@@ -100,21 +100,28 @@
                           <div class="row">
                                 <div class="col-lg-4 text-center m-b-30">
                                   <h6>Alamat Kantor</h6><br>
-                                  <a href=""><i class="fa fa-map-marker fa-3x"></i></a>
-                                  <p>Jalan Ancol Baru</p>
+                                  <a href="https://www.google.com/maps/place/Kantor+Distrik+Navigasi+Kelas+I+tanjung+Priok/@-6.1196082,106.8605278,17z/data=!4m12!1m6!3m5!1s0x2e6a1e336250cb5d:0xd7a4bb18bef9edaa!2sKantor+Distrik+Navigasi+Kelas+I+tanjung+Priok!8m2!3d-6.1196135!4d106.8627165!3m4!1s0x2e6a1e336250cb5d:0xd7a4bb18bef9edaa!8m2!3d-6.1196135!4d106.8627165" target="blank"><i class="fa fa-map-marker fa-3x"></i></a>
+                                  <a href="https://www.google.com/maps/place/Kantor+Distrik+Navigasi+Kelas+I+tanjung+Priok/@-6.1196082,106.8605278,17z/data=!4m12!1m6!3m5!1s0x2e6a1e336250cb5d:0xd7a4bb18bef9edaa!2sKantor+Distrik+Navigasi+Kelas+I+tanjung+Priok!8m2!3d-6.1196135!4d106.8627165!3m4!1s0x2e6a1e336250cb5d:0xd7a4bb18bef9edaa!8m2!3d-6.1196135!4d106.8627165" target="blank"><p>Jl. Ancol Baru Kali Japat Tanjung Priok.</p></a>
                                 </div>
                                 <div class="col-lg-4 text-center m-b-30">
-                                  <h6>Email</h6>
-                                  <i class="fa fa-map-marker fa-3x" aria-hidden="true">
-                                  </i>
-                                  <p>Jalan Ancol Baru</p>
+                                  <h6>Email</h6><br>
+                                  <a href="#!"><i class="fa fa-envelope fa-3x" aria-hidden="true">
+                                  </i></a>
+                                  <a href="#!"><p>Jalan Ancol Baru</p></a>
                                 </div>
                                 <div class="col-lg-4 text-center m-b-30">
-                                  <h6>Contact </h6>
-                                  <i class="fa fa-map-marker fa-3x" aria-hidden="true">
-                                  </i>
-                                  <p>Jalan Ancol Baru</p>
+                                  <h6>Contact </h6><br>
+                                  <a href="#!"><i class="fa fa-phone-square fa-3x" aria-hidden="true">
+                                  </i></a>
+                                  <a href="#!"><p>Jalan Ancol Baru</p></a>
                                 </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-lg-12" align="center">
+                                <a data-toggle="tooltip" data-placement="top" title="instagram" href="https://www.instagram.com/explore/locations/283620335095207/distrik-navigasi-klas-1-tanjung-priok-jakarta-utara/" target="blank"><i class="fa fa-instagram fa-2x"></i><span class="hide-menu"></span></a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <a data-toggle="tooltip" data-placement="top" title="facebook" href="https://web.facebook.com/disnavtanjung.priok?_rdc=1&_rdr" target="blank"><i class="fa fa-facebook fa-2x"></i><span class="hide-menu"></span></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <a data-toggle="tooltip" data-placement="top" title="Youtube" href="https://www.youtube.com/channel/UCo0YNpVnsGIibgm7tDHaCOQ" target="blank"><i class="fa fa-youtube-play fa-2x"></i><span class="hide-menu"></span></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            </div><br>
                           </div>
                         </div>
                       </div>
