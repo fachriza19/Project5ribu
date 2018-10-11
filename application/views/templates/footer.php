@@ -5,7 +5,7 @@
 <!-- ============================================================== -->
 <footer class="footer"> 
     <a href="https://www.instagram.com/explore/locations/283620335095207/distrik-navigasi-klas-1-tanjung-priok-jakarta-utara/" target="blank"><i class="fa fa-instagram fa-2x"></i><span class="hide-menu"></span></a>
-    <a href="https://web.facebook.com/distriknavigasi.priok?_rdc=1&_rdr" target="blank"><i class="fa fa-facebook fa-2x"></i><span class="hide-menu"></span></a><br>
+    <a href="https://web.facebook.com/disnavtanjung.priok?_rdc=1&_rdr" target="blank"><i class="fa fa-facebook fa-2x"></i><span class="hide-menu"></span></a><br>
     © 2018 Distrik Navigasi by Mercubuana University 
 </footer>
 
