@@ -23,23 +23,14 @@
                                         <ol class="carousel-indicators">
                                           <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
                                           <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                                          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                                          <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
                                         </ol>
-                                        <div class="carousel-inner" style="height: 512px;">
+                                        <div class="carousel-inner">
                                             <div class="carousel-item active">
-                                              <img class="d-block w-100" src="<?php echo base_url('assets/images/slide/kantor1.jpeg') ?>" alt="First slide">
+                                              <img class="d-block w-100" src="<?php echo base_url('assets/images/TELKOMPEL/SROPJKT/bekasi.jpg') ?>" alt="First slide">
                                             </div>
                                             <div class="carousel-item">
-                                              <img class="d-block w-100" src="<?php echo base_url('assets/images/slide/kantor2.jpeg') ?>" alt="Second slide">
+                                              <img class="d-block w-100" src="<?php echo base_url('assets/images/TELKOMPEL/SROPJKT/kantor1.jpg') ?>" alt="Second slide">
                                             </div>
-                                            <div class="carousel-item">
-                                              <img class="d-block w-100" src="<?php echo base_url('assets/images/slide/kantor3.jpeg') ?>" alt="Third slide">
-                                            </div>
-                                            <div class="carousel-item">
-                                              <img class="d-block w-100" src="<?php echo base_url('assets/images/slide/kantor4.jpeg') ?>" alt="Third slide">
-                                            </div>
-                                          </div>
                                           <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
                                             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                                             <span class="sr-only">Previous</span>
@@ -136,15 +127,256 @@
                                  </ol>
                              </ol>
                             </ol>
-                          </ol>
+          
+
           </div>
         </div>
       </div>
     </div>
 
+             <div class="row el-element-overlay">
+              <div class="col-md-12">
+                <h4 class="card-title">Gallery SROP Jakarta</h4>
+              </div>
+              <div class="col-lg-3 col-md-6">
+                <div class="card">
+                  <div class="el-card-item">
+                    <div class="el-card-avatar el-overlay-1"> <img src="<?php echo base_url('assets/images/TELKOMPEL/SROPJKT/bekasi.jpg') ?>">
+                      <div class="el-overlay">
+                        <ul class="el-info">
+                          <li><a class="btn default btn-outline image-popup-vertical-fit" href="<?php echo base_url('assets/images/TELKOMPEL/SROPJKT/bekasi.jpg') ?>"><i class="icon-magnifier"></i></a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="el-card-content">
+                      <small>GEDUNG STASIUN PENERIMA JAKARTA RADIO DI BEKASI</small>
+                      <br> </div>
+                    </div>
+                  </div>
+                </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="card">
+                            <div class="el-card-item">
+                                <div class="el-card-avatar el-overlay-1"> <img src="<?php echo base_url('assets/images/TELKOMPEL/SROPJKT/jkt1.jpg') ?>">
+                                    <div class="el-overlay">
+                                        <ul class="el-info">
+                                            <li><a class="btn default btn-outline image-popup-vertical-fit" href="<?php echo base_url('assets/images/TELKOMPEL/SROPJKT/jkt1.jpg') ?>"><i class="icon-magnifier"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="el-card-content">
+                                   <small>RUANG MOBILE SERVICE UNTUK MELAYANI KOMUNIKASI DENGAN  KAPAL-KAPAL</small>
+                                    <br> </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="card">
+                            <div class="el-card-item">
+                                <div class="el-card-avatar el-overlay-1"> <img src="<?php echo base_url('assets/images/TELKOMPEL/SROPJKT/jkt2.jpg') ?>" alt="user">
+                                    <div class="el-overlay">
+                                        <ul class="el-info">
+                                            <li><a class="btn default btn-outline image-popup-vertical-fit" href="<?php echo base_url('assets/images/TELKOMPEL/SROPJKT/jkt2.jpg') ?>"><i class="icon-magnifier"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="el-card-content">
+                                  <small>RUANG FIXE SERVICE UNTUK MELAYANI KOMUNIKASI STASIUN-STASIUN DAERAH</small>
+                                    <br> </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="card">
+                            <div class="el-card-item">
+                                <div class="el-card-avatar el-overlay-1"> <img src="<?php echo base_url('assets/images/TELKOMPEL/SROPJKT/jkt3.jpg') ?>" alt="user">
+                                    <div class="el-overlay">
+                                        <ul class="el-info">
+                                            <li><a class="btn default btn-outline image-popup-vertical-fit" href="<?php echo base_url('assets/images/TELKOMPEL/SROPJKT/jkt3.jpg') ?>"><i class="icon-magnifier"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="el-card-content">
+                                  <small>DSC CONSOLE</small>
+                                    <br> </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> <!--Yang Pertama-->
+
+                <div class="row el-element-overlay">
+              <div class="col-lg-3 col-md-6">
+                <div class="card">
+                  <div class="el-card-item">
+                    <div class="el-card-avatar el-overlay-1"> <img src="<?php echo base_url('assets/images/TELKOMPEL/SROPJKT/jkt4.jpg') ?>">
+                      <div class="el-overlay">
+                        <ul class="el-info">
+                          <li><a class="btn default btn-outline image-popup-vertical-fit" href="<?php echo base_url('assets/images/TELKOMPEL/SROPJKT/jkt4.jpg') ?>"><i class="icon-magnifier"></i></a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="el-card-content">
+                      <small>NAVTEX CONSOLE</small>
+                      <br> </div>
+                    </div>
+                  </div>
+                </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="card">
+                            <div class="el-card-item">
+                                <div class="el-card-avatar el-overlay-1"> <img src="<?php echo base_url('assets/images/TELKOMPEL/SROPJKT/jkt5.jpg') ?>">
+                                    <div class="el-overlay">
+                                        <ul class="el-info">
+                                            <li><a class="btn default btn-outline image-popup-vertical-fit" href="<?php echo base_url('assets/images/TELKOMPEL/SROPJKT/jkt5.jpg') ?>"><i class="icon-magnifier"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="el-card-content">
+                                   <small>SERVER GMDSS</small>
+                                    <br> </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="card">
+                            <div class="el-card-item">
+                                <div class="el-card-avatar el-overlay-1"> <img src="<?php echo base_url('assets/images/TELKOMPEL/SROPJKT/jkt6.jpg') ?>" alt="user">
+                                    <div class="el-overlay">
+                                        <ul class="el-info">
+                                            <li><a class="btn default btn-outline image-popup-vertical-fit" href="<?php echo base_url('assets/images/TELKOMPEL/SROPJKT/jkt6.jpg') ?>"><i class="icon-magnifier"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="el-card-content">
+                                  <small>BROADBAND ANTENNA</small>
+                                    <br> </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="card">
+                            <div class="el-card-item">
+                                <div class="el-card-avatar el-overlay-1"> <img src="<?php echo base_url('assets/images/TELKOMPEL/SROPJKT/jkt7.jpg') ?>" alt="user">
+                                    <div class="el-overlay">
+                                        <ul class="el-info">
+                                            <li><a class="btn default btn-outline image-popup-vertical-fit" href="<?php echo base_url('assets/images/TELKOMPEL/SROPJKT/jkt7.jpg') ?>"><i class="icon-magnifier"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="el-card-content">
+                                  <small>GENSET 30 KVA 3 PHASE MERK PERKIN</small>
+                                    <br> </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!--End Gallery Kedua-->
+
+                <div class="row el-element-overlay">
+              <div class="col-lg-3 col-md-6">
+                <div class="card">
+                  <div class="el-card-item">
+                    <div class="el-card-avatar el-overlay-1"> <img src="<?php echo base_url('assets/images/TELKOMPEL/SROPJKT/kantor1.jpg') ?>">
+                      <div class="el-overlay">
+                        <ul class="el-info">
+                          <li><a class="btn default btn-outline image-popup-vertical-fit" href="<?php echo base_url('assets/images/TELKOMPEL/SROPJKT/kantor1.jpg') ?>"><i class="icon-magnifier"></i></a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="el-card-content">
+                      <small>GEDUNG STASIUN PEMANCAR SROP JAKARTA, JL.ANCOL BARU KALIJAPAT TG.PRIOK</small>
+                      <br> </div>
+                    </div>
+                  </div>
+                </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="card">
+                            <div class="el-card-item">
+                                <div class="el-card-avatar el-overlay-1"> <img src="<?php echo base_url('assets/images/TELKOMPEL/SROPJKT/jkt9.jpg') ?>">
+                                    <div class="el-overlay">
+                                        <ul class="el-info">
+                                            <li><a class="btn default btn-outline image-popup-vertical-fit" href="<?php echo base_url('assets/images/TELKOMPEL/SROPJKT/jkt9.jpg') ?>"><i class="icon-magnifier"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="el-card-content">
+                                   <small>PERALATAN PEMANCAR MF/HF MERK JRC</small>
+                                    <br> </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="card">
+                            <div class="el-card-item">
+                                <div class="el-card-avatar el-overlay-1"> <img src="<?php echo base_url('assets/images/TELKOMPEL/SROPJKT/jkt11.jpg') ?>" alt="user">
+                                    <div class="el-overlay">
+                                        <ul class="el-info">
+                                            <li><a class="btn default btn-outline image-popup-vertical-fit" href="<?php echo base_url('assets/images/TELKOMPEL/SROPJKT/jkt11.jpg') ?>"><i class="icon-magnifier"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="el-card-content">
+                                  <small>PERALATAN UPS</small>
+                                    <br> </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="card">
+                            <div class="el-card-item">
+                                <div class="el-card-avatar el-overlay-1"> <img src="<?php echo base_url('assets/images/TELKOMPEL/SROPJKT/jkt13.jpg') ?>" alt="user">
+                                    <div class="el-overlay">
+                                        <ul class="el-info">
+                                            <li><a class="btn default btn-outline image-popup-vertical-fit" href="<?php echo base_url('assets/images/TELKOMPEL/SROPJKT/jkt13.jpg') ?>"><i class="icon-magnifier"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="el-card-content">
+                                  <small>RADIO TRANCEIVER VHF</small>
+                                    <br> </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!--End Gallery Ketiga-->
+
+                 <div class="row el-element-overlay">
+              <div class="col-lg-3 col-md-6">
+                <div class="card">
+                  <div class="el-card-item">
+                    <div class="el-card-avatar el-overlay-1"> <img src="<?php echo base_url('assets/images/TELKOMPEL/SROPJKT/jkt12.jpg') ?>">
+                      <div class="el-overlay">
+                        <ul class="el-info">
+                          <li><a class="btn default btn-outline image-popup-vertical-fit" href="<?php echo base_url('assets/images/TELKOMPEL/SROPJKT/jkt12.jpg') ?>"><i class="icon-magnifier"></i></a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="el-card-content">
+                      <small>INSTALASI ANTENNA STASIUN PEMANCAR</small>
+                      <br> </div>
+                    </div>
+                  </div>
+                </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="card">
+                            <div class="el-card-item">
+                                <div class="el-card-avatar el-overlay-1"> <img src="<?php echo base_url('assets/images/TELKOMPEL/SROPJKT/jkt14.jpg') ?>">
+                                    <div class="el-overlay">
+                                        <ul class="el-info">
+                                            <li><a class="btn default btn-outline image-popup-vertical-fit" href="<?php echo base_url('assets/images/TELKOMPEL/SROPJKT/jkt14.jpg') ?>"><i class="icon-magnifier"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="el-card-content">
+                                   <small>GENSET MERK PERKIN 130 KVA</small>
+                                    <br> </div>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
 
 
   </div>
-</div>
-
 </div>

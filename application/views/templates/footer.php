@@ -97,6 +97,10 @@
 <!-- <script src="https://cdn.datatables.net/1.10.19/js/dataTables.bootstrap.min.js"></script> -->
 <script src="https://cdn.datatables.net/responsive/2.2.3/js/responsive.bootstrap.min.js"></script>
 <!-- END DATATABLES -->
+<!-- Magnific popup JavaScript -->
+<script src="<?php echo base_url() ?>/assets/plugins/Magnific-Popup-master/dist/jquery.magnific-popup.min.js"></script>
+<script src="<?php echo base_url() ?>/assets/plugins/Magnific-Popup-master/dist/jquery.magnific-popup-init.js"></script>
+<!-- ============================================================== -->
 
 
 

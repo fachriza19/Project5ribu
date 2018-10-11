@@ -23,6 +23,7 @@
     <link href="<?php echo base_url('assets/plugins/bootstrap-material-datetimepicker/css/bootstrap-material-datetimepicker.css') ?>" rel="stylesheet" type="text/css" >
     <!-- Page plugins css -->
     <link href="<?php echo base_url('assets/plugins/clockpicker/dist/jquery-clockpicker.min.css') ?>" rel="stylesheet" type="text/css" >
+    <link href="<?php echo base_url()?>/assets/plugins/Magnific-Popup-master/dist/magnific-popup.css" rel="stylesheet">
 
     <script src="<?php echo base_url('assets/jquery/jquery-3.3.1.js') ?>">    </script>
 
