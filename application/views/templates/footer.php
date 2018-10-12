@@ -153,7 +153,7 @@ $(document).ready(function() {
 
 <script type="text/javascript">
 $('.carousel').carousel({
-  interval: 2000
+  interval: 5000
 })
 </script>
 </body>
