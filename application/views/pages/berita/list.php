@@ -29,9 +29,9 @@
                   <div class="row">
                     <div class="col-12">
                       <div itemprop="text" class="entry-content">
-                        <h2><?php echo $judul;?></h2><hr/>
-                        <img src="<?php echo base_url().'assets/images/Upload/'.$image;?>" class="img-fluid">
-                        <?php echo limit_words($isi,30);?><br><a href="<?php echo base_url().'daftarberita/tampilanberita/'.$id;?>"> Selengkapnya...</a>
+                        <h2 class="text-center"><?php echo $judul;?></h2><hr/>
+                        <img src="<?php echo base_url().'assets/images/Upload/'.$image;?>" class="img-fluid"></br></br>
+                        <div class="text-dark"><?php echo limit_words($isi,30);?><br><a href="<?php echo base_url().'daftarberita/tampilanberita/'.$id;?>"> Selengkapnya...</a></div>
                       </div>
                     </div>
                   </div>
