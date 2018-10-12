@@ -107,13 +107,13 @@
                                   <h6>Email</h6><br>
                                   <a href="#!"><i class="fa fa-envelope fa-3x" aria-hidden="true">
                                   </i></a>
-                                  <a href="#!"><p>Jalan Ancol Baru</p></a>
+                                  <a href="#!"><p>Email@email.com</p></a>
                                 </div>
                                 <div class="col-lg-4 text-center m-b-30">
                                   <h6>Contact </h6><br>
                                   <a href="#!"><i class="fa fa-phone-square fa-3x" aria-hidden="true">
                                   </i></a>
-                                  <a href="#!"><p>Jalan Ancol Baru</p></a>
+                                  <a href="#!"><p>(021) 43930070<br>(021) 43931849</p></a>
                                 </div>
                           </div>
                           <div class="row">

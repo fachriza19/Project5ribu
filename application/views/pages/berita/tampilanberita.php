@@ -22,9 +22,9 @@
 							<div class="row">
 								<div class="col-12">
 									<div itemprop="text" class="entry-content">
-										<h1><?php echo $b['berita_judul'];?></h1><hr/>
-										<img src="<?php echo base_url().'assets/images/Upload/'.$b['berita_image'];?>" class="img-fluid">
-										<?php echo $b['berita_isi'];?>
+										<h1 class="text-center"><?php echo $b['berita_judul'];?></h1><hr/>
+										<img src="<?php echo base_url().'assets/images/Upload/'.$b['berita_image'];?>" class="img-fluid"><br><br>
+										<div class="text-dark"><?php echo $b['berita_isi'];?></div>
 									</div>
 								</div>
 							</div>
