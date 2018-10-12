@@ -83,9 +83,9 @@
                               <div class="col-lg-4 text-center m-b-30">
                                         <h4 class="card-title">SBNP</h4>
                                         <h6 class="card-subtitle">Sarana Bantu Navigasi Pelayaran</h6>
-                                        <img src="<?php echo base_url('assets/images/icon/menara.png') ?>" alt="image" class="img-circle" width="300">
+                                        <a href="<?php echo base_url('Sarpras/SBNP') ?>"><img src="<?php echo base_url('assets/images/icon/menara.png') ?>" alt="image" class="img-circle" width="300"></a>
                                         <p class="m-t-15 m-b-0">
-                                        <a href="#" class="btn btn-primary">Info Detail</a></p>
+                                        <a href="<?php echo base_url('Sarpras/SBNP') ?>" class="btn btn-primary">Info Detail</a></p>
                               </div>
                             </div>
                           </div>
