@@ -41,6 +41,74 @@
                 <li>Evaluasi Pelaporan dan Gambar.</li>
                 <h6>Perencanaan kerja, gambar, menginventarisir peralatan bengkel, mengajukan permintaan, menerima, menyimpan dan mengeluarkan bahan kerja dan peralatan kerja bengkel.</h6>
               </h6></ol><br>
+
+              <h4>MESIN – MESIN BENGKEL YANG MENGGUNAKAN BAHAN BAKAR SOLAR DAN PREMIUM</h4>
+            <h6><ol type="1">
+              <li></li><img src="<?php echo base_url('assets/images/AlatBengkel/1.jpg');?>"><br>
+              <li></li><img src="<?php echo base_url('assets/images/AlatBengkel/2.jpg');?>"><br>
+              <li></li><img src="<?php echo base_url('assets/images/AlatBengkel/3.jpg');?>"><br>
+              <li></li><img src="<?php echo base_url('assets/images/AlatBengkel/4.jpg');?>"><br>
+              <li></li><img src="<?php echo base_url('assets/images/AlatBengkel/5.jpg');?>"><br>
+              <li></li><img src="<?php echo base_url('assets/images/AlatBengkel/6.jpg');?>"><br>
+              <li></li><img src="<?php echo base_url('assets/images/AlatBengkel/7.jpg');?>"><br>
+              <li></li><img src="<?php echo base_url('assets/images/AlatBengkel/8.jpg');?>"><br>
+              <li></li><img src="<?php echo base_url('assets/images/AlatBengkel/9.jpg');?>"><br>
+              <li></li><img src="<?php echo base_url('assets/images/AlatBengkel/10.jpg');?>"><br>
+              <li></li><img src="<?php echo base_url('assets/images/AlatBengkel/11.jpg');?>"><br>
+              <li></li><img src="<?php echo base_url('assets/images/AlatBengkel/12.jpg');?>"><br>
+              <li></li><img src="<?php echo base_url('assets/images/AlatBengkel/13.jpg');?>"><br>
+              <li></li><img src="<?php echo base_url('assets/images/AlatBengkel/14.jpg');?>"><br>
+              <li></li><img src="<?php echo base_url('assets/images/AlatBengkel/15.jpg');?>"><br>
+              <li></li><img src="<?php echo base_url('assets/images/AlatBengkel/16.jpg');?>"><br>
+              <li></li><img src="<?php echo base_url('assets/images/AlatBengkel/17.jpg');?>"><br>
+              <li></li><img src="<?php echo base_url('assets/images/AlatBengkel/18.jpg');?>"><br>
+              <li></li><img src="<?php echo base_url('assets/images/AlatBengkel/19.jpg');?>"><br>
+              <li></li><img src="<?php echo base_url('assets/images/AlatBengkel/20.jpg');?>"><br>
+              <li></li><img src="<?php echo base_url('assets/images/AlatBengkel/21.jpg');?>"><br>
+              <li></li><img src="<?php echo base_url('assets/images/AlatBengkel/22.jpg');?>"><br>
+              <li></li><img src="<?php echo base_url('assets/images/AlatBengkel/23.jpg');?>"><br>
+              <li></li><img src="<?php echo base_url('assets/images/AlatBengkel/24.jpg');?>"><br>
+              <li></li><img src="<?php echo base_url('assets/images/AlatBengkel/25.jpg');?>"><br>
+              <li></li><img src="<?php echo base_url('assets/images/AlatBengkel/26.jpg');?>"><br>
+              <li></li><img src="<?php echo base_url('assets/images/AlatBengkel/27.jpg');?>"><br>
+            </ol></h6>
+            <h4>MESIN – MESIN BENGKEL YANG MENGGUNAKAN BAHAN BAKAR ELEKTRICAL</h4>
+            <h6><ol>
+              <li></li><img src="<?php echo base_url('assets/images/AlatBengkel/28.jpg');?>"><br>
+              <li></li><img src="<?php echo base_url('assets/images/AlatBengkel/29.jpg');?>"><br>
+              <li></li><img src="<?php echo base_url('assets/images/AlatBengkel/30.jpg');?>"><br>
+              <li></li><img src="<?php echo base_url('assets/images/AlatBengkel/31.jpg');?>"><br>
+              <li></li><img src="<?php echo base_url('assets/images/AlatBengkel/32.jpg');?>"><br>
+              <li></li><img src="<?php echo base_url('assets/images/AlatBengkel/33.jpg');?>"><br>
+              <li></li><img src="<?php echo base_url('assets/images/AlatBengkel/34.jpg');?>"><br>
+              <li></li><img src="<?php echo base_url('assets/images/AlatBengkel/35.jpg');?>"><br>
+              <li></li><img src="<?php echo base_url('assets/images/AlatBengkel/36.jpg');?>"><br>
+              <li></li><img src="<?php echo base_url('assets/images/AlatBengkel/37.jpg');?>"><br>
+              <li></li><img src="<?php echo base_url('assets/images/AlatBengkel/38.jpg');?>"><br>
+              <li></li><img src="<?php echo base_url('assets/images/AlatBengkel/39.jpg');?>"><br>
+              <li></li><img src="<?php echo base_url('assets/images/AlatBengkel/40.jpg');?>"><br>
+              <li></li><img src="<?php echo base_url('assets/images/AlatBengkel/41.jpg');?>"><br>
+              <li></li><img src="<?php echo base_url('assets/images/AlatBengkel/42.jpg');?>"><br>
+              <li></li><img src="<?php echo base_url('assets/images/AlatBengkel/43.jpg');?>"><br>
+              <li></li><img src="<?php echo base_url('assets/images/AlatBengkel/44.jpg');?>"><br>
+              <li></li><img src="<?php echo base_url('assets/images/AlatBengkel/45.jpg');?>"><br>
+              <li></li><img src="<?php echo base_url('assets/images/AlatBengkel/46.jpg');?>"><br>
+              <li></li><img src="<?php echo base_url('assets/images/AlatBengkel/47.jpg');?>"><br>
+              <li></li><img src="<?php echo base_url('assets/images/AlatBengkel/48.jpg');?>"><br>
+              <li></li><img src="<?php echo base_url('assets/images/AlatBengkel/49.jpg');?>"><br>
+              <li></li><img src="<?php echo base_url('assets/images/AlatBengkel/50.jpg');?>"><br>
+              <li></li><img src="<?php echo base_url('assets/images/AlatBengkel/51.jpg');?>"><br>
+              <li></li><img src="<?php echo base_url('assets/images/AlatBengkel/52.jpg');?>"><br>
+              <li></li><img src="<?php echo base_url('assets/images/AlatBengkel/53.jpg');?>"><br>
+              <li></li><img src="<?php echo base_url('assets/images/AlatBengkel/54.jpg');?>"><br>
+              <li></li><img src="<?php echo base_url('assets/images/AlatBengkel/55.jpg');?>"><br>
+              <li></li><img src="<?php echo base_url('assets/images/AlatBengkel/56.jpg');?>"><br>
+              <li></li><img src="<?php echo base_url('assets/images/AlatBengkel/57.jpg');?>"><br>
+              <li></li><img src="<?php echo base_url('assets/images/AlatBengkel/58.jpg');?>"><br>
+              <li></li><img src="<?php echo base_url('assets/images/AlatBengkel/59.jpg');?>"><br>
+              <li></li><img src="<?php echo base_url('assets/images/AlatBengkel/60.jpg');?>"><br>
+              <li></li><img src="<?php echo base_url('assets/images/AlatBengkel/61.jpg');?>"><br>
+            </ol></h6>
           </div>
         </div>
       </div>
