@@ -122,6 +122,12 @@ if (! defined('BASEPATH') ) exit('No direct script access allowed');
             $this->load->view('pages/sarpras/pengamatan');
             $this->load->view('templates/footer');
           }
+          function SBNP()
+          {
+            $this->load->view('templates/header');
+            $this->load->view('pages/sarpras/SBNP');
+            $this->load->view('templates/footer');
+          }
 
           //admin page
           function Keldatasarpras()

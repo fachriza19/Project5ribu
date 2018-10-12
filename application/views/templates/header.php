@@ -189,6 +189,7 @@
                               <li>
                                 <a class="" href="<?php echo base_url('sarpras/index'); ?>" aria-expanded="false">Peta Kenavigasian</a>
                                 </li>
+                                <li><a href="<?php echo base_url('Sarpras/SBNP') ?>">SBNP</a></li>
                                 <li><a href="<?php echo base_url('Sarpras/Telkompel') ?>">Telkompel</a></li>
                                 <li><a href="<?php echo base_url('sarpras/bengkel'); ?>">Bengkel</a></li>
                                 <li>
