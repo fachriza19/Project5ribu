@@ -89,18 +89,18 @@
                                     <li><a href="<?php echo base_url('Sarpras/SROPCirebon') ?>">
                                       Stasiun Radio Pantai Kelas III/A Cirebon (Klik Untuk Lebih Detail)</a></li>
                                     
-                                    <li><h6>Stasiun Radio Pantai Kelas III/A Cigading (Klik Untuk Lebih Detail)</h6></li>
-                                    <li><h6>Stasiun Radio Pantai Kelas III/A Panjang (Klik Untuk Lebih Detail)</h6></li>
+                                    <li><a href="<?php echo base_url('Sarpras/SROPCigading') ?>">Stasiun Radio Pantai Kelas III/A Cigading (Klik Untuk Lebih Detail)</a></li>
+                                    <li><a href="<?php echo base_url('Sarpras/SROPPanjang') ?>">Stasiun Radio Pantai Kelas III/A Panjang (Klik Untuk Lebih Detail)</a></li>
                                     <li><a href="<?php echo base_url('Sarpras/SROPBengkulu') ?>">Stasiun Radio Pantai Kelas III/A Bengkulu (Klik Untuk Lebih Detail)</a></li>
                                   </ol>
 
                                   <li><h6>Adapun Vessel Traffic  Service (VTS) dan Ship Reporting System (SRS) di wilayah kerja Distrik Navigasi Kelas I Tanjung Priok terdiri dari :</h6></li>
                                   <ol>
-                                    <a href="<?php echo base_url('Sarpras/VtsTanjungPriok') ?>"><li><h6>Vessel Traffic  Service (VTS) Pohon Asem Tanjung Priok;(Klik Untuk Lebih Detail)</h6></li></a>
-                                    <li><h6>Ship Reporting System (SRS) Cirebon (Klik Untuk Lebih Detail)</h6></li>
-                                    <a href="<?php echo base_url('Sarpras/VtsMerak') ?>"><li><h6>Vessel Traffic  Service (VTS) Merak, Selat Sunda (Klik Untuk Lebih Detail)</h6></li></a>
-                                    <a href="<?php echo base_url('Sarpras/VtsPanjang') ?>"><li><h6>Vessel Traffic  Service (VTS) Panjang (Klik Untuk Lebih Detail)</h6></li></a>
-                                    <li><h6>Ship Reporting System (SRS) Bengkulu (Klik Untuk Lebih Detail)</h6></li>
+                                    <li><a href="<?php echo base_url('Sarpras/VtsTanjungPriok') ?>">Vessel Traffic  Service (VTS) Pohon Asem Tanjung Priok;(Klik Untuk Lebih Detail)</a></li>
+                                    <li><a href="<?php echo base_url('Sarpras/VtsMerak') ?>">Vessel Traffic  Service (VTS) Merak, Selat Sunda (Klik Untuk Lebih Detail)</a></li>
+                                    <li><a href="<?php echo base_url('Sarpras/VtsPanjang') ?>">Vessel Traffic  Service (VTS) Panjang (Klik Untuk Lebih Detail)</a></li>
+                                    <li><a href="#!">Ship Reporting System (SRS) Cirebon</a></li>
+                                    <li><a href="#!">Ship Reporting System (SRS) Bengkulu</a></li>
                                   </ol>
                                 </ol>
                             <br>

@@ -69,6 +69,18 @@ if (! defined('BASEPATH') ) exit('No direct script access allowed');
             $this->load->view('pages/sarpras/Telkompel/SROPBengkulu');
             $this->load->view('templates/footer');
           }
+          function SROPCigading()
+          {
+            $this->load->view('templates/header');
+            $this->load->view('pages/sarpras/Telkompel/SROPCigading');
+            $this->load->view('templates/footer');
+          }
+          function SROPPanjang()
+          {
+            $this->load->view('templates/header');
+            $this->load->view('pages/sarpras/Telkompel/SROPPanjang');
+            $this->load->view('templates/footer');
+          }
 
           function Bengkel()
           {

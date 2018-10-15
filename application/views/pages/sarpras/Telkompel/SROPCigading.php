@@ -8,7 +8,7 @@
         <h3 class="text-themecolor">Sarana Prasarana</h3>
         <ol class="breadcrumb">
           <li class="breadcrumb-item"><a href="javascript:void(0)">Telkompel</a></li>
-          <li class="breadcrumb-item active">Stasiun Radio Pantai Cirebon</li>
+          <li class="breadcrumb-item active">Stasiun Radio Pantai Cigading</li>
         </ol>
       </div>
     </div>
@@ -22,14 +22,10 @@
                                       <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
                                         <ol class="carousel-indicators">
                                           <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                                          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
                                         </ol>
                                         <div class="carousel-inner">
                                             <div class="carousel-item active">
-                                              <img class="d-block w-100" src="<?php echo base_url('assets/images/TELKOMPEL/SROPCIR/cirebon1.jpg') ?>" alt="First slide">
-                                            </div>
-                                            <div class="carousel-item">
-                                              <img class="d-block w-100" src="<?php echo base_url('assets/images/TELKOMPEL/SROPCIR/cirebon2.jpg') ?>" alt="Second slide">
+                                              <img class="d-block w-100" src="<?php echo base_url('assets/images/TELKOMPEL/SROPCIG/ci1.jpg') ?>" alt="First slide">
                                             </div>
                                           <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
                                             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -61,15 +57,15 @@
             </tr>
             <tr>
               <td><h5>Nama Stasiun</h5></td>
-              <td><h5>Cirebon Radio</h5></td>
+              <td><h5>Cigading Radio</h5></td>
             </tr>
             <tr>
               <td><h5>Tanda Panggilan</h5></td>
-              <td><h5>PKZ2 (mobile), 8AA2 (fix)</h5></td>
+              <td><h5>PKZ34 (mobile), 8AA8 (fix)</h5></td>
             </tr>
             <tr>
               <td><h5>MMSI</h5></td>
-              <td><h5>005250032</h5></td>
+              <td><h5>005250033</h5></td>
             </tr>
             <tr>
               <td><h5>Jam Dinas</h5></td>
@@ -77,23 +73,23 @@
             </tr>
             <tr>
               <td><h5>Posisi Geografis </h5></td>
-              <td><h5>06°-43’-00” LS / 108°-34’-20” BT</h5></td>
+              <td><h5>06°-30’-01” LS / 105°-57’-02” BT</h5></td>
             </tr>
             <tr>
               <td><h5>Telepon</h5></td>
-              <td><h5>1. 0231.247653</h5></td>
+              <td><h5>1. 0254.574461. <br> 2. 0254.574005</h5></td>
             </tr>
             <tr>
               <td><h5>Fax</h5></td>
-              <td><h5>1. 0231.247653</h5></td>
+              <td><h5>1. 0254.574005</h5></td>
             </tr>
             <tr>
               <td><h5>Email</h5></td>
-              <td><h5>cirebonradiopkz2@gmail.com</h5></td>
+              <td><h5>cigadingradiopkz34@gmail.com</h5></td>
             </tr>
             <tr>
               <td><h5>Alamat</h5></td>
-              <td><h5>Jl. Ambon no. 7 Pelabuhan Cirebon Jawa Barat.</h5></td>
+              <td><h5>Jl. Puskesmas no. 24 Merak Banten.</h5></td>
             </tr>
 
           </tbody></table>
@@ -107,21 +103,21 @@
 
              <div class="row el-element-overlay">
               <div class="col-md-12">
-                <h4 class="card-title">Gallery SROP Cirebon</h4>
+                <h4 class="card-title">Gallery SROP Gigading</h4>
               </div>
               <div class="col-lg-3 col-md-6">
                 <div class="card">
                   <div class="el-card-item">
-                    <div class="el-card-avatar el-overlay-1"> <img src="<?php echo base_url('assets/images/TELKOMPEL/SROPCIR/cirebon1.jpg') ?>">
+                    <div class="el-card-avatar el-overlay-1"> <img src="<?php echo base_url('assets/images/TELKOMPEL/SROPCIG/ci1.jpg') ?>">
                       <div class="el-overlay">
                         <ul class="el-info">
-                          <li><a class="btn default btn-outline image-popup-vertical-fit" href="<?php echo base_url('assets/images/TELKOMPEL/SROPCIR/cirebon1.jpg') ?>"><i class="icon-magnifier"></i></a>
+                          <li><a class="btn default btn-outline image-popup-vertical-fit" href="<?php echo base_url('assets/images/TELKOMPEL/SROPCIG/ci1.jpg') ?>"><i class="icon-magnifier"></i></a>
                           </li>
                         </ul>
                       </div>
                     </div>
                     <div class="el-card-content">
-                      <small>GEDUNG STASIUN RADIO PANTAI CIREBON DI JALAN AMBON NO.7 PELABUHAN CIREBON</small>
+                      <small>GEDUNG STASIUN RADIO PANTAI CIGADING, JL PUSKESMAS NO.24 PULO MERAK</small>
                       <br> </div>
                     </div>
                   </div>
@@ -129,15 +125,15 @@
                     <div class="col-lg-3 col-md-6">
                         <div class="card">
                             <div class="el-card-item">
-                                <div class="el-card-avatar el-overlay-1"> <img src="<?php echo base_url('assets/images/TELKOMPEL/SROPCIR/cirebon3.jpg') ?>">
+                                <div class="el-card-avatar el-overlay-1"> <img src="<?php echo base_url('assets/images/TELKOMPEL/SROPCIG/ci2.jpg') ?>">
                                     <div class="el-overlay">
                                         <ul class="el-info">
-                                            <li><a class="btn default btn-outline image-popup-vertical-fit" href="<?php echo base_url('assets/images/TELKOMPEL/SROPCIR/cirebon3.jpg') ?>"><i class="icon-magnifier"></i></a></li>
+                                            <li><a class="btn default btn-outline image-popup-vertical-fit" href="<?php echo base_url('assets/images/TELKOMPEL/SROPCIG/ci2.jpg') ?>"><i class="icon-magnifier"></i></a></li>
                                         </ul>
                                     </div>
                                 </div>
                                 <div class="el-card-content">
-                                   <small>PERALATAN RADIO GMDSS</small>
+                                   <small>PERALATAN RADIO CONSOLE GMDSS  MERK SAILOR</small>
                                     <br> </div>
                             </div>
                         </div>
@@ -145,15 +141,15 @@
                     <div class="col-lg-3 col-md-6">
                         <div class="card">
                             <div class="el-card-item">
-                                <div class="el-card-avatar el-overlay-1"> <img src="<?php echo base_url('assets/images/TELKOMPEL/SROPCIR/cirebon4.jpg') ?>" alt="user">
+                                <div class="el-card-avatar el-overlay-1"> <img src="<?php echo base_url('assets/images/TELKOMPEL/SROPCIG/ci3.jpg') ?>" alt="user">
                                     <div class="el-overlay">
                                         <ul class="el-info">
-                                            <li><a class="btn default btn-outline image-popup-vertical-fit" href="<?php echo base_url('assets/images/TELKOMPEL/SROPCIR/cirebon4.jpg') ?>"><i class="icon-magnifier"></i></a></li>
+                                            <li><a class="btn default btn-outline image-popup-vertical-fit" href="<?php echo base_url('assets/images/TELKOMPEL/SROPCIG/ci3.jpg') ?>"><i class="icon-magnifier"></i></a></li>
                                         </ul>
                                     </div>
                                 </div>
                                 <div class="el-card-content">
-                                  <small>PERALATAN SHIP REPORTING SYSTEM</small>
+                                  <small>RADIO TRANSCEIVER CADANGAN  MERK  ICOM  M-700</small>
                                     <br> </div>
                             </div>
                         </div>
@@ -161,15 +157,15 @@
                     <div class="col-lg-3 col-md-6">
                         <div class="card">
                             <div class="el-card-item">
-                                <div class="el-card-avatar el-overlay-1"> <img src="<?php echo base_url('assets/images/TELKOMPEL/SROPCIR/cirebon5.jpg') ?>" alt="user">
+                                <div class="el-card-avatar el-overlay-1"> <img src="<?php echo base_url('assets/images/TELKOMPEL/SROPCIG/ci4.jpg') ?>" alt="user">
                                     <div class="el-overlay">
                                         <ul class="el-info">
-                                            <li><a class="btn default btn-outline image-popup-vertical-fit" href="<?php echo base_url('assets/images/TELKOMPEL/SROPCIR/cirebon5.jpg') ?>"><i class="icon-magnifier"></i></a></li>
+                                            <li><a class="btn default btn-outline image-popup-vertical-fit" href="<?php echo base_url('assets/images/TELKOMPEL/SROPCIG/ci4.jpg') ?>"><i class="icon-magnifier"></i></a></li>
                                         </ul>
                                     </div>
                                 </div>
                                 <div class="el-card-content">
-                                  <small>PERALATAN SHIP REPORTING SYSTEM</small>
+                                  <small>PERALATAN ANTENA SROP CIGADING</small>
                                     <br> </div>
                             </div>
                         </div>
@@ -180,38 +176,21 @@
               <div class="col-lg-3 col-md-6">
                 <div class="card">
                   <div class="el-card-item">
-                    <div class="el-card-avatar el-overlay-1"> <img src="<?php echo base_url('assets/images/TELKOMPEL/SROPCIR/cirebon6.jpg') ?>">
+                    <div class="el-card-avatar el-overlay-1"> <img src="<?php echo base_url('assets/images/TELKOMPEL/SROPCIG/ci5.jpg') ?>">
                       <div class="el-overlay">
                         <ul class="el-info">
-                          <li><a class="btn default btn-outline image-popup-vertical-fit" href="<?php echo base_url('assets/images/TELKOMPEL/SROPCIR/cirebon6.jpg') ?>"><i class="icon-magnifier"></i></a>
+                          <li><a class="btn default btn-outline image-popup-vertical-fit" href="<?php echo base_url('assets/images/TELKOMPEL/SROPCIG/ci5.jpg') ?>"><i class="icon-magnifier"></i></a>
                           </li>
                         </ul>
                       </div>
                     </div>
                     <div class="el-card-content">
-                      <small>GENSET MERK YANMAR 10 KVA 3 PHASE 220 VOLT</small>
+                      <small>GENSET MERK YANMAR 5 KVA 3 PHASE 220 VOLT</small>
                       <br> </div>
                     </div>
                   </div>
                 </div>
-                    <div class="col-lg-3 col-md-6">
-                        <div class="card">
-                            <div class="el-card-item">
-                                <div class="el-card-avatar el-overlay-1"> <img src="<?php echo base_url('assets/images/TELKOMPEL/SROPCIR/cirebon7.jpg') ?>">
-                                    <div class="el-overlay">
-                                        <ul class="el-info">
-                                            <li><a class="btn default btn-outline image-popup-vertical-fit" href="<?php echo base_url('assets/images/TELKOMPEL/SROPCIR/cirebon7.jpg') ?>"><i class="icon-magnifier"></i></a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="el-card-content">
-                                   <small>GENSET MERK KUBOTA  5 KVA 3 PHASE 220 VOLT</small>
-                                    <br> </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                  </div>
+              </div>
 
   </div>
 </div>
