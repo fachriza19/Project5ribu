@@ -70,7 +70,7 @@
                     <div class="card">
                       <div class="card-body">
                         <div class="row">
-                          <div class="col-12">        
+                          <div class="col-12">
                             <h1 align="center">INSTALASI</h1><hr><br>
 
                             <div class="row">
@@ -107,11 +107,11 @@
                               <div class="col-lg-4 text-center m-b-30">
                                         <h4 class="card-title">Bengkel</h4>
                                         <h6 class="card-subtitle">Bengkel</h6>
-                                        <a href="<?php echo base_url('Sarpras/Bengkel') ?>"><img src="<?php echo base_url('assets/images/icon/gear.png') ?>" alt="image" class="img-circle" width="300"></a>
+                                        <a href="<?php echo base_url('Sarpras/Bengkel') ?>"><img src="<?php echo base_url('assets/images/icon/gear.jpg') ?>" alt="image" class="img-circle" width="300"></a>
                                         <p class="m-t-15 m-b-0">
                                         <a href="<?php echo base_url('Sarpras/Bengkel') ?>" class="btn btn-primary">Info Detail</a></p>
                               </div>
-                            </div>  
+                            </div>
                             </div>
                           </div>
                       </div>
