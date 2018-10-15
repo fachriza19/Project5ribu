@@ -71,20 +71,20 @@
                       <div class="card-body">
                         <div class="row">
                           <div class="col-12">        
-                            <h1 align="center">PELAYANAN</h1><hr><br>
+                            <h1 align="center">INSTALASI</h1><hr><br>
 
                             <div class="row">
                               <div class="col-lg-4 text-center m-b-30">
                                         <h4 class="card-title">PENGAMATAN LAUT</h4>
                                         <h6 class="card-subtitle">Pengamatan Laut</h6>
-                                        <a href="<?php echo base_url('Sarpras/Pengamatan') ?>"><img src="<?php echo base_url('assets/images/icon/kapal.png') ?>" alt="image" class="img-circle" width="300"></a>
+                                        <a href="<?php echo base_url('Sarpras/Pengamatan') ?>"><img src="<?php echo base_url('assets/images/icon/teropong1.png') ?>" alt="image" class="img-circle" width="300"></a>
                                         <p class="m-t-15 m-b-0">
                                         <a href="<?php echo base_url('Sarpras/Pengamatan') ?>" class="btn btn-primary">Info Detail</a></p>
                               </div>
                               <div class="col-lg-4 text-center m-b-30">
                                         <h4 class="card-title">TELKOMPEL</h4>
                                         <h6 class="card-subtitle">Telekomunikasi Pelayaran</h6>
-                                        <a href="<?php echo base_url('Sarpras/Telkompel') ?>"><img src="<?php echo base_url('assets/images/icon/radio.png') ?>" alt="image" class="img-circle" width="300"></a>
+                                        <a href="<?php echo base_url('Sarpras/Telkompel') ?>"><img src="<?php echo base_url('assets/images/icon/tower.png') ?>" alt="image" class="img-circle" width="300"></a>
                                         <p class="m-t-15 m-b-0">
                                         <a href="<?php echo base_url('Sarpras/Telkompel') ?>" class="btn btn-primary">Info Detail</a></p>
                               </div>
@@ -96,8 +96,24 @@
                                         <a href="<?php echo base_url('Sarpras/SBNP') ?>" class="btn btn-primary">Info Detail</a></p>
                               </div>
                             </div>
+                            <div class="row justify-content-center">
+                              <div class="col-lg-4 text-center m-b-30">
+                                        <h4 class="card-title">Kapal Negara</h4>
+                                        <h6 class="card-subtitle">Kapal Negara</h6>
+                                        <a href="<?php echo base_url('Sarpras/ProfileKN') ?>"><img src="<?php echo base_url('assets/images/icon/kapal.png') ?>" alt="image" class="img-circle" width="300"></a>
+                                        <p class="m-t-15 m-b-0">
+                                        <a href="<?php echo base_url('Sarpras/ProfileKN') ?>" class="btn btn-primary">Info Detail</a></p>
+                              </div>
+                              <div class="col-lg-4 text-center m-b-30">
+                                        <h4 class="card-title">Bengkel</h4>
+                                        <h6 class="card-subtitle">Bengkel</h6>
+                                        <a href="<?php echo base_url('Sarpras/Bengkel') ?>"><img src="<?php echo base_url('assets/images/icon/gear.png') ?>" alt="image" class="img-circle" width="300"></a>
+                                        <p class="m-t-15 m-b-0">
+                                        <a href="<?php echo base_url('Sarpras/Bengkel') ?>" class="btn btn-primary">Info Detail</a></p>
+                              </div>
+                            </div>  
+                            </div>
                           </div>
-                        </div>
                       </div>
                     </div>
                   </div>

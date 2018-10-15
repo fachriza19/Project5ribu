@@ -193,14 +193,14 @@
                                 <li><a href="<?php echo base_url('Sarpras/Telkompel') ?>">Telkompel</a></li>
                                 <li><a href="<?php echo base_url('sarpras/bengkel'); ?>">Bengkel</a></li>
                                 <li>
-                                    <a class="has-arrow " href="#!" aria-expanded="false"><span class="hide-menu">Kapal Negara</span></a>
-                                    <ul aria-expanded="false" class="collapse">
+                                    <a class="" href="<?php echo base_url('Sarpras/ProfileKN') ?>" aria-expanded="false"><span class="hide-menu">Kapal Negara</span></a>
+                                    <!-- <ul aria-expanded="false" class="collapse">
                                         <li><a href="<?php echo base_url('Sarpras/Kapal') ?>">KN EDAM</a></li>
                                         <li><a href="<?php echo base_url('Sarpras/KNKARAKATA') ?>">KN KARAKATA</a></li>
                                         <li><a href="<?php echo base_url('Sarpras/KNENGGANO') ?>">KN. ENGGANO</a></li>
                                         <li><a href="<?php echo base_url('Sarpras/KNMIAPLACIDUS') ?>">KN. MIAPLACIDUS</a></li>
                                         <li><a href="<?php echo base_url('Sarpras/KNMOKMER') ?>">KN. MOKMER</a></li>
-                                    </ul>
+                                    </ul> -->
                                 </li>
                                 <li><a href="<?php echo base_url('sarpras/pengamatan'); ?>">Pengamatan Laut</a></li>
                             </ul>
