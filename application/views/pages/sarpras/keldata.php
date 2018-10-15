@@ -74,7 +74,7 @@
                       foreach ($data as $r){ ?>
                         <tr>
                           <td><?= $r->id; ?></td>
-                          <td><a data-toggle="tooltip" data-placement="top" title="Klik untuk melihat lebih detail" href="<?php echo base_url('adminmenu/detailpeta/'.$r->id) ?>"><?=  $r->namasbnp; ?></a></td>
+                          <td><a data-toggle="tooltip" data-placement="top" title="Klik untuk melihat lebih detail" href="<?php echo base_url('sarpras/detailpeta/'.$r->id) ?>"><?=  $r->namasbnp; ?></a></td>
                           <td><?= $r->nomordsi; ?></td>
                           <td><?= $r->jenis; ?></td>
                           <td> <a href="#form" data-toggle="modal" class="btn btn-primary" data-toggle="modal" data-target="#modal_edit<?= $r->id; ?>">Edit</a>
