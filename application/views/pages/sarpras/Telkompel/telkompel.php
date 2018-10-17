@@ -20,29 +20,29 @@
         <div class="card">
           <div class="card-body">
                              <blockquote>
-                              <h1 align="center"><b>TELEKOMUNIKASI PELAYARAN</b></h1><hr>
+                              <img src="<?php echo base_url('assets/images/icon/telkompel.png'); ?>" width="75%" height="5%">
                              </blockquote>
                              <h6>Adalah Telekomunikasi khusus untuk keperluan dinas pelayaran  yang berupa pemancaran, pengiriman atau penerimaan tiap tanda, gambar, suara dan informasi dalam bentuk apapun melalui  sistem kawat, optik, radio atau sistem elektromagtik lainnya dalam dinas bergerak pelayaran yang merupakan bagian dari keselamatan pelayaran.
                              </h6><br>
                              <h6>Dasar Hukum:</h6>
-                            <ol>
+                            <h6><ol>
                               <li><h6>Undang-Undang Nomor 17 Tahun 2008 tentang Pelayaran</h6></li>
                               <li><h6>Peraturan Pemerintah Nomor 5 Tahun 2010 tentang Kenavigasian</h6></li>
                               <li><h6>Peraturan Menteri Perhubungan Nomor :  PM 26 Tahun 2011 tentang Telekomunikasi Pelayaran.</h6></li>
                               <li><h6>Peraturan Menteri Perhubungan Nomor :  KM. 30 tahun 2006 tentang Organisasi dan Tata Kerja Distrik Navigasi.</h6></li>
                               <li><h6>ITU (Radio Regulation), IMO (SOLAS) dan IALA (VTS Guideline).</h6></li>
-                            </ol>
+                            </ol></h6>
                             <h6>PERATURAN TENTANG TELEKOMUNIKASI PELAYARAN</h6>
-                            <ol>
+                            <h6><ol>
                               <li><h6>Undang Undang Republik Indonesia Nomor 17 tahun 2008 tentang Pelayaran tertuang pada pasal 192 Setiap alur-pelayaran wajib dilengkapi dengan Sarana Bantu Navigasi-Pelayaran dan Telekomunikasi-Pelayaran.</h6></li>
                               <li><h6>Peraturan Pemerintah Nomor 5 Tahun 2010 Tentang Kenavigasian tertuang pada BAB V Pasal 51 sd 84.</h6></li>
                               <li><h6>Peraturan Menteri Perhubungan Nomor 26 Tahun 2011 Tentang Telekomunikasi Pelayaran pasal demi pasal.</h6></li>
                               <li><h6>Solas Amandemen Chapter IV  Radio Communication Global Maritime Distress Safety System (GMDSS).</h6></li>
                               <li><h6>Solas Amandemen Chapter V Safety Of Navigation regulation 12 Vessel Traffic Service (VTS).</h6></li>
-                            </ol>
+                            </ol></h6>
                             <br>
                              <h6>Fungsi Telekomunikasi Pelayaran:</h6><br>
-                             <ol>
+                             <h6><ol>
                                <li><h6>Di dalam Global Maritime Distress and Safety System (GMDSS) sebagaimana dimaksud dalam Peraturan Menteri Perhubungan Nomor :  PM 26 Tahun 2011 tentang Telekomunikasi Pelayaran berfungsi untuk :</h6></li>
                                <ol type="a">
                                  <li><h6>Pemberitahuan tentang adanya musibah marabahaya (alerting).</h6></li>
@@ -71,16 +71,16 @@
                                  <li><h6>Menentukan lokasi dengan cepat, saat kapal dalam bahaya yang tidak diketahui posisinya, dan</h6></li>
                                  <li><h6>Meningkatkan keamanan dan keselamatan jiwa dan harta benda di laut.</h6></li>
                                </ol><br>
-                             </ol>
+                             </ol></h6>
                             <h6>SARANA, JENIS DAN FUNGSI TELEKOMUNIKASI PELAYARAN</h6>
                             <h6><b>Sarana Telekomunikasi Pelayaran terdiri atas :</b></h6>
-                            <ol type="a">
+                            <h6><ol type="a">
                               <li><h6>Stasiun Radio Pantai</h6></li>
                               <li><h6>Vessel Traffic  Service (VTS)</h6></li>
                               <li><h6>Ship Reporting System (SRS)</h6></li>
-                            </ol>
+                            </ol></h6>
                             <br>
-                                <ol type="a">
+                                <h6><ol type="a">
                                   <li><h6 >Adapun Stasiun Radio Pantai di wilayah kerja Distrik Navigasi Kelas I Tanjung Priok terdiri dari:</h6></li>
                                   <ol>
                                     <li><a href="<?php echo base_url('Sarpras/SROPTanjungPriok') ?>">
@@ -96,11 +96,11 @@
 
                                   <li><h6>Adapun Vessel Traffic  Service (VTS) di wilayah kerja Distrik Navigasi Kelas I Tanjung Priok terdiri dari :</h6></li>
                                   <ol>
-                                    <li><a href="<?php echo base_url('Sarpras/VtsTanjungPriok') ?>">Vessel Traffic  Service (VTS) Pohon Asem Tanjung Priok;(Klik Untuk Lebih Detail)</a></li>
+                                    <li><a href="<?php echo base_url('Sarpras/VtsTanjungPriok') ?>">Vessel Traffic  Service (VTS) Pohon Asem Tanjung Priok (Klik Untuk Lebih Detail)</a></li>
                                     <li><a href="<?php echo base_url('Sarpras/VtsMerak') ?>">Vessel Traffic  Service (VTS) Merak, Selat Sunda (Klik Untuk Lebih Detail)</a></li>
                                     <li><a href="<?php echo base_url('Sarpras/VtsPanjang') ?>">Vessel Traffic  Service (VTS) Panjang (Klik Untuk Lebih Detail)</a></li>
                                   </ol>
-                                </ol>
+                                </ol></h6>
                             <br>
                             <br>
                             <br>
