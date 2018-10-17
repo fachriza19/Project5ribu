@@ -30,15 +30,14 @@
 										<tr>
 											<th>ID</th>
                                             <th>Instansi</th>
-											<th style="width: 150px;">Hari/Tanggal</th>
+											<th style="width: 275px;">Tanggal</th>
 											<th>Waktu</th>
 											<th>Kapal Masuk</th>
 											<th>Kapal keluar</th>
 											<th>Kapal Melintas</th>
                                             <th>Kapal Labuh</th>
 											<th>Kapal Sandar</th>
-											<th>Petugas1</th>
-											<th>Petugas2</th>
+											<th>Petugas</th>
 											<th>Action</th>
 										</tr>
 									</thead>
@@ -48,8 +47,6 @@
                                         foreach ($data->result_array() as $t) :
                                             $id=$t['id_laporan'];
                                             $ins=$t['nama_instansi'];
-                                            $hari1=$t['hari_mulai'];
-                                            $hari2=$t['hari_akhir'];
                                             $tgl1=$t['tanggal_mulai'];
                                             $tgl2=$t['tanggal_akhir'];
                                             $jam1=$t['jam_awal'];
@@ -66,15 +63,15 @@
                                             <tr>
                                                 <td><?php echo $id; ?></td>
                                                 <td><?php echo $ins; ?></td>
-                                                <td><?php echo $hari1,",&nbsp",$tgl1,"&nbsp -",$hari2,",&nbsp",$tgl2; ?></td>
+                                                <td><?php echo $tgl1," s/d ",$tgl2; ?></td>
                                                 <td><?php echo $jam1,"&nbsp- ",$jam2; ?></td>
                                                 <td><?php echo $kplmsk; ?></td>
                                                 <td><?php echo $kplklr; ?></td>
                                                 <td><?php echo $kpllnt; ?></td>
                                                 <td><?php echo $kpllbh; ?></td>
                                                 <td><?php echo $kplsdr; ?></td>
-                                                <td><?php echo $ptg1; ?></td>
-                                                <td><?php echo $ptg2; ?></td>
+                                                <td><?php echo "1. &nbsp",$ptg1,"<br>2. ",$ptg2; ?></td>
+                                                
                                                 <td>
                                                     <a class="btn btn-xs btn-info" href="#" >Print</a>
                                                 </td>

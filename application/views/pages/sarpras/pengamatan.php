@@ -20,7 +20,7 @@
         <div class="card">
           <div class="card-body">
             <blockquote>
-              <h1 align="center"><b>PENGAMATAN LAUT</b></h1><hr>
+              <img src="<?php echo base_url('assets/images/icon/pl.png'); ?>" width="65%" height="5%">
             </blockquote>
               <h6>Dasar Hukum:</h6>
               <ol><h6>

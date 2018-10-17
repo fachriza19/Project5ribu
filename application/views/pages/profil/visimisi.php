@@ -19,7 +19,7 @@
       <div class="col-12">
         <div class="card">
           <div class="card-body">
-          <img src="<?php echo base_url('assets/images/logo-visi-misi.png'); ?>">
+          <center><img src="<?php echo base_url('assets/images/icon/vimi.png'); ?>" width="90%" height="40%"></center>
             <div id="accordion2" role="tablist" class="minimal-faq" aria-multiselectable="true">
                                     <div class="card m-b-0">
                                         <div class="card-header" role="tab" id="headingOne11">

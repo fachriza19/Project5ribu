@@ -40,17 +40,6 @@
                   </div>
                 </div>
                 <div class="form-group row">
-                  <h5 class="control-label text-left col-md-3">Hari</h5>
-                  <div class="col-md-3">
-                    <input type="text" class="form-control" name="hari1">
-                  </div>
-                  <h5 class="control-label text-left col-md-1">s/d</h5>
-                  <div class="col-md-3">
-                    <input type="text" class="form-control" name="hari2">
-                  </div>
-                </div>
-                <div class="form-group row">
-                  
                   <h5 class="control-label text-left col-md-3">Tanggal</h5>
                   <div class="col-md-3">
                     <input type="text" class="form-control" placeholder="2018-09-03" name="tgl1" id="mdate" data-dtp="dtp_QCnhf"> 
@@ -63,21 +52,11 @@
                 <div class="form-group row">
                   <h5 class="control-label text-left col-md-3">Waktu</h5>
                   <div class="col-md-3">
-                    <div class="input-group clockpicker">
-	                    <input type="text" class="form-control" name="jam1" value="09:30"> 
-                        <span class="input-group-addon"> 
-                            <span class="fa fa-clock-o"></span> 
-                        </span>
-                    </div>
+                    <input type="text" class="form-control" id="timepicker" placeholder="Jam" name="jam1" data-dtp="dtp_6Vvs4">  
                   </div>
                   <h5 class="control-label text-left col-md-1">s/d</h5>
                   <div class="col-md-3">
-                    <div class="input-group clockpicker">
-	                    <input type="text" class="form-control" name="jam2" value="09:30"> 
-                        <span class="input-group-addon"> 
-                            <span class="fa fa-clock-o"></span> 
-                        </span>
-                    </div>
+                    <input type="text" class="form-control" id="timepicker1" placeholder="Jam" name="jam2" data-dtp="dtp_6Vvs4">
                   </div>
                 </div>
 
@@ -85,32 +64,37 @@
                 <div class="form-group row">
                   <h5 class="control-label text-left col-md-3">Kapal Masuk</h5>
                   <div class="col-md-3">
-                    <input type="text" class="form-control" name="kmasuk">
+                    <input type="text" class="form-control" placeholder="Jumlah Kapal Masuk" name="kmasuk">
                   </div>
+                  <h5 class="control-label text-left col-md-3">Kapal</h5>
                 </div>
                 <div class="form-group row">
                   <h5 class="control-label text-left col-md-3">Kapal Keluar</h5>
                   <div class="col-md-3">
-                    <input type="text" class="form-control" name="kkeluar">
+                    <input type="text" class="form-control" placeholder="Jumlah Kapal Keluar" name="kkeluar">
                   </div>
+                  <h5 class="control-label text-left col-md-3">Kapal</h5>
                 </div>
                 <div class="form-group row">
                   <h5 class="control-label text-left col-md-3">Kapal Melintas</h5>
                   <div class="col-md-3">
-                    <input type="text" class="form-control" name="klintas">
+                    <input type="text" class="form-control" placeholder="Jumlah Kapal Melintas" name="klintas">
                   </div>
+                  <h5 class="control-label text-left col-md-3">Kapal</h5>
                 </div>
                 <div class="form-group row">
                   <h5 class="control-label text-left col-md-3">Kapal Labuh</h5>
                   <div class="col-md-3">
-                    <input type="text" class="form-control" name="klabuh">
+                    <input type="text" class="form-control" placeholder="Jumlah Kapal Labuh" name="klabuh">
                   </div>
+                  <h5 class="control-label text-left col-md-3">Kapal</h5>
                 </div>
                 <div class="form-group row">
                   <h5 class="control-label text-left col-md-3">Kapal Sandar</h5>
                   <div class="col-md-3">
-                    <input type="text" class="form-control" name="ksandar">
+                    <input type="text" class="form-control" placeholder="Jumlah Kapal Sandar" name="ksandar">
                   </div>
+                  <h5 class="control-label text-left col-md-3">Kapal</h5>
                 </div>
 
                 <h5 class="card-title">II. Prakiraan Cuaca Wilayah Pelabuhan dari BMKG</h5><br>

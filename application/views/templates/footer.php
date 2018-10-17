@@ -50,6 +50,16 @@
         weekStart: 0,
         time: false
     });
+    $('#timepicker').bootstrapMaterialDatePicker({
+        format: 'HH:mm',
+        time: true,
+        date: false
+    });
+    $('#timepicker1').bootstrapMaterialDatePicker({
+        format: 'HH:mm',
+        time: true,
+        date: false
+    });
     // Clock pickers
     $('#single-input').clockpicker({
         placement: 'bottom',
