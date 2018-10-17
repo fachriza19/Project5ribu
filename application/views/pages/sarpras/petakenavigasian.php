@@ -100,7 +100,7 @@
                               '<h6 id="firstHeading"> Koordinat : '+ office[3] + ' , '+ office[4] + '</h6>'+
                               '<h6 id="firstHeading"> Nomor DSI : '+ office[5] + ' </h6>'+
                               '<div id="bodyContent" align="center">'+
-                              '<a href=<?php echo base_url('sarpras/detailpeta/') ?>'+office[0]+'>Info Detail</a>'+
+                              '<a target="_blank" href=<?php echo base_url('sarpras/detailpeta/') ?>'+office[0]+'>Info Detail</a>'+
                               '</div>'+
                               '</div>';
 
@@ -175,7 +175,7 @@
                           foreach ($dataaa as $r){ ?>
                             <tr>
                               <td><?= $r->id; ?></td>
-                              <td><a data-toggle="tooltip" data-placement="top" title="Klik untuk melihat lebih detail" href="<?php echo base_url('sarpras/detailpeta/'.$r->id) ?>"><?=  $r->namasbnp; ?></a></td>
+                              <td><a data-toggle="tooltip" data-placement="top" title="Klik untuk melihat lebih detail" target="_blank" href="<?php echo base_url('sarpras/detailpeta/'.$r->id) ?>"><?=  $r->namasbnp; ?></a></td>
                               <td><?= $r->nomordsi; ?></td>
                               <td><?= $r->jenis; ?></td>
                               <td><?= $r->LS; ?></td>
@@ -269,12 +269,12 @@
                             var infowindow = new google.maps.InfoWindow({content: contentString});
 
                             var contentString =
-                            '<div id="content">'+
+                            '<div id="content" class="text-center">'+
                             '<div id="siteNotice">'+
                             '</div>'+
                             '<h3 id="firstHeading" align="center">'+ office[1] + '</h3>'+
-                            // '<h6 id="firstHeading"> Jenis : '+ office[2] + '</h6>'+
-                            // '<h6 id="firstHeading"> Koordinat : '+ office[3] + ' , '+ office[4] + '</h6>'+
+                            '<h6 id="firstHeading"> Jenis : '+ office[2] + '</h6>'+
+                            '<h6 id="firstHeading"> Koordinat : '+ office[3] + ' , '+ office[4] + '</h6>'+
                             // '<h6 id="firstHeading"> Nomor DSI : '+ office[5] + ' </h6>'+
                             '<div id="bodyContent" align="center">'+
                             // '<a href=<?php //echo base_url('sarpras/detailpeta/') ?>'+office[0]+'>Info Detail</a>'+
@@ -316,14 +316,14 @@
 
 
 
-                    <table id="table3" class=" table table-bordered table-responsive nowrap table-hover" style="width: 100%;">
+                    <table id="tabletelkompel" class=" table table-bordered nowrap table-hover" style="width: 100%;">
                       <thead>
                         <tr>
-                          <th class="all text-dark" style="width: 5%;">ID</th>
-                          <th class="all text-dark" style="width: 40%;">NAMA</th>
-                          <th class="all text-dark" style="width: 25%;">JENIS</th>
-                          <th class="all text-dark" style="width: 20%;">Latitude</th>
-                          <th class="none text-dark">Longtitude : </th>
+                          <th class="text-dark" style="width: 5%;">ID</th>
+                          <th class="text-dark" style="width: 30%;">NAMA</th>
+                          <th class="text-dark" style="width: 25%;">JENIS</th>
+                          <th class="text-dark" style="width: 20%;">Latitude</th>
+                          <th class="text-dark" style="width: 20%;">Longtitude : </th>
                         </tr>
                       </thead>
 
@@ -331,16 +331,64 @@
 
 
 
-                        <?php
-                        foreach ($datatel as $r){ ?>
+
                           <tr>
-                            <td><?= $r->id; ?></td>
-                            <td><a data-toggle="tooltip" data-placement="top" title="Klik untuk melihat lebih detail" href="<?php //echo base_url('sarpras/detailpeta/'.$r->id) ?>"><?=  $r->nama; ?></a></td>
-                            <td><?= $r->jenis; ?></td>
-                            <td><?= $r->latitude; ?></td>
-                            <td><?= $r->longtitude; ?></td>
+                            <td>1</td>
+                            <td><a data-toggle="tooltip" data-placement="top" title="Klik untuk melihat lebih detail" target="_blank" href="<?php echo base_url('sarpras/SROPTanjungPriok') ?>">Stasiun Radio Pantai Kelas I Jakarta</a></td>
+                            <td>SROP</td>
+                            <td>-6.119123</td>
+                            <td>106.862808</td>
                           </tr>
-                        <?php } ?>
+                          <tr>
+                            <td>2</td>
+                            <td><a data-toggle="tooltip" data-placement="top" title="Klik untuk melihat lebih detail" target="_blank" href="<?php echo base_url('sarpras/SROPCirebon') ?>">Stasiun Radio Pantai Kelas III/A /Ship Reporting System(SRS) Cirebon</a></td>
+                            <td>SROP/SRS</td>
+                            <td>-6.716666666666667</td>
+                            <td>108.57222222222222</td>
+                          </tr>
+                          <tr>
+                            <td>3</td>
+                            <td><a data-toggle="tooltip" data-placement="top" title="Klik untuk melihat lebih detail" target="_blank" href="<?php echo base_url('sarpras/SROPCigading') ?>">Stasiun Radio Pantai Kelas III/A Cigading</a></td>
+                            <td>SROP</td>
+                            <td>-6.500277777777778</td>
+                            <td>105.95055555555555</td>
+                          </tr>
+                          <tr>
+                            <td>4</td>
+                            <td><a data-toggle="tooltip" data-placement="top" title="Klik untuk melihat lebih detail" target="_blank" href="<?php echo base_url('sarpras/SROPPanjang') ?>">Stasiun Radio Pantai Kelas III/A Panjang</a></td>
+                            <td>SROP</td>
+                            <td>-5.455</td>
+                            <td>105.30944444444444</td>
+                          </tr>
+                          <tr>
+                            <td>5</td>
+                            <td><a data-toggle="tooltip" data-placement="top" title="Klik untuk melihat lebih detail" target="_blank" href="<?php echo base_url('sarpras/SROPBengkulu') ?>">Stasiun Radio Pantai Kelas III/A / Ship Reporting System(SRS) Bengkulu</a></td>
+                            <td>SROP</td>
+                            <td>-3.8998442</td>
+                            <td>102.3070114</td>
+                          </tr>
+                          <tr>
+                            <td>6</td>
+                            <td><a data-toggle="tooltip" data-placement="top" title="Klik untuk melihat lebih detail" target="_blank" href="<?php echo base_url('sarpras/VtsTanjungPriok') ?>">Vessel Traffic Service (VTS) Pohon Asem Tanjung Priok</a></td>
+                            <td>VTS</td>
+                            <td>-6.09658611111</td>
+                            <td>106.882138889</td>
+                          </tr>
+                          <tr>
+                            <td>7</td>
+                            <td><a data-toggle="tooltip" data-placement="top" title="Klik untuk melihat lebih detail" target="_blank" href="<?php echo base_url('sarpras/VtsMerak') ?>">Vessel Traffic Service (VTS) Merak, Selat Sunda</a></td>
+                            <td>VTS</td>
+                            <td>-5.93354722222</td>
+                            <td>105.999658333</td>
+                          </tr>
+                          <tr>
+                            <td>8</td>
+                            <td><a data-toggle="tooltip" data-placement="top" title="Klik untuk melihat lebih detail" target="_blank" href="<?php echo base_url('sarpras/VtsPanjang') ?>">Vessel Traffic Service (VTS) Panjang</a></td>
+                            <td>VTS</td>
+                            <td>-5.455</td>
+                            <td>105.30944444444444</td>
+                          </tr>
+
 
                       </tbody>
                     </table>
@@ -477,7 +525,7 @@
                         foreach ($datakapal as $r){ ?>
                           <tr>
                             <td><?= $r->id; ?></td>
-                            <td><a data-toggle="tooltip" data-placement="top" title="Klik untuk melihat lebih detail" href="<?php echo base_url('sarpras/kapal/'.$r->id) ?>"><?=  $r->nama; ?></a></td>
+                            <td><a data-toggle="tooltip" data-placement="top" title="Klik untuk melihat lebih detail" target="_blank" href="<?php echo base_url('sarpras/kapal/'.$r->id) ?>"><?=  $r->nama; ?></a></td>
                             <td><?= $r->jenis; ?></td>
                             <td><?= $r->latitude; ?></td>
                             <td><?= $r->longtitude; ?></td>
