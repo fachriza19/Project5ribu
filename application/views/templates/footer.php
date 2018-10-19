@@ -119,6 +119,28 @@
 	});
 </script>
 
+</script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$('#tablemaptelkompel').DataTable({
+      responsive:{
+
+      }
+    });
+	});
+</script>
+
+</script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$('#tablemapkapal').DataTable({
+      responsive:{
+
+      }
+    });
+	});
+</script>
+
 
 <script type="text/javascript">
 $(document).ready(function() {

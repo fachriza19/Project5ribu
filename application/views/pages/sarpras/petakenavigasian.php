@@ -316,7 +316,7 @@
 
 
 
-                    <table id="tabletelkompel" class=" table table-bordered nowrap table-hover" style="width: 100%;">
+                    <table id="tablemaptelkompel" class="table table-bordered nowrap table-hover" style="width: 100%;">
                       <thead>
                         <tr>
                           <th class="text-dark" style="width: 5%;">ID</th>
@@ -506,14 +506,14 @@
 
 
 
-                    <table id="table3" class=" table table-bordered table-responsive nowrap table-hover" style="width: 100%;">
+                    <table id="tablemapkapal" class="table table-bordered nowrap table-hover" style="width: 100%;">
                       <thead>
                         <tr>
-                          <th class="all text-dark" style="width: 5%;">ID</th>
-                          <th class="all text-dark" style="width: 40%;">NAMA</th>
-                          <th class="all text-dark" style="width: 25%;">JENIS</th>
-                          <th class="all text-dark" style="width: 20%;">Latitude</th>
-                          <th class="none text-dark">Longtitude : </th>
+                          <th class="text-dark" style="width: 3%;">ID</th>
+                          <th class="text-dark" style="width: 32%;">NAMA</th>
+                          <th class="text-dark" style="width: 25%;">JENIS</th>
+                          <th class="text-dark" style="width: 20%;">Latitude</th>
+                          <th class="text-dark" style="width: 20%;">Longtitude : </th>
                         </tr>
                       </thead>
 
@@ -521,16 +521,43 @@
 
 
 
-                        <?php
-                        foreach ($datakapal as $r){ ?>
+
                           <tr>
-                            <td><?= $r->id; ?></td>
-                            <td><a data-toggle="tooltip" data-placement="top" title="Klik untuk melihat lebih detail" target="_blank" href="<?php echo base_url('sarpras/kapal/'.$r->id) ?>"><?=  $r->nama; ?></a></td>
-                            <td><?= $r->jenis; ?></td>
-                            <td><?= $r->latitude; ?></td>
-                            <td><?= $r->longtitude; ?></td>
+                            <td>1</td>
+                            <td><a data-toggle="tooltip" data-placement="top" title="Klik untuk melihat lebih detail" target="_blank" href="<?php echo base_url('sarpras/kapal') ?>">KN. EDAM</a></td>
+                            <td>Kapal Induk Perambuan</td>
+                            <td>-6.118846</td>
+                            <td>106.864825</td>
                           </tr>
-                        <?php } ?>
+                          <tr>
+                            <td>2</td>
+                            <td><a data-toggle="tooltip" data-placement="top" title="Klik untuk melihat lebih detail" target="_blank" href="<?php echo base_url('sarpras/KNKARAKATA') ?>">KN. KARAKATA</a></td>
+                            <td>Kapal Induk Perambuan</td>
+                            <td>-6.119017</td>
+                            <td>106.864824</td>
+                          </tr>
+                          <tr>
+                            <td>3</td>
+                            <td><a data-toggle="tooltip" data-placement="top" title="Klik untuk melihat lebih detail" target="_blank" href="<?php echo base_url('sarpras/KNENGGANO') ?>">KN. ENGGANO</a></td>
+                            <td>KAPAL PATROLI</td>
+                            <td>-6.118794</td>
+                            <td>106.864820</td>
+                          </tr>
+                          <tr>
+                            <td>4</td>
+                            <td><a data-toggle="tooltip" data-placement="top" title="Klik untuk melihat lebih detail" target="_blank" href="<?php echo base_url('sarpras/KNMIAPLACIDUS') ?>">KN. MIAPLACIDUS</a></td>
+                            <td>Kapal Bantu Perambuan</td>
+                            <td>-6.119037</td>
+                            <td>106.864820</td>
+                          </tr>
+                          <tr>
+                            <td>5</td>
+                            <td><a data-toggle="tooltip" data-placement="top" title="Klik untuk melihat lebih detail" target="_blank" href="<?php echo base_url('sarpras/KNMOKMER') ?>">KN. MOKMER</a></td>
+                            <td>Kapal Bantu Perambuan</td>
+                            <td>-6.119058</td>
+                            <td>106.864820</td>
+                          </tr>
+
 
                       </tbody>
                     </table>

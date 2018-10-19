@@ -188,6 +188,24 @@ if (! defined('BASEPATH') ) exit('No direct script access allowed');
 
       function tambahdata()
       {
+        $config['upload_path'] = './assets/images/uploadpeta/'; //path folder
+        $config['allowed_types'] = 'gif|jpg|png|jpeg|bmp'; //type yang dapat diakses bisa anda sesuaikan
+
+        $this->upload->initialize($config);
+              if(!empty($_FILES['gambar']['name'])){
+                if ($this->upload->do_upload('gambar')){
+                  $gbr = $this->upload->data();
+                  //Compress Image
+                  $config['image_library']='gd2';
+                  $config['source_image']='./assets/images/uploadpeta/'.$gbr['file_name'];
+                  $config['create_thumb']= FALSE;
+                  $config['maintain_ratio']= FALSE;
+                  $config['quality']= '70%';
+                  $config['width']= 1024;
+                  $config['height']= 768;
+                  $config['new_image']= './assets/images/uploadpeta/'.$gbr['file_name'];
+                  $this->load->library('image_lib', $config);
+                  $this->image_lib->resize();
 
         $namasbnp=$this->input->post('namasbnp');
         $nomordsi=$this->input->post('nomordsi');
@@ -210,9 +228,13 @@ if (! defined('BASEPATH') ) exit('No direct script access allowed');
         $rr=$this->input->post('rr');
         $status=$this->input->post('status');
         $tahun=$this->input->post('tahun');
+        $gambar=$gbr['file_name'];
 
-          $this->m_sarpras->tambahdata($namasbnp,$nomordsi,$LS,$BT,$latitude,$longtitude,$jenis,$wb,$wc,$kc,$pc,$tb,$elevasi,$jt,$sp,$bb,$btp,$se,$rr,$status,$tahun);
+          $this->m_sarpras->tambahdata($namasbnp,$nomordsi,$LS,$BT,$latitude,$longtitude,$jenis,$wb,$wc,$kc,$pc,$tb,$elevasi,$jt,$sp,$bb,$btp,$se,$rr,$status,$tahun,$gambar);
+          $this->session->set_flashdata('success', 'Berhasil menambah data');
           redirect('adminmenu/Keldatasarpras');
+        }
+        }
         }
 
 
@@ -277,14 +299,46 @@ if (! defined('BASEPATH') ) exit('No direct script access allowed');
         // $where = array('id' => $dataid);
         // $resut = $this->m_sarpras->edit_modal('data',$data,$where);
         $this->m_sarpras->modal_edit($dataid,$namasbnp,$nomordsi,$LS,$BT,$latitude,$longtitude,$jenis,$wb,$wc,$kc,$pc,$tb,$elevasi,$jt,$sp,$bb,$btp,$se,$rr,$status,$tahun);
+        $this->session->set_flashdata('successedit', 'Berhasil mengedit data');
         redirect('adminmenu/Keldatasarpras');
       }
+
 
       function hapusdata($blabla){
         $delete = $this->m_sarpras->hapusdata($blabla);
         if ($delete>0) {
-          $this->session->set_flashdata('sucess','true');
+          $this->session->set_flashdata('successhapus','Data berhasil dihapus');
           redirect('adminmenu/keldatasarpras');
+        }
+      }
+
+      function modal_editgambar(){
+        $config['upload_path'] = './assets/images/uploadpeta/'; //path folder
+        $config['allowed_types'] = 'gif|jpg|png|jpeg|bmp'; //type yang dapat diakses bisa anda sesuaikan
+
+        $this->upload->initialize($config);
+        if(!($_FILES['editgambar']['name'])){
+          echo "gagal";
+        }else{
+          if ($this->upload->do_upload('editgambar')){
+            $gbr = $this->upload->data();
+            //Compress Image
+            $config['image_library']='gd2';
+            $config['source_image']='./assets/images/uploadpeta/'.$gbr['file_name'];
+            $config['create_thumb']= FALSE;
+            $config['maintain_ratio']= FALSE;
+            $config['quality']= '70%';
+            $config['width']= 1024;
+            $config['height']= 768;
+            $config['new_image']= './assets/images/uploadpeta/'.$gbr['file_name'];
+            $this->load->library('image_lib', $config);
+            $this->image_lib->resize();
+            $editgambar=$gbr['file_name'];
+            $modaleditgambarid=$this->input->post('idmodaleditgambar');
+            $this->m_sarpras->modal_editgambarr($modaleditgambarid,$editgambar);
+            $this->session->set_flashdata('successeditgambar', 'Berhasil mengganti gambar');
+            redirect('adminmenu/keldatasarpras');
+          }
         }
       }
 

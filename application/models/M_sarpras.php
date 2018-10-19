@@ -32,8 +32,8 @@
         return $this->db->get();
       }
 
-      function tambahdata($namasbnp,$nomordsi,$LS,$BT,$latitude,$longtitude,$jenis,$wb,$wc,$kc,$pc,$tb,$elevasi,$jt,$sp,$bb,$btp,$se,$rr,$status,$tahun){
-        $hsl=$this->db->query("INSERT INTO data (namasbnp,nomordsi,LS,BT,latitude,longtitude,jenis,warna_bangunan,warna_cahaya,karakteristik_cahaya,periode_cahaya,tinggi_bangunan,elevasi,jarak_tampak,sistem_pelampungan,bahan_bangunan,bentuk_tanda_puncak,sumber_energi,radar_reflektor,status,thn_pemb) VALUES ('$namasbnp','$nomordsi','$LS','$BT','$latitude','$longtitude','$jenis','$wb','$wc','$kc','$pc','$tb','$elevasi','$jt','$sp','$bb','$btp','$se','$rr','$status','$tahun') ");
+      function tambahdata($namasbnp,$nomordsi,$LS,$BT,$latitude,$longtitude,$jenis,$wb,$wc,$kc,$pc,$tb,$elevasi,$jt,$sp,$bb,$btp,$se,$rr,$status,$tahun,$gambar){
+        $hsl=$this->db->query("INSERT INTO data (namasbnp,nomordsi,LS,BT,latitude,longtitude,jenis,warna_bangunan,warna_cahaya,karakteristik_cahaya,periode_cahaya,tinggi_bangunan,elevasi,jarak_tampak,sistem_pelampungan,bahan_bangunan,bentuk_tanda_puncak,sumber_energi,radar_reflektor,status,thn_pemb,gambar) VALUES ('$namasbnp','$nomordsi','$LS','$BT','$latitude','$longtitude','$jenis','$wb','$wc','$kc','$pc','$tb','$elevasi','$jt','$sp','$bb','$btp','$se','$rr','$status','$tahun','$gambar') ");
         // ('$nama','$kelompok','$latitude','$longtitude','$lokasi','$luas','$nomor','$penanggung_jawab','$jml_sdm','$wktjagaopl','$perangkat','$lampu','$solar_cell','$battery')
         return $hsl;
       }
@@ -81,6 +81,11 @@
         // $this->db->order_by('id','desc');
 
         return $this->db->get();
+      }
+
+      function modal_editgambarr($modaleditgambarid,$editgambar){
+        $hasil=$this->db->query("UPDATE data SET gambar='$editgambar' WHERE id='$modaleditgambarid'");
+        return $hasil;
       }
 
 
