@@ -35,8 +35,23 @@
                 <div class="col-lg-12">
                   <h2 class="card-title text-center">Data</h2>
 
-
-
+                  <?php if($this->session->flashdata('success')){ ?>
+                  <div class="alert alert-icon alert-success border-success alert-dismissible fade show" role="alert">
+                      <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button><?php echo $this->session->flashdata('success');?>
+                  </div>
+                <?php }elseif($this->session->flashdata('successhapus')){ ?>
+                <div class="alert alert-icon alert-success border-success alert-dismissible fade show" role="alert">
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button><?php echo $this->session->flashdata('successhapus');?>
+                </div>
+                <?php }elseif($this->session->flashdata('successedit')){ ?>
+                <div class="alert alert-icon alert-success border-success alert-dismissible fade show" role="alert">
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button><?php echo $this->session->flashdata('successedit');?>
+                </div>
+                <?php }elseif($this->session->flashdata('successeditgambar')){ ?>
+                <div class="alert alert-icon alert-success border-success alert-dismissible fade show" role="alert">
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button><?php echo $this->session->flashdata('successeditgambar');?>
+                </div>
+                  <?php } ?>
                   <table id="table1" class=" table table-bordered table-responsive nowrap table-hover" style="width: 100%;">
                     <thead>
                       <tr>
@@ -77,8 +92,10 @@
                           <td><a data-toggle="tooltip" data-placement="top" title="Klik untuk melihat lebih detail" href="<?php echo base_url('sarpras/detailpeta/'.$r->id) ?>"><?=  $r->namasbnp; ?></a></td>
                           <td><?= $r->nomordsi; ?></td>
                           <td><?= $r->jenis; ?></td>
-                          <td> <a href="#form" data-toggle="modal" class="btn btn-primary" data-toggle="modal" data-target="#modal_edit<?= $r->id; ?>">Edit</a>
-                            <a href="<?php echo base_url('adminmenu/hapusdata/'.$r->id) ?>" onclick="return confirm('Data Akan Dihapus');"class="btn btn-danger">Delete</a>
+                          <td>
+                            <a href="#form" data-toggle="modal" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#modal_edit<?= $r->id; ?>">Edit</a>
+                            <a href="#form" data-toggle="modal" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#modal_editgambar<?= $r->id; ?>">Edit Gambar</a>
+                            <a href="<?php echo base_url('adminmenu/hapusdata/'.$r->id) ?>" onclick="return confirm('Data Akan Dihapus');"class="btn btn-sm btn-danger">Delete</a>
                           </td>
                           <td><?= $r->LS; ?></td>
                           <td><?= $r->BT; ?></td>
@@ -112,7 +129,7 @@
           </div>
           <div class="tab-pane p-20" id="tabtambahdata" role="tabpanel" aria-expanded="false">
 
-            <form action="<?php echo base_url('adminmenu/tambahdata'); ?>" method="post">
+            <form action="<?php echo base_url('adminmenu/tambahdata'); ?>" method="post" enctype="multipart/form-data">
 
 
               <div class="form-group row">
@@ -239,6 +256,12 @@
                 <label class="col-2 col-form-label text-dark">Tahun Pemb/rehab</label>
                 <div class="col-10">
                   <input class="form-control text-dark" type="text" placeholder="Contoh : 2015/- " name="tahun" required>
+                </div>
+              </div>
+              <div class="form-group row">
+                <label class="col-2 col-form-label text-dark">Gambar</label>
+                <div class="col-10">
+                  <input class="form-control text-dark" type="file" name="gambar" required>
                 </div>
               </div>
               <div class="form-group row button-group">
@@ -446,7 +469,7 @@ foreach($data as $i):
             </div>
 
             <div class="modal-footer">
-              <button type="button" class="btn btn-danger waves-effect text-left" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-danger waves-effect text-left" data-dismiss="modal">Cancel</button>
               <input type="submit" name="" class="btn btn-primary pull-right" value="Update Data">
             </div>
           </form>
@@ -456,5 +479,45 @@ foreach($data as $i):
       </div>
     </div>
   </div>
+<?php endforeach;?>
+
+  <?php
+  foreach($data as $i):
+    ?>
+  <div class="modal fade" id="modal_editgambar<?php echo $i->id;?>" tabindex="-1" role="dialog" aria-labelledby="largeModal" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">x</button>
+          <h3 class="modal-title" id="myModalLabel">Edit Gambar</h3>
+        </div>
+        <form class="form-horizontal" method="post" action="<?php echo base_url().'adminmenu/modal_editgambar'?>" enctype="multipart/form-data">
+
+          <div class="modal-body">
+            <input type="hidden" name="idmodaleditgambar" value="<?php echo $i->id;?>">
+
+            <div class="card">
+              <div class="card-body">
+                <h4 class="card-title">Edit Gambar</h4>
+                <center><img src="<?php echo base_url().'assets/images/uploadpeta/'.$i->gambar;?>" class="img-fluid"><br><br></center>
+                <input type="file" name="editgambar"/>
+              </div>
+            </div>
+          </div>
+
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger waves-effect text-left" data-dismiss="modal">Cancel</button>
+            <input type="submit" name="" class="btn btn-primary pull-right" value="Update Gambar">
+          </div>
+
+        </form>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
 <?php endforeach;?>
 <!--END MODAL EDIT DATA-->

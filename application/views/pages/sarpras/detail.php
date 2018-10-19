@@ -31,7 +31,7 @@
 //   $solar_cell.=$item->solar_cell;
 //   $battery.=$item->battery;
 // }
- ?>
+?>
 
 
 
@@ -61,7 +61,7 @@
         <div class="card">
           <div class="card-body">
 
-              <h4 class="card-title text-center">DETAIL</h4>
+            <h4 class="card-title text-center">DETAIL</h4>
             <div id="map" style="width:100%;height:380px;"></div>
 
             <!-- <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key="></script>   API V3 -->
@@ -140,26 +140,30 @@
             }
 
             initialize();
-          </script>
+            </script>
 
 
 
 
 
 
+          </div>
         </div>
       </div>
     </div>
-  </div>
 
-  <div class="col-12">
-    <div class="card">
-      <div class="card-body">
-        <h2 class="card-title text-center">INFO DETAIL</h2>
-        <!-- <h6 class="card-subtitle">Create responsive tables by wrapping any <code>.table</code> in <code>.table-responsive </code></h6> -->
-        <div class="table-responsive">
-          <table class="table">
-            <tbody><tr>
+    <div class="col-12">
+      <div class="card">
+        <div class="card-body">
+          <h2 class="card-title text-center">INFO DETAIL</h2>
+        </br>
+        <center><img src="<?php echo base_url().'assets/images/uploadpeta/'.$datas->gambar;?>" class="img-fluid"><br><br></center>
+        </br></br></br>
+      <!-- <h6 class="card-subtitle">Create responsive tables by wrapping any <code>.table</code> in <code>.table-responsive </code></h6> -->
+      <div class="table-responsive">
+        <table class="table">
+          <tbody>
+            <tr>
               <th><h2>Item</h2></th>
               <th><h2>Detail</h2></th>
             </tr>
@@ -247,8 +251,7 @@
               <td>Tahun Pemb/Rehab</td>
               <td><h5><?php echo $datas->thn_pemb ?></h5></td>
             </tr>
-            <tr>
-            </tr>
+
           </tbody></table>
         </div>
       </div>
