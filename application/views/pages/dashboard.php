@@ -82,11 +82,11 @@
                                         <a href="<?php echo base_url('Sarpras/Pengamatan') ?>" class="btn btn-primary">Info Detail</a></p>
                               </div>
                               <div class="col-lg-4 text-center m-b-30">
-                                        <h4 class="card-title">TELKOMPEL</h4>
-                                        <h6 class="card-subtitle">Telekomunikasi Pelayaran</h6>
-                                        <a href="<?php echo base_url('Sarpras/Telkompel') ?>"><img src="<?php echo base_url('assets/images/icon/tower.png') ?>" alt="image" class="img-circle" width="300"></a>
+                                        <h4 class="card-title">Kapal Negara</h4>
+                                        <h6 class="card-subtitle">Kapal Negara</h6>
+                                        <a href="<?php echo base_url('Sarpras/ProfileKN') ?>"><img src="<?php echo base_url('assets/images/icon/kapal.png') ?>" alt="image" class="img-circle" width="300"></a>
                                         <p class="m-t-15 m-b-0">
-                                        <a href="<?php echo base_url('Sarpras/Telkompel') ?>" class="btn btn-primary">Info Detail</a></p>
+                                        <a href="<?php echo base_url('Sarpras/ProfileKN') ?>" class="btn btn-primary">Info Detail</a></p>
                               </div>
                               <div class="col-lg-4 text-center m-b-30">
                                         <h4 class="card-title">SBNP</h4>
@@ -98,11 +98,11 @@
                             </div>
                             <div class="row justify-content-center">
                               <div class="col-lg-4 text-center m-b-30">
-                                        <h4 class="card-title">Kapal Negara</h4>
-                                        <h6 class="card-subtitle">Kapal Negara</h6>
-                                        <a href="<?php echo base_url('Sarpras/ProfileKN') ?>"><img src="<?php echo base_url('assets/images/icon/kapal.png') ?>" alt="image" class="img-circle" width="300"></a>
+                                        <h4 class="card-title">TELKOMPEL</h4>
+                                        <h6 class="card-subtitle">Telekomunikasi Pelayaran</h6>
+                                        <a href="<?php echo base_url('Sarpras/Telkompel') ?>"><img src="<?php echo base_url('assets/images/icon/tower.png') ?>" alt="image" class="img-circle" width="300"></a>
                                         <p class="m-t-15 m-b-0">
-                                        <a href="<?php echo base_url('Sarpras/ProfileKN') ?>" class="btn btn-primary">Info Detail</a></p>
+                                        <a href="<?php echo base_url('Sarpras/Telkompel') ?>" class="btn btn-primary">Info Detail</a></p>
                               </div>
                               <div class="col-lg-4 text-center m-b-30">
                                         <h4 class="card-title">Bengkel</h4>
@@ -118,6 +118,15 @@
                     </div>
                   </div>
 
+                    <div class="col-lg-12">
+                      <div class="card">
+                        <div class="card-body">
+                          <div class="row">
+                            <iframe width="100%" height="500" src="https://www.youtube.com/embed/Jbz-n1XU1Vs" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                     <div class="col-lg-12">
                       <div class="card">
                         <div class="card-body">
@@ -150,6 +159,7 @@
                         </div>
                       </div>
                     </div>
+
 
     </div>
   </div>

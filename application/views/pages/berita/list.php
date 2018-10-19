@@ -22,6 +22,7 @@
               $id=$i['berita_id'];
               $judul=$i['berita_judul'];
               $image=$i['berita_image'];
+              $tgl=$i['berita_tanggal'];
               $isi=$i['berita_isi'];
           ?>
               <div class="card">
@@ -31,6 +32,8 @@
                       <div itemprop="text" class="entry-content">
                         <h2 class="text-center"><?php echo $judul;?></h2><hr/>
                         <img src="<?php echo base_url().'assets/images/Upload/'.$image;?>" class="img-fluid"></br></br>
+                        <h5 class="text-right">Posted On <?php echo $tgl; ?></h5>
+                        </br>
                         <div class="text-dark"><?php echo limit_words($isi,30);?><br><a href="<?php echo base_url().'daftarberita/tampilanberita/'.$id;?>"> Selengkapnya...</a></div>
                       </div>
                     </div>
@@ -49,6 +52,18 @@
                 </div>
                 <input class="btn btn-primary" type="submit" value="Cari">
               </form><br>
+              <h3>Berita Terbaru</h3>
+              <?php
+               foreach ($data->result_array() as $i) :
+              $id=$i['berita_id'];
+              $judul=$i['berita_judul'];
+               ?>
+              <div>
+              <ul>
+                <li><a href="<?php echo base_url().'daftarberita/tampilanberita/'.$id;?>"><?=  $judul; ?><div class="text-dark"></a></div></li>
+              </ul>
+              </div>
+              <?php endforeach;?>  
             </div>
           </div>
         </div>

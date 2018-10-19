@@ -21,21 +21,31 @@
           <div class="card-body">
             <div class="container">
             	<h3>Hasil Pencarian</h3>
-            	<hr> 
-            	<?php
-            	if(count($cari)>0)
-            	{
-            		foreach ($cari as $data) {
-            			echo $data->berita_judul . " ";
-            			echo $data->berita_image . " ";
-            			echo $data->berita_isi	 . " ";
-            		}
-            	}
-            	else
-            	{
-            		echo "Data tidak ditemukan";
-            	}
-            	?>
+            	<hr>
+
+              <div class="row">
+                <div class="col-12">
+                  <div class="card">
+                    <div class="card-body">
+                      <?php
+              if(count($cari)>0)
+              {
+                foreach ($cari as $data) {
+                  echo $data->berita_judul;
+                  echo $data->berita_image;
+                  echo $data->berita_isi  ;
+                }
+              }
+              else
+              {
+                echo "Data tidak ditemukan";
+              }
+              ?>        
+                    </div>
+                  </div>
+                </div>
+              </div> 
+            	
             </div>
           </div>
         </div>
