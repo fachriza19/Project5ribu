@@ -7,13 +7,13 @@ class m_telkompel extends CI_Model{
 	}  
 	function show_laporan(){
 
-            $hsl=$this->db->query("SELECT * FROM laporan_telkompel ORDER BY id_laporan DESC");
-			return $hsl;
-      }  
-    //  public function hapuslaporan($laporan_id)
-    //   {
-    //         $this->db->where('laporan_id', $laporan_id);
-    //         return $this->db->delete('helpdesk');
-    //   }
+    $hsl=$this->db->query("SELECT * FROM laporan_telkompel ORDER BY id_laporan DESC");
+		return $hsl;
+  }  
+  
+  function getdatalap_id($idlap){
+    $hsl=$this->db->query("SELECT * FROM laporan_telkompel where id_laporan='$idlap'");
+    return $hsl;
+  }
 }
 ?>

@@ -30,7 +30,7 @@
 										<tr>
 											<th>ID</th>
                                             <th>Instansi</th>
-											<th style="width: 275px;">Tanggal</th>
+											<th style="width: 175px;">Tanggal</th>
 											<th>Waktu</th>
 											<th>Kapal Masuk</th>
 											<th>Kapal keluar</th>
@@ -47,8 +47,13 @@
                                         foreach ($data->result_array() as $t) :
                                             $id=$t['id_laporan'];
                                             $ins=$t['nama_instansi'];
-                                            $tgl1=$t['tanggal_mulai'];
-                                            $tgl2=$t['tanggal_akhir'];
+											$tgl1=$t['tanggal_mulai'];
+											$tgla=date_indo($tgl1);
+											//$tgla=date_format(strtotime($tgl1),"d F Y");
+											//$tgla=date('d F Y', strtotime($tgl1));
+											$tgl2=$t['tanggal_akhir'];
+											$tglb=date_indo($tgl2);
+											//$tglb=date_format($tgl2,"d F Y");
                                             $jam1=$t['jam_awal'];
                                             $jam2=$t['jam_akhir'];
                                             $kplmsk=$t['kapal_masuk'];
@@ -63,7 +68,7 @@
                                             <tr>
                                                 <td><?php echo $id; ?></td>
                                                 <td><?php echo $ins; ?></td>
-                                                <td><?php echo $tgl1," s/d ",$tgl2; ?></td>
+                                                <td><?php echo $tgla," s/d <br>",$tglb; ?></td>
                                                 <td><?php echo $jam1,"&nbsp- ",$jam2; ?></td>
                                                 <td><?php echo $kplmsk; ?></td>
                                                 <td><?php echo $kplklr; ?></td>
@@ -73,7 +78,7 @@
                                                 <td><?php echo "1. &nbsp",$ptg1,"<br>2. ",$ptg2; ?></td>
                                                 
                                                 <td>
-                                                    <a class="btn btn-xs btn-info" href="#" >Print</a>
+                                                    <a class="btn btn-xs btn-info" href="<?php echo base_url('telkompel/printlaporan/'.$id);?>" >Print</a>
                                                 </td>
                                             </tr>
                                         <?php endforeach;?>
