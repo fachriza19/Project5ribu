@@ -28,10 +28,24 @@ if (! defined('BASEPATH') ) exit('No direct script access allowed');
           function simpanlaporan()
           {
             $instansi = $this->input->post('instansi');
-            $hari1 = $this->input->post('hari1');
-            $hari2 = $this->input->post('hari2');
+            // $hari1 = $this->input->post('hari1');
+            // $hari2 = $this->input->post('hari2');
             $tgl1 = $this->input->post('tgl1');
+            $day1 = date('D', strtotime($tgl1));
+            $harilist = array(
+              'Sun' => 'Minggu',
+              'Mon' => 'Senin',
+              'Tue' => 'Selasa',
+              'Wed' => 'Rabu',
+              'Thu' => 'Kamis',
+              'Fri' => 'Jumat',
+              'Sat' => 'Sabtu'
+            );
+            
+            $hari1 = $harilist[$day1];
             $tgl2 = $this->input->post('tgl2');
+            $day2 = date('D', strtotime($tgl2));
+            $hari2 = $harilist[$day2];
             $jam1 = $this->input->post('jam1');
             $jam2 = $this->input->post('jam2');
             $kplmasuk = $this->input->post('kmasuk');
@@ -60,6 +74,17 @@ if (! defined('BASEPATH') ) exit('No direct script access allowed');
             $this->session->set_flashdata('success', 'true');
             redirect('Telkompel/index');
           }
+
+          function printlaporan($idlap)
+          {
+            $laporan['data'] = $this->m_telkompel->getdatalap_id($idlap);
+            $this->load->view('templates/header');
+            $this->load->view('pages/sarpras/printtelkompel',$laporan);
+            $this->load->view('templates/footer');
+          }
+          
+          
+           
 
         }
 
