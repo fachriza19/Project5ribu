@@ -1,5 +1,6 @@
 <div class="page-wrapper">
 	<div class="container-fluid">
+    
     <div class="row page-titles">
       <div class="col-md-5 col-8 align-self-center">
         <h3 class="text-themecolor">Dashboard</h3>
@@ -18,6 +19,7 @@
               $words = explode(" ",$string);
               return implode(" ",array_splice($words,0,$word_limit));
             }
+            $no = $this->uri->segment('3') + 1;
             foreach ($data->result_array() as $i) :
               $id=$i['berita_id'];
               $judul=$i['berita_judul'];
@@ -52,9 +54,11 @@
                 </div>
                 <input class="btn btn-primary" type="submit" value="Cari">
               </form><br>
+
+
               <h3>Berita Terbaru</h3>
               <?php
-               foreach ($data->result_array() as $i) :
+               foreach ($dataSB->result_array() as $i) :
               $id=$i['berita_id'];
               $judul=$i['berita_judul'];
                ?>
@@ -64,9 +68,14 @@
               </ul>
               </div>
               <?php endforeach;?>  
+
+
             </div>
           </div>
         </div>
+        <?php 
+        echo $this->pagination->create_links();
+        ?>
       </div>
     </div>
   </div>

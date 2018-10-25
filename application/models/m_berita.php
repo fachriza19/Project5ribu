@@ -15,11 +15,22 @@ class M_berita extends CI_Model{
 		$hsl=$this->db->query("SELECT * FROM berita ORDER BY berita_id DESC");
 		return $hsl;
 	}
+	function get_all_berita_SB(){
+		$hsl=$this->db->query("SELECT * FROM berita ORDER BY berita_id DESC limit 5");
+		return $hsl;
+	}
 	public function cari()
 	{
 		$cari = $this->input->GET('cari', TRUE);
 		$data = $this->db->query("SELECT * from berita where berita_judul like '%$cari%' ");
 		return $data->result();
+	}
+	function dataa($number,$offset){
+		return $query = $this->db->get('berita',$number,$offset)->result();		
+	}
+ 
+	function jumlah_data(){
+		return $this->db->get('berita')->num_rows();
 	}
  
 }

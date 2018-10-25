@@ -30,10 +30,8 @@
                       <?php
               if(count($cari)>0)
               {
-                foreach ($cari as $data) {
-                  echo $data->berita_judul;
-                  echo $data->berita_image;
-                  echo $data->berita_isi  ;
+                foreach ($cari as $i) {
+                  echo $i->berita_judul;
                 }
               }
               else
