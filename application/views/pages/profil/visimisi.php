@@ -21,10 +21,10 @@
           <div class="card-body">
             <img src="<?php echo base_url('assets/images/logo-visi-misi.png'); ?>">
             <h4 class="card-title">VISI</h4>
-            <p class="text-justify">Terwujudnya kecukupan dan kehandalan sarana dan prasarana kenavigasian untuk meningkatkan keselamatan dan keamanan bernavigasi di perairan Indonesia.</p><br />
+            <p class="text-justify text-dark">Terwujudnya kecukupan dan kehandalan sarana dan prasarana kenavigasian untuk meningkatkan keselamatan dan keamanan bernavigasi di perairan Indonesia.</p><br />
 
             <h4 class="card-title">MISI</h4>
-            <ul class="list-icons">
+            <ul class="list-icons text-dark">
               <li>
                 <i class="ti-angle-right"></i>Melaksanakan kegiatan pelayanan kenavigasian untuk meningkatkan keselamatan pelayaran.
               </li>
@@ -37,7 +37,7 @@
             </ul><br />
 
             <h4 class="card-title">TUJUAN</h4>
-            <ul class="list-icons">
+            <ul class="list-icons text-dark">
               <li>
                 <i class="ti-angle-right"></i>Terwujudnya  kecukupan dan keandalan SBNP.
               </li>
