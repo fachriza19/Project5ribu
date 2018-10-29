@@ -62,7 +62,14 @@
               <li>
                 <i class="ti-angle-right"></i>Terwujudnya kuantitas dan kualitas sumber daya manusia yang profesional.
               </li>
-            </ul><br />  
+            </ul><br />
+
+            <div class="col-lg-4 col-md-6 col-xlg-2 col-xs-12">
+                                <div class="ribbon-wrapper card">
+                                    <div class="ribbon ribbon-default">Ribbon</div>
+                                    <img src="<?php echo base_url('assets/images/AlatBengkel/1.jpg') ?>">
+                                </div>
+                            </div>  
           </div>
         </div>
       </div>

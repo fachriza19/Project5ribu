@@ -34,4 +34,6 @@ if (! defined('BASEPATH') ) exit('No direct script access allowed');
             $this->load->view('pages/berita/tampilanberita',$x);
             $this->load->view('templates/footer');
           }
+
+          
       }

@@ -25,6 +25,7 @@
               $judul=$i['berita_judul'];
               $image=$i['berita_image'];
               $tgl=$i['berita_tanggal'];
+              $tglindo=date_indo($tgl);
               $isi=$i['berita_isi'];
           ?>
               <div class="card">
@@ -33,8 +34,11 @@
                     <div class="col-12">
                       <div itemprop="text" class="entry-content">
                         <h2 class="text-center"><?php echo $judul;?></h2><hr/>
+                        <div class="ribbon-wrapper card">
+                        <div class="ribbon ribbon-bookmark ribbon-success"><?php echo $tglindo; ?></div></br>
                         <img src="<?php echo base_url().'assets/images/Upload/'.$image;?>" class="img-fluid"></br></br>
-                        <h5 class="text-right">Posted On <?php echo $tgl; ?></h5>
+                        </div>
+                        <!-- <h5 class="text-right"></h5> -->
                         </br>
                         <div class="text-dark"><?php echo limit_words($isi,30);?><br><a href="<?php echo base_url().'daftarberita/tampilanberita/'.$id;?>"> Selengkapnya...</a></div>
                       </div>
