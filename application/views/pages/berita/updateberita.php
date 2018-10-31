@@ -26,8 +26,6 @@
                   <input type="hidden" name="id_berita" value="<?php echo $bebas->berita_id ?>">
                   <input type="text" name="judul" value="<?php echo $bebas->berita_judul ?>" class="form-control" placeholder="Judul berita" required/><br/>
                   <textarea id="ckeditor" name="berita" class="form-control" required><?php echo $bebas->berita_isi ?></textarea><br/>
-                  <img src="<?php echo base_url('assets/images/Upload/'.$bebas->berita_image) ?>" class="img-fluid"><br><br>
-                  <input type="file" name="filefoto">
                   <button class="btn btn-success btn-lg pull-right" type="submit">Update</button>
                 </form>
               </div>

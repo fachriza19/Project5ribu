@@ -1,8 +1,8 @@
 <?php
 class M_berita extends CI_Model{
 
-	function simpan_berita($jdl,$berita,$gambar){
-		$hsl=$this->db->query("INSERT INTO berita (berita_judul,berita_isi,berita_image) VALUES ('$jdl','$berita','$gambar')");
+	function simpan_berita($jdl,$berita,$gambar,$date){
+		$hsl=$this->db->query("INSERT INTO berita (berita_judul,berita_isi,berita_image,berita_tanggal) VALUES ('$jdl','$berita','$gambar','$date')");
 		return $hsl;
 	}
 
@@ -26,11 +26,11 @@ class M_berita extends CI_Model{
 		return $data->result();
 	}
 	function dataa($number,$offset){
-		return $query = $this->db->get('berita',$number,$offset)->result();		
+		return $query = $this->db->get('berita',$number,$offset)->result();
 	}
- 
+
 	function jumlah_data(){
 		return $this->db->get('berita')->num_rows();
 	}
- 
+
 }

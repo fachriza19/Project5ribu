@@ -19,7 +19,7 @@ if (! defined('BASEPATH') ) exit('No direct script access allowed');
           {
               $config['upload_path'] = './assets/images/Upload/'; //path folder
               $config['allowed_types'] = 'gif|jpg|png|jpeg|bmp'; //type yang dapat diakses bisa anda sesuaikan
-              $config['encrypt_name'] = TRUE; //nama yang terupload nantinya
+              // $config['encrypt_name'] = TRUE; //nama yang terupload nantinya
 
               $this->upload->initialize($config);
               if(!empty($_FILES['filefoto']['name'])){
@@ -37,11 +37,12 @@ if (! defined('BASEPATH') ) exit('No direct script access allowed');
                   $this->load->library('image_lib', $config);
                   $this->image_lib->resize();
 
+                  $date = date("Y-m-d");
                   $gambar=$gbr['file_name'];
                   $jdl=$this->input->post('judul');
                   $berita=$this->input->post('berita');
 
-                  $this->m_berita->simpan_berita($jdl,$berita,$gambar);
+                  $this->m_berita->simpan_berita($jdl,$berita,$gambar,$date);
                   redirect('adminmenu/kelolaberita');
                 }else{
                    redirect('adminmenu/kelolaberita');
@@ -136,6 +137,38 @@ if (! defined('BASEPATH') ) exit('No direct script access allowed');
             $berita_isi=$this->input->post('berita');
             $berita_image=$gbr['file_name'];
             $this->m_kelolaberita->edit_berita($berita_id,$berita_judul,$berita_isi,$berita_image);
+            redirect('adminmenu/kelolaberita');
+          }
+        }
+      }
+
+      function modal_editgambarberita(){
+        $config['upload_path'] = './assets/images/Upload/'; //path folder
+        $config['allowed_types'] = 'gif|jpg|png|jpeg|bmp'; //type yang dapat diakses bisa anda sesuaikan
+        // $config['encrypt_name'] = TRUE; //nama yang terupload nantinya
+
+        $this->upload->initialize($config);
+        if(!($_FILES['editgambarberita']['name'])){
+          $this->session->set_flashdata('gagaleditgambarberita', '<b>GAGAL!</b> GAMBAR BELUM DIGANTI');
+          redirect('adminmenu/kelolaberita');
+        }else{
+          if ($this->upload->do_upload('editgambarberita')){
+            $gbr = $this->upload->data();
+            //Compress Image
+            $config['image_library']='gd2';
+            $config['source_image']='./assets/images/Upload/'.$gbr['file_name'];
+            $config['create_thumb']= FALSE;
+            $config['maintain_ratio']= FALSE;
+            $config['quality']= '70%';
+            $config['width']= 1024;
+            $config['height']= 768;
+            $config['new_image']= './assets/images/Upload/'.$gbr['file_name'];
+            $this->load->library('image_lib', $config);
+            $this->image_lib->resize();
+            $editgambar=$gbr['file_name'];
+            $modaleditgambarid=$this->input->post('idmodaleditgambarberita');
+            $this->m_kelolaberita->edit_beritagambar($modaleditgambarid,$editgambar);
+            $this->session->set_flashdata('successeditgambarberita', 'Berhasil mengganti gambar');
             redirect('adminmenu/kelolaberita');
           }
         }
@@ -318,7 +351,8 @@ if (! defined('BASEPATH') ) exit('No direct script access allowed');
 
         $this->upload->initialize($config);
         if(!($_FILES['editgambar']['name'])){
-          echo "gagal";
+          $this->session->set_flashdata('gagaleditgambar', '<b>GAGAL!</b> GAMBAR BELUM DIGANTI');
+          redirect('adminmenu/keldatasarpras');
         }else{
           if ($this->upload->do_upload('editgambar')){
             $gbr = $this->upload->data();

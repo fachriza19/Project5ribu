@@ -47,12 +47,16 @@
                 <div class="alert alert-icon alert-success border-success alert-dismissible fade show" role="alert">
                     <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button><?php echo $this->session->flashdata('successedit');?>
                 </div>
+                <?php }elseif($this->session->flashdata('gagaleditgambar')){ ?>
+                <div class="alert alert-icon alert-danger border-danger alert-dismissible fade show" role="alert">
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button><?php echo $this->session->flashdata('gagaleditgambar');?>
+                </div>
                 <?php }elseif($this->session->flashdata('successeditgambar')){ ?>
                 <div class="alert alert-icon alert-success border-success alert-dismissible fade show" role="alert">
                     <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button><?php echo $this->session->flashdata('successeditgambar');?>
                 </div>
                   <?php } ?>
-                  <table id="table1" class=" table table-bordered table-responsive nowrap table-hover" style="width: 100%;">
+                  <table id="table1" class="table table-bordered table-responsive nowrap table-hover" style="width: 100%;">
                     <thead>
                       <tr>
                         <th class="all text-dark" style="width: 5%;">ID</th>
