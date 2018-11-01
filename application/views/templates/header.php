@@ -125,6 +125,7 @@
                         <!-- ============================================================== -->
                         <!-- Profile -->
                         <!-- ============================================================== -->
+                        <?php if ($this->session->has_userdata('username')) {  ?>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle text-muted waves-effect waves-dark" href="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="<?php echo base_url('assets/images/users/1.jpg') ?>" alt="user" class="profile-pic" /></a>
                             <div class="dropdown-menu dropdown-menu-right scale-up">
@@ -133,8 +134,8 @@
                                         <div class="dw-user-box">
                                             <div class="u-img"><img src="<?php echo base_url('assets/images/users/1.jpg') ?>" alt="user"></div>
                                             <div class="u-text">
-                                                <h4>disnav</h4>
-                                                <p class="text-muted">disnav@gmail.com</p><a href="profile.html" class="btn btn-rounded btn-danger btn-sm">View Profile</a></div>
+                                                <h4><?php echo $this->session->userdata('username'); ?> </h4>
+                                                <p class="text-muted"><?php echo $this->session->userdata('role'); ?> </p><a href="profile.html" class="btn btn-rounded btn-danger btn-sm">View Profile</a></div>
                                         </div>
                                     </li>
                                     <li role="separator" class="divider"></li>
@@ -142,10 +143,11 @@
                                     <li role="separator" class="divider"></li>
                                     <li><a href="#"><i class="ti-settings"></i> Account Setting</a></li>
                                     <li role="separator" class="divider"></li>
-                                    <li><a href="#"><i class="fa fa-power-off"></i> Logout</a></li>
+                                    <li><a href="<?php echo site_url('logout') ?>"><i class="fa fa-power-off"></i> Logout</a></li>
                                 </ul>
                             </div>
                         </li>
+                      <?php } ?>
                         <!-- ============================================================== -->
                         <!-- Language -->
                         <!-- ============================================================== -->
@@ -210,7 +212,7 @@
                         </li>
 
 
-
+                      <?php if ($this->session->userdata('role')=='developer') {  ?>
                         <li class="pull-right">
                             <a class="has-arrow" href="#" aria-expanded="false"><i class="mdi mdi-arrange-send-backward"></i><span class="hide-menu">Menu Admin</span></a>
                             <ul aria-expanded="false" class="collapse">
@@ -222,10 +224,37 @@
                                         </ul>
                                 </li>
                                 <li><a href="<?php echo base_url('adminmenu/keldatasarpras') ?>">Kelola Data Sarpras</a></li>
+                                <li><a href="<?php echo site_url('adminmenu/kelolahelpdesk')?>">Kelola Laporan Helpdesk</a></li>
+
                                 <li><a href="#">item 1.4</a></li>
+                            </ul>
+                        </li>
+                      <?php } ?>
+
+                      <?php if ($this->session->userdata('role')=='news') {  ?>
+                        <li class="pull-right">
+                            <a class="has-arrow" href="#" aria-expanded="false"><i class="mdi mdi-arrange-send-backward"></i><span class="hide-menu">Menu Admin</span></a>
+                            <ul aria-expanded="false" class="collapse">
+                                <li>
+                                    <a class="has-arrow" href="#" aria-expanded="false">Berita</a>
+                                        <ul aria-expanded="false" class="collapse">
+                                            <li><a href="<?php echo site_url('adminmenu')?>">Tambah Berita</a></li>
+                                            <li><a href="<?php echo site_url('adminmenu/kelolaberita')?>">Kelola Berita</a></li>
+                                        </ul>
+                                </li>
+                            </ul>
+                        </li>
+                      <?php } ?>
+
+                      <?php if ($this->session->userdata('role')=='sarpras') {  ?>
+                        <li class="pull-right">
+                            <a class="has-arrow" href="#" aria-expanded="false"><i class="mdi mdi-arrange-send-backward"></i><span class="hide-menu">Menu Admin</span></a>
+                            <ul aria-expanded="false" class="collapse">
+                                <li><a href="<?php echo base_url('adminmenu/keldatasarpras') ?>">Kelola Data Sarpras</a></li>
                                 <li><a href="<?php echo site_url('adminmenu/kelolahelpdesk')?>">Kelola Laporan Helpdesk</a></li>
                             </ul>
                         </li>
+                      <?php } ?>
                     </ul>
                 </nav>
                 <!-- End Sidebar navigation -->
