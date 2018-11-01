@@ -7,12 +7,20 @@ if (! defined('BASEPATH') ) exit('No direct script access allowed');
           {
             parent::__construct();
             $this->load->library('upload');
+            if (!$this->session->has_userdata('username')) {
+              redirect ('Home');
+            }
           }
-          function Index()
-          {
+
+
+          function Index(){
+          if ($this->session->userdata('role')=='news' || $this->session->userdata('role')=='developer') {
             $this->load->view('templates/header');
             $this->load->view('pages/berita/berita');
             $this->load->view('templates/footer');
+          }else{
+            redirect('home');
+          }
           }
 
           function simpan_berita()
@@ -82,12 +90,15 @@ if (! defined('BASEPATH') ) exit('No direct script access allowed');
                   $this->m_helpdesk->simpan_helpdesk($nama,$instansi,$email,$inti,$kordinat,$keterangan);
                   redirect('adminmenu/Helpdesk');
           }
-           function kelolahelpdesk()
-        {
-            $x['data']=$this->m_helpdesk->show_laporan();
-          $this->load->view('Templates/header');
-          $this->load->view('pages/sarpras/kelolahelpdesk',$x);
-          $this->load->view('Templates/footer');
+           function kelolahelpdesk(){
+               if ($this->session->userdata('role')=='sarpras' || $this->session->userdata('role')=='developer') {
+                 $x['data']=$this->m_helpdesk->show_laporan();
+                 $this->load->view('Templates/header');
+                 $this->load->view('pages/sarpras/kelolahelpdesk',$x);
+                 $this->load->view('Templates/footer');
+               }else{
+               redirect('Home');
+        }
         }
 
         function hapuslaporan($laporan_id)
@@ -99,10 +110,14 @@ if (! defined('BASEPATH') ) exit('No direct script access allowed');
             }
       }
         function kelolaberita(){
-            $x['data']=$this->m_kelolaberita->show_berita();
-            $this->load->view('templates/header');
-            $this->load->view('pages/berita/kelolaberita',$x);
-            $this->load->view('templates/footer');
+            if ($this->session->userdata('role')=='news' || $this->session->userdata('role')=='developer') {
+              $x['data']=$this->m_kelolaberita->show_berita();
+              $this->load->view('templates/header');
+              $this->load->view('pages/berita/kelolaberita',$x);
+              $this->load->view('templates/footer');
+            }else{
+              redirect('Home');
+      }
       }
 
       function updateberita($berita_id){
@@ -188,14 +203,17 @@ if (! defined('BASEPATH') ) exit('No direct script access allowed');
       // ===== CONTROLLER SARPRAS =====
 
 
-      function Keldatasarpras()
-      {
-        $data['data'] = $this->m_sarpras->ambildata()->result();
-        // die(print_r($data));
-        $this->load->view('templates/header');
-        $this->load->view('pages/sarpras/keldata',$data);
-        $this->load->view('templates/footer');
-        // var_dump($data);
+      function Keldatasarpras(){
+        if ($this->session->userdata('role')=='sarpras' || $this->session->userdata('role')=='developer') {
+          $data['data'] = $this->m_sarpras->ambildata()->result();
+          // die(print_r($data));
+          $this->load->view('templates/header');
+          $this->load->view('pages/sarpras/keldata',$data);
+          $this->load->view('templates/footer');
+          // var_dump($data);
+        }else{
+          redirect('home');
+      }
       }
 
 
