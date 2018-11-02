@@ -10,6 +10,7 @@ if (! defined('BASEPATH') ) exit('No direct script access allowed');
           }
           function Index()
           {
+            // $x['udata']=$this->m_login->get_user_by_id($this->session->userdata('id'));
             $this->load->view('templates/header');
             $this->load->view('pages/dashboard');
             $this->load->view('templates/footer');

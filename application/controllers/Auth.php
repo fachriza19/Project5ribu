@@ -29,6 +29,7 @@ class Auth extends CI_Controller {
   function proses_login(){
     $user=$this->input->post('username');
     $pass=$this->input->post('password');
+    $query = $this->db->get('users');
 
     $ceklogin= $this->M_login->login($user,$pass);
     // die(print_r($ceklogin));
@@ -38,13 +39,14 @@ class Auth extends CI_Controller {
         'username' => $row->username,
         'role'=> $row->role,
         'nama'=> $row->nama,
-        'email'=> $row->email
+        'email'=> $row->email,
+        'logged_in' => TRUE,
 
       );
       $this->session->set_userdata($datasession);
       redirect('Home');
     }else{
-      $data['pesan']="Username atau Password tidak sesuai.";
+      $data['pesan']="Username / Password tidak sesuai.";
       $this->load->view('pages/auth',$data);
     }
   }
