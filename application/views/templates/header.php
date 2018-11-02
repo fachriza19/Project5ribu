@@ -63,22 +63,23 @@
                 <!-- Logo -->
                 <!-- ============================================================== -->
                 <div class="navbar-header">
-                    <a class="navbar-brand" href="index.html">
-                        <!-- Logo icon --><b>
-                            <!--You can put here icon as well // <i class="wi wi-sunset"></i> //-->
-                            <!-- Dark Logo icon -->
-                            <!-- <img src="<?php echo base_url('assets/images/logo-icon.png') ?>" alt="homepage" class="dark-logo" /> -->
-                            <!-- Light Logo icon -->
-                            <img src="<?php echo base_url('assets/images/logo-headers.png') ?>" alt="homepage" class="light-logo" align="left" />
-                        </b>
-                        <!--End Logo icon -->
-                        <!-- Logo text --><span>
-                         <!-- dark Logo text -->
-                         <!-- <img src="<?php echo base_url('assets/images/logo-text.png') ?>" alt="homepage" class="dark-logo" /> -->
-                         <!-- Light Logo text -->
-                         <!-- <h4 class="light-logo"><b>Distrik Navigasi</b></h4> -->
-                       </a>
-                </div>
+                     <a class="navbar-brand" href="index.html">
+                         <!-- Logo icon -->
+                         <b>
+                             <!--You can put here icon as well // <i class="wi wi-sunset"></i> //-->
+                             <!-- Dark Logo icon -->
+                             <img src="assets/images/logo-headers.png" alt="homepage" class="dark-logo" />
+                             <!-- Light Logo icon -->
+                             <img src="assets/images/logo-headers.png" alt="homepage" class="light-logo" />
+                         </b>
+                         <!--End Logo icon -->
+                         <!-- Logo text -->
+                         <span>
+                          <!-- dark Logo text -->
+                          <img src="assets/images/logo-headers.png" alt="homepage" class="dark-logo" />
+                          <!-- Light Logo text -->
+                          <img src="assets/images/logo-light-text.png" class="light-logo" alt="homepage" /></span> </a>
+                 </div>
                 <!-- ============================================================== -->
                 <!-- End Logo -->
                 <!-- ============================================================== -->
@@ -125,17 +126,20 @@
                         <!-- ============================================================== -->
                         <!-- Profile -->
                         <!-- ============================================================== -->
-                        <?php if ($this->session->has_userdata('username')) {  ?>
+                        <?php if ($this->session->has_userdata('username')) {
+                            // foreach ($udata as $u){
+                          ?>
+
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle text-muted waves-effect waves-dark" href="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="<?php echo base_url('assets/images/users/1.jpg') ?>" alt="user" class="profile-pic" /></a>
                             <div class="dropdown-menu dropdown-menu-right scale-up">
                                 <ul class="dropdown-user">
                                     <li>
                                         <div class="dw-user-box">
-                                            <div class="u-img"><img src="<?php echo base_url('assets/images/users/1.jpg') ?>" alt="user"></div>
-                                            <div class="u-text">
+                                            <!-- <div class="u-img"><img src="<?php// echo base_url('assets/images/users/1.jpg') ?>" alt="user"></div> -->
+                                            <div class="text-center">
                                                 <h4><?php echo $this->session->userdata('username'); ?> </h4>
-                                                <p class="text-muted"><?php echo $this->session->userdata('role'); ?> </p><a href="profile.html" class="btn btn-rounded btn-danger btn-sm">View Profile</a></div>
+                                                <p class="text-muted"><?php echo $this->session->userdata('email'); ?> </p><a href="profile.html" class="btn btn-rounded btn-danger btn-sm text-dark">View Profile</a></div>
                                         </div>
                                     </li>
                                     <li role="separator" class="divider"></li>
