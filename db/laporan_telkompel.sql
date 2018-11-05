@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Oct 08, 2018 at 10:05 AM
+-- Generation Time: Nov 05, 2018 at 09:56 AM
 -- Server version: 10.1.19-MariaDB
 -- PHP Version: 5.6.28
 
@@ -51,8 +51,10 @@ CREATE TABLE `laporan_telkompel` (
   `kond_alur_pelayaran` varchar(30) NOT NULL,
   `kond_sbnp` varchar(50) NOT NULL,
   `kond_peralatan` varchar(30) NOT NULL,
-  `nota_tagih` int(11) NOT NULL,
-  `master_cable` int(11) NOT NULL,
+  `nota_tagihvts` int(11) NOT NULL,
+  `master_cablevts` int(11) NOT NULL,
+  `nota_tagihtr` int(11) NOT NULL,
+  `master_cabletr` int(11) NOT NULL,
   `lain` varchar(50) NOT NULL,
   `petugas1` varchar(30) NOT NULL,
   `petugas2` varchar(30) NOT NULL
@@ -62,18 +64,10 @@ CREATE TABLE `laporan_telkompel` (
 -- Dumping data for table `laporan_telkompel`
 --
 
-INSERT INTO `laporan_telkompel` (`id_laporan`, `nama_instansi`, `hari_mulai`, `hari_akhir`, `tanggal_mulai`, `tanggal_akhir`, `jam_awal`, `jam_akhir`, `kapal_masuk`, `kapal_keluar`, `kapal_melintas`, `kapal_labuh`, `kapal_sandar`, `cuaca`, `arah_angin`, `kecepatan_angin`, `jarak_pandang`, `tinggi_gelombang`, `suhu_udaramax`, `suhu_udaramin`, `pasang_surutmax`, `kond_alur_pelayaran`, `kond_sbnp`, `kond_peralatan`, `nota_tagih`, `master_cable`, `lain`, `petugas1`, `petugas2`) VALUES
-(1, 'STASIUN RADIO PANTAI CIREBON', '', '', '0000-00-00', '0000-00-00', '', '', 0, 0, 0, 0, 0, '', '', '', '', '', '', '', '', '', '', '', 0, 0, '', '', ''),
-(2, 'STASIUN RADIO PANTAI CIREBON', '', '', '0000-00-00', '0000-00-00', '', '', 0, 0, 0, 0, 0, '', '', '', '', '', '', '', '', '', '', '', 0, 0, '', '', ''),
-(3, 'VESSEL TRAFFIC SERVICE MERAK', 'senin', 'selasa', '0000-00-00', '0000-00-00', '', '', 0, 0, 0, 0, 0, '', '', '', '', '', '', '', '', '', '', '', 0, 0, '', '', ''),
-(4, 'STASIUN RADIO PANTAI CIREBON', 'selasa', 'rabu', '0000-00-00', '0000-00-00', '', '', 0, 0, 0, 0, 0, '', '', '', '', '', '', '', '', '', '', '', 0, 0, '', '', ''),
-(5, 'VESSEL TRAFFIC SERVICE MERAK', 'selasa', 'rabu', '2018-10-07', '2018-10-07', '', '', 0, 0, 0, 0, 0, '', '', '', '', '', '', '', '', '', '', '', 0, 0, '', '', ''),
-(6, 'STASIUN RADIO PANTAI CIREBON', 'senin', 'selasa', '2018-10-07', '2018-10-07', '8.00', '8.00', 0, 0, 0, 0, 0, '', '', '', '', '', '', '', '', '', '', '', 0, 0, '', '', ''),
-(7, 'STASIUN RADIO PANTAI CIREBON', '', '', '0000-00-00', '0000-00-00', '08:00', '', 0, 0, 0, 0, 0, '', '', '', '', '', '', '', '', '', '', '', 0, 0, '', '', ''),
-(8, 'STASIUN RADIO PANTAI CIREBON', 'rabu', 'kamis', '2018-10-10', '2018-10-11', '08:00', '08:00', 3, 5, 6, 5, 7, '', '', '', '', '', '', '', '', '', '', '', 0, 0, '', '', ''),
-(9, 'VESSEL TRAFFIC SERVICE MERAK', 'kamis', 'jumat', '2018-10-07', '2018-10-08', '08:00', '08:00', 1, 2, 3, 4, 5, 'Cerah ', 'Timur', '10 Mach', '10 Km', '100 m', '99 Celsius', '9 Celcius', '', '', '', '', 0, 0, '', '', ''),
-(10, 'STASIUN RADIO PANTAI CIREBON', '', '', '0000-00-00', '0000-00-00', '', '', 0, 0, 0, 0, 0, '', '', '', '', '', '', '-99 Celcius', '', '', '', '', 0, 0, '', '', ''),
-(11, 'VESSEL TRAFFIC SERVICE MERAK', 'jumat', 'sabtu', '2018-10-07', '2018-10-08', '08:00', '08:00', 1, 2, 3, 4, 5, 'Cerah ', 'Timur', '10 Mach', '10 Km', '100 m', '99 Celsius', '-99 Celcius', '69 m', 'aman', 'aman', 'aman', 4, 1929099, 'kurang ngopi', 'saipul', 'burhan');
+INSERT INTO `laporan_telkompel` (`id_laporan`, `nama_instansi`, `hari_mulai`, `hari_akhir`, `tanggal_mulai`, `tanggal_akhir`, `jam_awal`, `jam_akhir`, `kapal_masuk`, `kapal_keluar`, `kapal_melintas`, `kapal_labuh`, `kapal_sandar`, `cuaca`, `arah_angin`, `kecepatan_angin`, `jarak_pandang`, `tinggi_gelombang`, `suhu_udaramax`, `suhu_udaramin`, `pasang_surutmax`, `kond_alur_pelayaran`, `kond_sbnp`, `kond_peralatan`, `nota_tagihvts`, `master_cablevts`, `nota_tagihtr`, `master_cabletr`, `lain`, `petugas1`, `petugas2`) VALUES
+(18, 'VESSEL TRAFFIC SERVICE MERAK', 'Rabu', 'Kamis', '2018-05-23', '2018-05-24', '11:38', '11:38', 12, 6, 5, 23, 22, 'Hujan Lebat', 'Utara', '10 Mach', '10 Km', '100 m', '99 Celsius', '9 Celcius', '69 m', 'aman', 'aman', 'aman', 4, 1929099, 0, 0, 'kurang ngopi', 'saipul', 'Abdilah'),
+(19, 'STASIUN RADIO PANTAI CIREBON', 'Rabu', 'Kamis', '2018-10-31', '2018-11-01', '08:15', '08:34', 3, 5, 69, 13, 23, 'Cerah Berawan', 'Barat', '44 Mach', '1 Km', '1 m', '40 C', '20 C', '1 m', 'Tidak aman', 'aman', 'Tidak aman', 2, 100900, 0, 0, 'ada markas kecoa ', 'Ahmad', 'Budi'),
+(20, 'STASIUN RADIO PANTAI CIREBON', 'Sabtu', 'Minggu', '2018-11-03', '2018-11-04', '17:30', '17:30', 12, 2, 5, 6, 2, 'Berawan', 'Barat', '10', '10', '1', '40', '30', '1', 'aman', 'aman', 'aman', 4, 0, 3, 100000, 'Kondisi lingkungan kerja aman', 'Nur Kayati', 'Yanto Tiyanto');
 
 --
 -- Indexes for dumped tables
@@ -93,7 +87,7 @@ ALTER TABLE `laporan_telkompel`
 -- AUTO_INCREMENT for table `laporan_telkompel`
 --
 ALTER TABLE `laporan_telkompel`
-  MODIFY `id_laporan` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
+  MODIFY `id_laporan` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;

@@ -25,12 +25,5 @@ class M_berita extends CI_Model{
 		$cari = $this->db->query("SELECT * from berita where berita_judul like '%$cari%' ");
 		return $cari->result();
 	}
-	function dataa($number,$offset){
-		return $query = $this->db->get('berita',$number,$offset)->result();
-	}
-
-	function jumlah_data(){
-		return $this->db->get('berita')->num_rows();
-	}
-
+	
 }
