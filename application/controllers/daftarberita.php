@@ -16,7 +16,7 @@ if (! defined('BASEPATH') ) exit('No direct script access allowed');
             $this->load->library('pagination');
             $config['base_url'] = base_url().'daftarberita/Index/';
             $config['total_rows'] = $jumlah_data;
-            $config['per_page'] = 10;
+            $config['per_page'] = 20;
             $from=$this->uri->segment(3);
             $this->pagination->initialize($config);
             $x['berita']=$this->m_berita->dataa($config['per_page'],$from);
@@ -34,6 +34,14 @@ if (! defined('BASEPATH') ) exit('No direct script access allowed');
             $this->load->view('pages/berita/tampilanberita',$x);
             $this->load->view('templates/footer');
           }
+
+          function cari() {
+            $data2['cari'] = $this->m_berita->cari();
+            $this->load->view('Templates/header');
+            $this->load->view('pages/berita/search', $data2);
+            $this->load->view('Templates/footer');
+
+            }
 
           
       }

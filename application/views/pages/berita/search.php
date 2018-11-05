@@ -28,17 +28,23 @@
                   <div class="card">
                     <div class="card-body">
                       <?php
-              if(count($cari)>0)
-              {
+                      function limit_words($string, $word_limit){
+                        $words = explode(" ",$string);
+                        return implode(" ",array_splice($words,0,$word_limit));
+                      }              
                 foreach ($cari as $i) {
-                  echo $i->berita_judul;
-                }
+                  //echo $i->berita_judul;
+              
               }
-              else
-              {
-                echo "Data tidak ditemukan";
-              }
-              ?>        
+              if(count($cari)>0){
+                ?>  
+              <a href="<?php echo base_url('daftarberita/tampilanberita/'.$i->berita_id)?>"><?= $i->berita_judul; ?></a></br></br>
+             <div class="text-dark"><?php echo limit_words($i->berita_isi,30);?><br><a href="<?php echo base_url().'daftarberita/tampilanberita/'.$i->berita_id;?>"> Selengkapnya...</a></div>
+                      </div>
+
+                <?php }else{
+                  echo "Berita tidak ditemukan";
+              }?>     
                     </div>
                   </div>
                 </div>
