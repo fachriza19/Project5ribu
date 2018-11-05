@@ -4,7 +4,7 @@
 <!-- footer -->
 <!-- ============================================================== -->
 <footer class="footer text-dark">
-  <b class="pull-left"> &copy; 2018 Distrik Navigasi Kelas I Tanjung Priok - Build & Maintained by Mercubuana University. &nbsp;  All rights reserved</b> <mark class="pull-right"><strong>Page rendered in</strong> {elapsed_time} <strong> &nbsp; Version </strong> 1.5.1.1 </mark>
+  <b class="pull-left"> &copy; 2018 DISNAV KELAS 1 TANJUNG PRIOK - Build & Maintained by Mercubuana University. </b> <mark class="pull-right"><strong>Page rendered in</strong> {elapsed_time} <strong> &nbsp; Version </strong> 1.5.1.1 </mark>
 </footer>
 
 <!-- ============================================================== -->
