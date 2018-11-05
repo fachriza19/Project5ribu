@@ -58,7 +58,7 @@
                   <div class="col-md-3">
                     <input type="text" class="form-control" id="timepicker1" placeholder="Jam" name="jam2" data-dtp="dtp_6Vvs4">
                   </div>
-                </div>
+                </div><hr><br>
 
                 <h5 class="card-title">I. Lalu lintas Kapal</h5><br>
                 <div class="form-group row">
@@ -95,7 +95,7 @@
                     <input type="text" class="form-control" placeholder="Jumlah Kapal Sandar" name="ksandar">
                   </div>
                   <h5 class="control-label text-left col-md-3">Kapal</h5>
-                </div>
+                </div><hr><br>
 
                 <h5 class="card-title">II. Prakiraan Cuaca Wilayah Pelabuhan dari BMKG</h5><br>
                 <div class="form-group row">
@@ -112,40 +112,46 @@
                 </div>
                 <div class="form-group row">
                   <h5 class="control-label text-left col-md-3">Kecepatan Angin</h5>
-                  <div class="col-md-9">
+                  <div class="col-md-3">
                     <input type="text" class="form-control" name="kecepatana">
                   </div>
+                  <h5 class="control-label text-left col-md-3">Knots</h5>
                 </div>
                 <div class="form-group row">
                   <h5 class="control-label text-left col-md-3">Jarak Pandang</h5>
-                  <div class="col-md-9">
+                  <div class="col-md-3">
                     <input type="text" class="form-control" name="jrkpandang">
                   </div>
+                  <h5 class="control-label text-left col-md-3">Km</h5>
                 </div>
                 <div class="form-group row">
                   <h5 class="control-label text-left col-md-3">Tinggi Gelombang</h5>
-                  <div class="col-md-9">
+                  <div class="col-md-3">
                     <input type="text" class="form-control" name="tgigel">
                   </div>
+                  <h5 class="control-label text-left col-md-3">Meter</h5>
                 </div>
                 <div class="form-group row">
                   <h5 class="control-label text-left col-md-3">Suhu Udara Maximum</h5>
-                  <div class="col-md-9">
+                  <div class="col-md-3">
                     <input type="text" class="form-control" name="suhumax">
                   </div>
+                  <h5 class="control-label text-left col-md-3">°C</h5>
                 </div>
                 <div class="form-group row">
                   <h5 class="control-label text-left col-md-3">Suhu Udara Minimum</h5>
-                  <div class="col-md-9">
+                  <div class="col-md-3">
                     <input type="text" class="form-control" name="suhumin">
                   </div>
+                  <h5 class="control-label text-left col-md-3">°C</h5>
                 </div>
                 <div class="form-group row">
                   <h5 class="control-label text-left col-md-3">Pasang Surut Maximum</h5>
-                  <div class="col-md-9">
+                  <div class="col-md-3">
                     <input type="text" class="form-control" name="pasangmax">
                   </div>
-                </div>
+                  <h5 class="control-label text-left col-md-3">Meter</h5>
+                </div><hr><br>
 
                 <h5 class="card-title">III. Kondisi</h5><br>
                 <div class="form-group row">
@@ -165,21 +171,35 @@
                   <div class="col-md-9">
                     <input type="text" class="form-control" name="peralatan">
                   </div>
-                </div>
+                </div><hr><br>
 
                 <h5 class="card-title">IV. Jasa PNBP VTS/Telegram Radio</h5><br>
+                <div class="form-group row"><h5 class="control-label text-left col-md-3">> VTS</h5></div>
                 <div class="form-group row">
-                  <h5 class="control-label text-left col-md-3">Nota Tagih</h5>
+                  <h5 class="control-label text-left col-md-3">&emsp;Nota Tagih</h5>
                   <div class="col-md-2">
-                    <input type="text" class="form-control" name="nota">
+                    <input type="text" class="form-control" name="notavts">
                   </div>
                 </div>
                 <div class="form-group row">
-                  <h5 class="control-label text-left col-md-3">Master Cable</h5>
+                  <h5 class="control-label text-left col-md-3">&emsp;Master Cable</h5>
                   <div class="col-md-6">
-                    <input type="text" class="form-control" name="mastercbl">
+                    <input type="text" class="form-control" name="mastercblvts">
                   </div>
                 </div>
+                <div class="form-group row"><h5 class="control-label text-left col-md-3">> Telegram Radio</h5></div>
+                <div class="form-group row">
+                  <h5 class="control-label text-left col-md-3">&emsp;Nota Tagih</h5>
+                  <div class="col-md-2">
+                    <input type="text" class="form-control" name="notatr">
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <h5 class="control-label text-left col-md-3">&emsp;Master Cable</h5>
+                  <div class="col-md-6">
+                    <input type="text" class="form-control" name="mastercbltr">
+                  </div>
+                </div><hr><br>
 
                 <h5 class="card-title">V. Lain - lain</h5><br>
                 <div class="form-group row">
@@ -187,7 +207,7 @@
                   <div class="col-md-9">
                     <input type="text" class="form-control" name="lain">
                   </div>
-                </div>
+                </div><hr><br>
 
                 <h5 class="card-title">VI. Petugas Jaga</h5><br>
                 <div class="form-group row">
