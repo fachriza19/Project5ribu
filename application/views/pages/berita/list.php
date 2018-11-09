@@ -19,7 +19,6 @@
               $words = explode(" ",$string);
               return implode(" ",array_splice($words,0,$word_limit));
             }
-            $no = $this->uri->segment('3') + 1;
             foreach ($data->result_array() as $i) :
               $id=$i['berita_id'];
               $judul=$i['berita_judul'];
@@ -52,7 +51,7 @@
         <div class="card">
           <div class="card-body">
             <div class="col-12">
-              <form class="form-inline" action="<?php echo base_url('adminmenu/cari')?>" action="GET">
+              <form class="form-inline" action="<?php echo base_url('daftarberita/cari')?>" action="GET">
                 <div class="form-group">
                 <input type="text" class="form-control" id="cari" name="cari" placeholder="cari">
                 </div>
@@ -77,9 +76,6 @@
             </div>
           </div>
         </div>
-        <?php 
-        echo $this->pagination->create_links();
-        ?>
       </div>
     </div>
   </div>

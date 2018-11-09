@@ -64,13 +64,7 @@ if (! defined('BASEPATH') ) exit('No direct script access allowed');
             $this->load->view('pages/berita/list',$x);
             $this->load->view('templates/footer');
           }
-          function cari() {
-            $data2['cari'] = $this->m_berita->cari();
-            $this->load->view('Templates/header');
-            $this->load->view('pages/berita/search', $data2);
-            $this->load->view('Templates/footer');
-
-            }
+          
           function helpdesk()
           {
             $this->load->view('templates/header');

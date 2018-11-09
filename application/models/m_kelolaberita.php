@@ -4,7 +4,7 @@ class m_kelolaberita extends CI_Model{
 
       function show_berita(){
 
-            $hsl=$this->db->query("SELECT * FROM berita ORDER BY berita_id DESC");
+            $hsl=$this->db->query("SELECT * FROM berita ORDER BY berita_id ASC");
 			return $hsl;
       }
       public function v_editberita($berita_id)
