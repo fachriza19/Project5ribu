@@ -11,7 +11,7 @@ td{
 
 
 
-    <div class="row page-titles">
+    <!-- <div class="row page-titles">
       <div class="col-md-5 col-8 align-self-center">
         <h3 class="text-themecolor">Telkompel</h3>
         <ol class="breadcrumb">
@@ -19,7 +19,7 @@ td{
           <li class="breadcrumb-item active">Telkompel</li>
         </ol>
       </div>
-    </div>
+    </div> -->
   
 
 
@@ -28,217 +28,181 @@ td{
         <div class="card">
           <div class="card-body printableArea">
           <?php
-            foreach ($data->result_array() as $t) :
-                $id=$t['id_laporan'];
-                $ins=$t['nama_instansi'];
+            foreach ($data as $t) :
                 $kotalist=array('STASIUN RADIO PANTAI CIREBON' => 'Cirebon','VESSEL TRAFFIC SERVICE MERAK' => 'Merak');
                 $kepalalist=array('STASIUN RADIO PANTAI CIREBON' => 'ADAH MUNADI','VESSEL TRAFFIC SERVICE MERAK' => 'KEPALA VTS Merak');
                 $pangkatlist=array('STASIUN RADIO PANTAI CIREBON' => 'Penata Tk.I ( III/d )','VESSEL TRAFFIC SERVICE MERAK' => 'Pangkat');
                 $niplist=array('STASIUN RADIO PANTAI CIREBON' => '19630102 198403 1 001','VESSEL TRAFFIC SERVICE MERAK' => 'NIP');
-                $kota=$kotalist[$ins];
-                $kepala=$kepalalist[$ins];
-                $pangkat=$pangkatlist[$ins];
-                $nip=$niplist[$ins];
-                $hari1=$t['hari_mulai'];
-                $hari2=$t['hari_akhir'];
-                //$tgl1=date_create($t['tanggal_mulai']);
-                //$tgla=date_format($tgl1,"d F Y");
-                $tgl1=$t['tanggal_mulai'];
-                $tgla=date_indo($tgl1);
-                //$tgl2=date_create($t['tanggal_akhir']);
-                //$tglb=date_format($tgl2,"d F Y");
-                $tgl2=$t['tanggal_akhir'];
-                $tglb=date_indo($tgl2);
-                $jam1=$t['jam_awal'];
-                $jam2=$t['jam_akhir'];
-                $kplmsk=$t['kapal_masuk'];
-                $kplklr=$t['kapal_keluar'];
-                $kpllnt=$t['kapal_melintas'];
-                $kpllbh=$t['kapal_labuh'];
-                $kplsdr=$t['kapal_sandar'];
-                $cuaca=$t['cuaca'];
-                $araha=$t['arah_angin'];
-                $kcpta=$t['kecepatan_angin'];
-                $jrkp=$t['jarak_pandang'];
-                $tggel=$t['tinggi_gelombang'];
-                $suhumax=$t['suhu_udaramax'];
-                $suhumin=$t['suhu_udaramin'];
-                $psg=$t['pasang_surutmax'];
-                $alurp=$t['kond_alur_pelayaran'];
-                $sbnp=$t['kond_sbnp'];
-                $alat=$t['kond_peralatan'];
-                $notavts=$t['nota_tagihvts'];
-                $cablevts=$t['master_cablevts'];
-                $notatr=$t['nota_tagihtr'];
-                $cabletr=$t['master_cabletr'];
-                $lain=$t['lain'];
-                $ptg1=$t['petugas1'];
-                $ptg2=$t['petugas2']
+                $kota=$kotalist[$t['nama_instansi']];
+                $kepala=$kepalalist[$t['nama_instansi']];
+                $pangkat=$pangkatlist[$t['nama_instansi']];
+                $nip=$niplist[$t['nama_instansi']];                
+                $tgla=date_indo($t['tanggal_mulai']);
+                $tglb=date_indo($t['tanggal_akhir']);
             ?>
-            <h4 class="card-title text-center text-black"><font face="Times New Roman"><?php echo "LAPORAN HARIAN ",$ins ?></font></h4>
-            <h4 class="card-title text-center"><font face="Times New Roman">DISTRIK NAVIGASI KELAS I TANJUNG PRIOK</font></h4>
-            <font face="Times New Roman"></font>
+            <center><font face="Times New Roman" style="font-weight:bold;"><?php echo "LAPORAN HARIAN ".$t['nama_instansi']; ?></center>
+            <center><font face="Times New Roman" style="font-weight:bold;">DISTRIK NAVIGASI KELAS I TANJUNG PRIOK</center><br>
             <table border="3" width="100%" >
                 <tr>
                     <td>
                         <table width="95%" padding="0">
                             <tr>
-                                <td width="35%"><font face="Times New Roman" size="2" color="black">&nbsp;Hari/Tanggal</font></td>
-                                <td width="3%" align="center"><font face="Times New Roman" size="2" color="black">:</font></td>
-                                <td><font face="Times New Roman" size="2" color="black"><?php echo $hari1 ?>, <?php echo $tgla;?> s/d <?php echo $hari2?>, <?php echo $tglb?></font></td>
+                                <td width="35%" style="font-size:10;">&nbsp;Hari/Tanggal</td>
+                                <td width="3%" align="center" style="font-size:10;">:</td>
+                                <td style="font-size:10;"><?php echo $t['hari_mulai']; ?>, <?php echo $tgla;?> s/d <?php echo $t['hari_akhir'];?>, <?php echo $tglb?></td>
                             </tr>
                             <tr>
-                                <td width="35%"><font face="Times New Roman" size="2" color="black">&nbsp;Waktu</font></td>
-                                <td width="3%" align="center"><font face="Times New Roman" size="2" color="black">:</font></td>
-                                <td><font face="Times New Roman" size="2" color="black"><?php echo $jam1;?> s/d <?php echo $jam2?></font></td>
+                                <td width="35%" style="font-size:10;">&nbsp;Waktu</td>
+                                <td width="3%" align="center" style="font-size:10;">:</td>
+                                <td style="font-size:10;"><?php echo $t['jam_awal'];?> s/d <?php echo $t['jam_akhir'];?></td>
                             </tr>
                         </table>
                     </td>
                 </tr>
                 <tr>
-                    <td><br>
+                    <td>
                         <font face="Times New Roman" size="2" color="black" style="font-weight:bold;">&nbsp;I. Lalu lintas Kapal</font>
                         <table width="95%">
                             <tr>
-                                <td width="35%"><font face="Times New Roman" size="2" color="black">&emsp;&nbsp;> Kapal Masuk</font></td>
-                                <td width="3%" align="center"><font face="Times New Roman" size="2" color="black">:</font></td>
-                                <td width="10%"><font face="Times New Roman" size="2" color="black"><?php echo $kplmsk ?></font></td>
-                                <td><font face="Times New Roman" size="2" color="black">Kapal</font></td>
+                                <td width="35%" style="font-size:10;">&emsp;&nbsp;> Kapal Masuk</td>
+                                <td width="3%" align="center" style="font-size:10;">:</td>
+                                <td width="10%" style="font-size:10;"><?php echo $t['kapal_masuk']; ?></td>
+                                <td style="font-size:10;">Kapal</td>
                             </tr>
                             <tr>
-                                <td width="35%"><font face="Times New Roman" size="2" color="black">&emsp;&nbsp;> Kapal Keluar</font></td>
-                                <td width="3%" align="center"><font face="Times New Roman" size="2" color="black">:</font></td>
-                                <td width="10%"><font face="Times New Roman" size="2" color="black"><?php echo $kplklr ?></font></td>
-                                <td><font face="Times New Roman" size="2" color="black">Kapal</font></td>
+                                <td width="35%" style="font-size:10;">&emsp;&nbsp;> Kapal Keluar</td>
+                                <td width="3%" align="center" style="font-size:10;">:</td>
+                                <td width="10%" style="font-size:10;"><?php echo $t['kapal_keluar']; ?></td>
+                                <td style="font-size:10;">Kapal</td>
                             </tr>
                             <tr>
-                                <td width="35%"><font face="Times New Roman" size="2" color="black">&emsp;&nbsp;> Kapal Melintas</font></td>
-                                <td width="3%" align="center"><font face="Times New Roman" size="2" color="black">:</font></td>
-                                <td width="10%"><font face="Times New Roman" size="2" color="black"><?php echo $kpllnt ?></font></td>
-                                <td><font face="Times New Roman" size="2" color="black">Kapal</font></td>
+                                <td width="35%" style="font-size:10;">&emsp;&nbsp;> Kapal Melintas</td>
+                                <td width="3%" align="center" style="font-size:10;">:</td>
+                                <td width="10%" style="font-size:10;"><?php echo $t['kapal_melintas']; ?></td>
+                                <td style="font-size:10;">Kapal</td>
                             </tr>
                             <tr>
-                                <td width="35%"><font face="Times New Roman" size="2" color="black">&emsp;&nbsp;> Kapal Labuh</font></td>
-                                <td width="3%" align="center"><font face="Times New Roman" size="2" color="black">:</font></td>
-                                <td width="10%"><font face="Times New Roman" size="2" color="black"><?php echo $kpllbh ?></font></td>
-                                <td><font face="Times New Roman" size="2" color="black">Kapal</font></td>
+                                <td width="35%" style="font-size:10;">&emsp;&nbsp;> Kapal Labuh</td>
+                                <td width="3%" align="center" style="font-size:10;">:</td>
+                                <td width="10%" style="font-size:10;"><?php echo $t['kapal_labuh']; ?></td>
+                                <td style="font-size:10;">Kapal</td>
                             </tr>
                             <tr>
-                                <td width="35%"><font face="Times New Roman" size="2" color="black">&emsp;&nbsp;> Kapal Sandar</font></td>
-                                <td width="3%" align="center"><font face="Times New Roman" size="2" color="black">:</font></td>
-                                <td width="10%"><font face="Times New Roman" size="2" color="black"><?php echo $kplsdr ?></font></td>
-                                <td><font face="Times New Roman" size="2" color="black">Kapal</font></td>
+                                <td width="35%" style="font-size:10;">&emsp;&nbsp;> Kapal Sandar</td>
+                                <td width="3%" align="center" style="font-size:10;">:</td>
+                                <td width="10%" style="font-size:10;"><?php echo $t['kapal_sandar']; ?></td>
+                                <td style="font-size:10;">Kapal</td>
                             </tr>
                         </table><br>
 
                         <font face="Times New Roman" size="2" color="black" style="font-weight:bold;">&nbsp;II. Prakiraan Cuaca Wilayah Pelabuhan dari BMKG</font>
                         <table  width="95%">
                             <tr>
-                                <td width="35%"><font face="Times New Roman" size="2" color="black">&emsp;&nbsp;> Cuaca</font></td>
-                                <td width="3%" align="center"><font face="Times New Roman" size="2" color="black">:</font></td>
-                                <td><font face="Times New Roman" size="2" color="black"><?php echo $cuaca ?></font></td>
+                                <td width="35%" style="font-size:10;">&emsp;&nbsp;> Cuaca</td>
+                                <td width="3%" align="center" style="font-size:10;">:</td>
+                                <td width="15%" style="font-size:10;"><?php echo $t['cuaca']; ?></td>
                             </tr>
                             <tr>
-                                <td width="35%"><font face="Times New Roman" size="2" color="black">&emsp;&nbsp;> Arah Angin</font></td>
-                                <td width="3%" align="center"><font face="Times New Roman" size="2" color="black">:</font></td>
-                                <td><font face="Times New Roman" size="2" color="black"><?php echo $araha ?></font></td>
+                                <td width="35%" style="font-size:10;">&emsp;&nbsp;> Arah Angin</td>
+                                <td width="3%" align="center" style="font-size:10;">:</td>
+                                <td style="font-size:10;"><?php echo $t['arah_angin']; ?></td>
                             </tr>
                             <tr>
-                                <td width="35%"><font face="Times New Roman" size="2" color="black">&emsp;&nbsp;> Kecepatan Angin</font></td>
-                                <td width="3%" align="center"><font face="Times New Roman" size="2" color="black">:</font></td>
-                                <td width="10%"><font face="Times New Roman" size="2" color="black"><?php echo $kcpta ?></font></td>
-                                <td><font face="Times New Roman" size="2" color="black">Knots</font></td>
+                                <td width="35%" style="font-size:10;">&emsp;&nbsp;> Kecepatan Angin</td>
+                                <td width="3%" align="center" style="font-size:10;">:</td>
+                                <td width="10%" style="font-size:10;"><?php echo $t['kecepatan_angin']; ?></td>
+                                <td style="font-size:10;">Knots</td>
                             </tr>
                             <tr>
-                                <td width="35%"><font face="Times New Roman" size="2" color="black">&emsp;&nbsp;> Jarak Pandang</font></td>
-                                <td width="3%" align="center"><font face="Times New Roman" size="2" color="black">:</font></td>
-                                <td width="10%"><font face="Times New Roman" size="2" color="black"><?php echo $jrkp ?></font></td>
-                                <td><font face="Times New Roman" size="2" color="black">Km</font></td>
+                                <td width="35%" style="font-size:10;">&emsp;&nbsp;> Jarak Pandang</td>
+                                <td width="3%" align="center" style="font-size:10;">:</td>
+                                <td width="10%" style="font-size:10;"><?php echo $t['jarak_pandang']; ?></td>
+                                <td style="font-size:10;">Km</td>
                             </tr>
                             <tr>
-                                <td width="35%"><font face="Times New Roman" size="2" color="black">&emsp;&nbsp;> Tinggi Gelombang</font></td>
-                                <td width="3%" align="center"><font face="Times New Roman" size="2" color="black">:</font></td>
-                                <td width="10%"><font face="Times New Roman" size="2" color="black"><?php echo $tggel ?></font></td>
-                                <td><font face="Times New Roman" size="2" color="black">Meter</font></td>
+                                <td width="35%" style="font-size:10;">&emsp;&nbsp;> Tinggi Gelombang</td>
+                                <td width="3%" align="center" style="font-size:10;">:</td>
+                                <td width="10%" style="font-size:10;"><?php echo $t['tinggi_gelombang']; ?></td>
+                                <td style="font-size:10;">Meter</td>
                             </tr>
                             <tr>
-                                <td width="35%"><font face="Times New Roman" size="2" color="black">&emsp;&nbsp;> Suhu Udara Maximum</font></td>
-                                <td width="3%" align="center"><font face="Times New Roman" size="2" color="black">:</font></td>
-                                <td width="10%"><font face="Times New Roman" size="2" color="black"><?php echo $suhumax ?></font></td>
-                                <td><font face="Times New Roman" size="2" color="black">°C</font></td>
+                                <td width="35%" style="font-size:10;">&emsp;&nbsp;> Suhu Udara Maximum</td>
+                                <td width="3%" align="center" style="font-size:10;">:</td>
+                                <td width="10%" style="font-size:10;"><?php echo $t['suhu_udaramax']; ?></td>
+                                <td style="font-size:10;">°C</td>
                             </tr>
                             <tr>
-                                <td width="35%"><font face="Times New Roman" size="2" color="black">&emsp;&nbsp;> Suhu Udara Minimum</font></td>
-                                <td width="3%" align="center"><font face="Times New Roman" size="2" color="black">:</font></td>
-                                <td width="10%"><font face="Times New Roman" size="2" color="black"><?php echo $suhumin ?></font></td>
-                                <td><font face="Times New Roman" size="2" color="black">°C</font></td>
+                                <td width="35%" style="font-size:10;">&emsp;&nbsp;> Suhu Udara Minimum</td>
+                                <td width="3%" align="center" style="font-size:10;">:</td>
+                                <td width="10%" style="font-size:10;"><?php echo $t['suhu_udaramin']; ?></td>
+                                <td style="font-size:10;">°C</td>
                             </tr>
                             <tr>
-                                <td width="35%"><font face="Times New Roman" size="2" color="black">&emsp;&nbsp;> Pasang Surut Maximum</font></td>
-                                <td width="3%" align="center"><font face="Times New Roman" size="2" color="black">:</font></td>
-                                <td width="10%"><font face="Times New Roman" size="2" color="black"><?php echo $psg ?></font></td>
-                                <td><font face="Times New Roman" size="2" color="black">Meter</font></td>
+                                <td width="35%" style="font-size:10;">&emsp;&nbsp;> Pasang Surut Maximum</td>
+                                <td width="3%" align="center" style="font-size:10;">:</td>
+                                <td width="10%" style="font-size:10;"><?php echo $t['pasang_surutmax']; ?></td>
+                                <td style="font-size:10;">Meter</td>
                             </tr>
                         </table><br>
                     
                         <table  width="95%">
                             <tr>
-                                <td width="35%"><font face="Times New Roman" size="2" color="black" style="font-weight:bold;">&nbsp;III. Kondisi Alur Pelayaran</font></td>
-                                <td width="3%" align="center"><font face="Times New Roman" size="2" color="black">:</font></td>
-                                <td><font face="Times New Roman" size="2" color="black"><?php echo $alurp ?></font></td>
+                                <td width="35%" style="font-size:10;"><font face="Times New Roman" size="2" color="black" style="font-weight:bold;">&nbsp;III. Kondisi Alur Pelayaran</td>
+                                <td width="3%" align="center" style="font-size:10;">:</td>
+                                <td style="font-size:10;"><?php echo $t['kond_alur_pelayaran']; ?></td>
                             </tr>
                             <tr>
-                                <td width="35%"><font face="Times New Roman" size="2" color="black">&emsp;&nbsp;> Kondisi SBNP</font></td>
-                                <td width="3%" align="center"><font face="Times New Roman" size="2" color="black">:</font></td>
-                                <td><font face="Times New Roman" size="2" color="black"><?php echo $sbnp ?></font></td>
+                                <td width="35%" style="font-size:10;">&emsp;&nbsp;> Kondisi SBNP</td>
+                                <td width="3%" align="center" style="font-size:10;">:</td>
+                                <td style="font-size:10;"><?php echo $t['kond_sbnp']; ?></td>
                             </tr>
                             <tr>
-                                <td width="35%"><font face="Times New Roman" size="2" color="black">&emsp;&nbsp;> Kondisi Peralatan</font></td>
-                                <td width="3%" align="center"><font face="Times New Roman" size="2" color="black">:</font></td>
-                                <td><font face="Times New Roman" size="2" color="black"><?php echo $alat ?></font></td>
+                                <td width="35%" style="font-size:10;">&emsp;&nbsp;> Kondisi Peralatan</td>
+                                <td width="3%" align="center" style="font-size:10;">:</td>
+                                <td style="font-size:10;"><?php echo $t['kond_peralatan']; ?></td>
                             </tr>
                         </table><br>
 
                     <font face="Times New Roman" size="2" color="black" style="font-weight:bold;">&nbsp;IV. Jasa PNBP VTS/Telegram Radio</font>
                         <table  width="95%">
-                            <tr><td width="18.65%"><font face="Times New Roman" size="2" color="black">&emsp;&nbsp;> VTS</font></td></tr>
+                            <tr><td width="18.65%" style="font-size:10;">&emsp;&nbsp;> VTS</td></tr>
                             <tr>
-                                <td width="18.65%"><font face="Times New Roman" size="2" color="black">&emsp;&nbsp;Nota Tagih</font></td>
-                                <td width="1.65%" align="center"><font face="Times New Roman" size="2" color="black">:</font></td>
-                                <td width="10%"><font face="Times New Roman" size="2" color="black"><?php echo $notavts ?></font></td>
-                                <td width="10%"><font face="Times New Roman" size="2" color="black">Master Cable</font></td>
-                                <td width="3%" align="center"><font face="Times New Roman" size="2" color="black">:</font></td>
-                                <td width="10%"><font face="Times New Roman" size="2" color="black">Rp. <?php echo $cablevts ?></font></td>
+                                <td width="18.65%" style="font-size:10;">&emsp;&nbsp;Nota Tagih</td>
+                                <td width="1.65%" align="center" style="font-size:10;">:</td>
+                                <td width="10%" style="font-size:10;"><?php echo $t['nota_tagihvts']; ?></td>
+                                <td width="10%" style="font-size:10;">Master Cable</td>
+                                <td width="3%" align="center" style="font-size:10;">:</td>
+                                <td width="10%" style="font-size:10;">Rp. <?php echo $t['master_cablevts']; ?></td>
                             </tr>
-                            <tr><td width="18.65%"><font face="Times New Roman" size="2" color="black">&emsp;&nbsp;> Telegram Radio</font></td></tr>
+                            <tr><td width="18.65%" style="font-size:10;">&emsp;&nbsp;> Telegram Radio</td></tr>
                             <tr>
-                                <td width="18.65%"><font face="Times New Roman" size="2" color="black">&emsp;&nbsp;Nota Tagih</font></td>
-                                <td width="1.65%" align="center"><font face="Times New Roman" size="2" color="black">:</font></td>
-                                <td width="10%"><font face="Times New Roman" size="2" color="black"><?php echo $notatr ?></font></td>
-                                <td width="10%"><font face="Times New Roman" size="2" color="black">Master Cable</font></td>
-                                <td width="3%" align="center"><font face="Times New Roman" size="2" color="black">:</font></td>
-                                <td width="10%"><font face="Times New Roman" size="2" color="black">Rp. <?php echo $cabletr ?></font></td>
+                                <td width="18.65%" style="font-size:10;">&emsp;&nbsp;Nota Tagih</td>
+                                <td width="1.65%" align="center" style="font-size:10;">:</td>
+                                <td width="10%" style="font-size:10;"><?php echo $t['nota_tagihtr']; ?></td>
+                                <td width="10%" style="font-size:10;">Master Cable</td>
+                                <td width="3%" align="center" style="font-size:10;">:</td>
+                                <td width="10%" style="font-size:10;">Rp. <?php echo $t['master_cabletr']; ?></td>
                             </tr>
                         </table><br>
 
                         <table  width="95%">
                             <tr>
                                 <td width="35%"><font face="Times New Roman" size="2" color="black" style="font-weight:bold;">&nbsp;V. Lain - lain</font></td>
-                                <td width="3%" align="center"><font face="Times New Roman" size="2" color="black">:</font></td>
-                                <td><font face="Times New Roman" size="2" color="black"><?php echo $lain ?></font></td>
+                                <td width="3%" align="center">:</td>
+                                <td style="font-size:10;"><?php echo $t['lain']; ?></td>
                             </tr>
                         </table><br>   
 
                      <table  width="95%">
                         <tr>
                             <td width="35%"><font face="Times New Roman" size="2" color="black" style="font-weight:bold;">&nbsp;VI. Petugas Jaga</font></td>
-                            <td width="3%" align="center"><font face="Times New Roman" size="2" color="black">:</font></td>
-                            <td><font face="Times New Roman" size="2" color="black"><?php echo $ptg1 ?></font></td>
+                            <td width="3%" align="center" style="font-size:10;">:</td>
+                            <td style="font-size:10;"><?php echo $t['petugas1']; ?></td>
                         </tr>
                         <tr>
-                            <td width="35%"></td>
-                            <td width="3%" align="center"><font face="Times New Roman" size="2" color="black">:</font></td>
-                            <td><font face="Times New Roman" size="2" color="black"><?php echo $ptg2 ?></font></td>
+                            <td width="35%" style="font-size:10;"></td>
+                            <td width="3%" align="center" style="font-size:10;">:</td>
+                            <td style="font-size:10;"><?php echo $t['petugas2']; ?></td>
                         </tr>
                     </table><br>   
                     <table width="95%">
@@ -248,30 +212,30 @@ td{
                     </table><br>
                     <table width="95%" class="text-right">
                         <tr>
-                            <td width="45%"></td>
-                            <td><font face="Times New Roman" size="2" color="black"><?php echo $kota ?>, <?php echo $tglb ?></font></td>
+                            <td width="55%" style="font-size:10;"></td>
+                            <td style="font-size:10;"><?php echo $kota ?>, <?php echo $tglb ?></td>
                         </tr>
                         <tr>
                             <td></td>
-                            <td><font face="Times New Roman" size="2" color="black">KEPALA <?php echo $ins ?></font></td>
+                            <td style="font-size:10;">KEPALA <?php echo $t['nama_instansi'] ?></td>
                         </tr>
                         <tr>
                             <td></td>
-                            <td><font face="Times New Roman" size="2" color="black">DISTRIK NAVIGASI KELAS I TANJUNG PRIOK</font></td>
+                            <td style="font-size:10;">DISTRIK NAVIGASI KELAS I TANJUNG PRIOK</td>
                         </tr>
                     </table><br><br><br>
                     <table width="95%" class="text-center">
                         <tr>
                             <td width="62%"></td>
-                            <td><font face="Times New Roman" size="2" color="black" style="font-weight:bold; text-decoration:underline;"><?php echo $kepala ?></td>
+                            <td><center><font face="Times New Roman" size="2" color="black" style="font-weight:bold; text-decoration:underline;"><?php echo $kepala ?></font></center></td>
                         </tr>
                         <tr>
                             <td></td>
-                            <td><font face="Times New Roman" size="2" color="black"><?php echo $pangkat ?></td>
+                            <td style="font-size:10;"><center><?php echo $pangkat ?></center></td>
                         </tr>
                         <tr>
                             <td></td>
-                            <td><font face="Times New Roman" size="2" color="black"><?php echo $nip ?></td>
+                            <td style="font-size:10;"><center><?php echo $nip ?></center></td>
                         </tr>
                     </table>
                     </td>
@@ -279,11 +243,11 @@ td{
             </table>
           </div>
           <?php endforeach;?>
-            <div class="text-right margin-right">
+            <!-- <div class="text-right margin-right">
                 <button id="print" class="btn btn-default btn-outline" type="button"> 
                     <span><i class="fa fa-print"></i> Print</span> 
                 </button> 
-            </div>
+            </div> -->
         </div>
       </div>
     </div>

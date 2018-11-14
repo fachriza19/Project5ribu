@@ -8,6 +8,7 @@ if (! defined('BASEPATH') ) exit('No direct script access allowed');
             parent::__construct();
             $this->load->model('m_telkompel');
             $this->load->library('upload');
+            
 
           }
           function Index()
@@ -79,10 +80,36 @@ if (! defined('BASEPATH') ) exit('No direct script access allowed');
 
           function printlaporan($idlap)
           {
-            $laporan['data'] = $this->m_telkompel->getdatalap_id($idlap);
-            $this->load->view('templates/header');
+            $laporan['data'] = $this->m_telkompel->getdatalap_id($idlap)->result_array();
+            $tgl=$laporan['data'][0]['tanggal_akhir'];
+            $tglindo=date_indo($tgl);
+            $ins=$laporan['data'][0]['nama_instansi'];
+            $singkatanlist=array('STASIUN RADIO PANTAI CIREBON' => 'SROP Cirebon','VESSEL TRAFFIC SERVICE MERAK' => 'VTS Merak');
+            $singkatan=$singkatanlist[$ins];
+            // print_r($laporan);
+            // die();
+            // $this->load->view('templates/header');
+            // $laporan['data'] .= $this->load->view('pages/sarpras/printtelkompel',$laporan);
             $this->load->view('pages/sarpras/printtelkompel',$laporan);
-            $this->load->view('templates/footer');
+            // $this->load->view('templates/footer');
+
+            //Get Output html
+            $print = $this->output->get_output();
+
+            //Load html library
+            $this->load->library('pdf');
+
+            //Load HTML Content
+            $this->dompdf->loadHtml($print);
+
+            //set paper size and orientation
+            $this->dompdf->setPaper('A4', 'portrait');
+
+            //render html as pdf
+            $this->dompdf->render();
+
+            //output pdf
+            $this->dompdf->stream('Laporan Harian '.$singkatan.' '.$tglindo.'.pdf', array('Attachment'=>0));
           }
           
           
