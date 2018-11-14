@@ -6,12 +6,28 @@ if (! defined('BASEPATH') ) exit('No direct script access allowed');
           public function __construct()
           {
             parent::__construct();
-            $this->load->helper(array('url'));
-            $this->load->model('m_berita');
+
+        // load Pagination library
+            $this->load->library('pagination');
+
+        // load URL helper
+            $this->load->helper('url');
           }
+
+
           function Index()
           { 
-            
+            $config = array();
+            $config["base_url"] = base_url() . "daftarberita/Index";
+            $config["total_rows"] = $this->m_berita->record_count();
+            $config["per_page"] = 2;
+            $config["uri_segment"] = 3;
+
+            $this->pagination->initialize($config);
+
+            $page = ($this->uri->segment(3)) ? $this->uri->segment(3) : 0;
+            $x["results"] = $this->m_berita->fetch_countries($config["per_page"], $page);
+            $x["links"] = $this->pagination->create_links();
           	$x['data']=$this->m_berita->get_all_berita();
             $x['dataSB']=$this->m_berita->get_all_berita_SB();
             $this->load->view('templates/header');
@@ -34,6 +50,8 @@ if (! defined('BASEPATH') ) exit('No direct script access allowed');
             $this->load->view('Templates/footer');
 
             }
+
+            
 
           
       }

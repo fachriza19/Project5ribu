@@ -25,5 +25,21 @@ class M_berita extends CI_Model{
 		$cari = $this->db->query("SELECT * from berita where berita_judul like '%$cari%' ");
 		return $cari->result();
 	}
-	
+
+	public function record_count() {
+        return $this->db->count_all("berita");
+    }
+
+    public function fetch_countries($limit, $start) {
+        $this->db->limit($limit, $start);
+        $query = $this->db->get("berita");
+
+        if ($query->num_rows() > 0) {
+            foreach ($query->result() as $row) {
+                $data[] = $row;
+            }
+            return $data;
+        }
+        return false;
+   }
 }

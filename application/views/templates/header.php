@@ -200,16 +200,12 @@
                                 <li><a href="<?php echo base_url('sarpras/bengkel'); ?>">Bengkel</a></li>
                                 <li>
                                     <a class="" href="<?php echo base_url('Sarpras/ProfileKN') ?>" aria-expanded="false"><span class="hide-menu">Kapal Negara</span></a>
-                                    <!-- <ul aria-expanded="false" class="collapse">
-                                        <li><a href="<?php echo base_url('Sarpras/Kapal') ?>">KN EDAM</a></li>
-                                        <li><a href="<?php echo base_url('Sarpras/KNKARAKATA') ?>">KN KARAKATA</a></li>
-                                        <li><a href="<?php echo base_url('Sarpras/KNENGGANO') ?>">KN. ENGGANO</a></li>
-                                        <li><a href="<?php echo base_url('Sarpras/KNMIAPLACIDUS') ?>">KN. MIAPLACIDUS</a></li>
-                                        <li><a href="<?php echo base_url('Sarpras/KNMOKMER') ?>">KN. MOKMER</a></li>
-                                    </ul> -->
                                 </li>
                                 <li><a href="<?php echo base_url('sarpras/pengamatan'); ?>">Pengamatan Laut</a></li>
                             </ul>
+                        </li>
+                        <li>
+                            <a class="" href="http://jdih.dephub.go.id/" target="blank" aria-expanded="false"><i class="mdi mdi-file"></i><span class="hide-menu">Dasar Hukum</span></a>
                         </li>
                         <li>
                             <a class="" href="<?php echo base_url('helpdesk/index') ?>" aria-expanded="false"><i class="mdi mdi-file"></i><span class="hide-menu">Helpdesk</span></a>
@@ -265,68 +261,3 @@
             </div>
             <!-- End Sidebar scroll-->
         </aside>
-
-
-
-
-
-
-
-
-        <!-- ============================================================== -->
-        <!-- End Left Sidebar - style you can find in sidebar.scss  -->
-        <!-- ============================================================== -->
-        <!-- ============================================================== -->
-        <!-- Page wrapper  -->
-        <!-- ============================================================== -->
-
-            <!-- ============================================================== -->
-            <!-- Container fluid  -->
-            <!-- ============================================================== -->
-
-                <!-- ============================================================== -->
-                <!-- Bread crumb and right sidebar toggle -->
-                <!-- ============================================================== -->
-
-
-
-
-
-                <!-- ============================================================== -->
-                <!-- End Bread crumb and right sidebar toggle -->
-                <!-- ============================================================== -->
-                <!-- ============================================================== -->
-                <!-- Start Page Content -->
-                <!-- ============================================================== -->
-                <!-- Row -->
-
-                <!-- Row -->
-                <!-- Row -->
-
-                <!-- Row -->
-                <!-- Row -->
-
-                <!-- Row -->
-
-                <!-- Row -->
-
-                <!-- Row -->
-                <!-- ============================================================== -->
-                <!-- End PAge Content -->
-                <!-- ============================================================== -->
-                <!-- ============================================================== -->
-                <!-- Right sidebar -->
-                <!-- ============================================================== -->
-                <!-- .right-sidebar -->
-
-                <!-- ============================================================== -->
-                <!-- End Right sidebar -->
-                <!-- ============================================================== -->
-
-
-            <!-- ============================================================== -->
-            <!-- End Container fluid  -->
-            <!-- ============================================================== -->
-            <!-- ============================================================== -->
-            <!-- footer -->
-            <!-- ============================================================== -->
