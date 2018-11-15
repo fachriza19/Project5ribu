@@ -15,5 +15,11 @@ class m_telkompel extends CI_Model{
     $hsl=$this->db->query("SELECT * FROM laporan_telkompel where id_laporan='$idlap'");
     return $hsl;
   }
+
+  function getdata(){
+  	$this->db->select('nama_instansi,kapal_masuk,kapal_keluar,kapal_melintas,kapal_labuh,kapal_sandar');
+  	$result = $this->db->get('laporan_telkompel');
+  	return $result;
+  }
 }
 ?>

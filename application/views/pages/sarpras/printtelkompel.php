@@ -29,10 +29,32 @@ td{
           <div class="card-body printableArea">
           <?php
             foreach ($data as $t) :
-                $kotalist=array('STASIUN RADIO PANTAI CIREBON' => 'Cirebon','VESSEL TRAFFIC SERVICE MERAK' => 'Merak');
-                $kepalalist=array('STASIUN RADIO PANTAI CIREBON' => 'ADAH MUNADI','VESSEL TRAFFIC SERVICE MERAK' => 'KEPALA VTS Merak');
-                $pangkatlist=array('STASIUN RADIO PANTAI CIREBON' => 'Penata Tk.I ( III/d )','VESSEL TRAFFIC SERVICE MERAK' => 'Pangkat');
-                $niplist=array('STASIUN RADIO PANTAI CIREBON' => '19630102 198403 1 001','VESSEL TRAFFIC SERVICE MERAK' => 'NIP');
+                $kotalist=array('STASIUN RADIO PANTAI CIREBON' => 'Cirebon','STASIUN RADIO PANTAI JAKARTA' => 'Jakarta','STASIUN RADIO PANTAI CIGADING' => 'Cigading','STASIUN RADIO PANTAI PANJANG'=>'Panjang','STASIUN RADIO PANTAI BENGKULU'=>'Bengkulu','VESSEL TRAFFIC SERVICE MERAK' => 'Merak','VESSEL TRAFFIC SERVICE TANJUNG PRIOK' => 'TANJUNG PRIOK','VESSEL TRAFFIC SERVICE PANJANG' => 'PANJANG');
+                $kepalalist=array('STASIUN RADIO PANTAI CIREBON' => 'ADAH MUNADI',
+                    'STASIUN RADIO PANTAI JAKARTA' => 'YUSNI THAMRIN, S.Pd',
+                    'STASIUN RADIO PANTAI CIGADING' => 'ENTRIS SUTRISMAN',
+                    'STASIUN RADIO PANTAI PANJANG'=>'MUHHAMAD DARSONI, S.Kom',
+                    'STASIUN RADIO PANTAI BENGKULU'=>'AZUARDI',
+                    'VESSEL TRAFFIC SERVICE MERAK' => 'ENTRIS SUTRISMAN',
+                    'VESSEL TRAFFIC SERVICE TANJUNG PRIOK' => 'SUPRIYANTO',
+                    'VESSEL TRAFFIC SERVICE PANJANG' => 'MUHHAMAD DARSONI, S.Kom');
+                $pangkatlist=array('STASIUN RADIO PANTAI CIREBON' => 'Penata Tk.I ( III/d )',
+                    'STASIUN RADIO PANTAI JAKARTA' => 'Penata - (III/c)',
+                    'STASIUN RADIO PANTAI CIGADING' => 'Penata - (III/c)',
+                    'STASIUN RADIO PANTAI PANJANG'=>'Penata - (III/c)',
+                    'STASIUN RADIO PANTAI BENGKULU'=>'Penata - (III/c)',
+                    'VESSEL TRAFFIC SERVICE MERAK' => 'Penata - (III/c)',
+                    'VESSEL TRAFFIC SERVICE TANJUNG PRIOK' => 'Penata - (III/c)',
+                    'VESSEL TRAFFIC SERVICE PANJANG' => 'Penata - (III/c)'
+                );
+                $niplist=array('STASIUN RADIO PANTAI CIREBON' => '19630102 198403 1 001',
+                    'STASIUN RADIO PANTAI JAKARTA' => '19641020 198903 1 002',
+                    'STASIUN RADIO PANTAI CIGADING' => '19670318 198903 1 001',
+                    'STASIUN RADIO PANTAI PANJANG'=>'19711009 199103 1 001',
+                    'STASIUN RADIO PANTAI BENGKULU'=>'19670818 199011 1 001',
+                    'VESSEL TRAFFIC SERVICE MERAK' => '19670318 198903 1 001',
+                    'VESSEL TRAFFIC SERVICE TANJUNG PRIOK' => '19690626 198903 1 002',
+                    'VESSEL TRAFFIC SERVICE PANJANG' => '19711009 199103 1 001');
                 $kota=$kotalist[$t['nama_instansi']];
                 $kepala=$kepalalist[$t['nama_instansi']];
                 $pangkat=$pangkatlist[$t['nama_instansi']];

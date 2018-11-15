@@ -34,8 +34,14 @@
                 <h5 class="control-label text-left col-md-3">Nama Instansi</h5>
                   <div class="col-md-3">
                     <select class="form-control custom-select" name="instansi">
+                      <option value="STASIUN RADIO PANTAI JAKARTA">SROP JAKARTA</option>
+                      <option value="STASIUN RADIO PANTAI CIGADING">SROP CIGADING</option>
+                      <option value="STASIUN RADIO PANTAI PANJANG">SROP PANJANG</option>
+                      <option value="STASIUN RADIO PANTAI BENGKULU">SROP BENGKULU</option>
                       <option value="STASIUN RADIO PANTAI CIREBON">SROP CIREBON</option>
                       <option value="VESSEL TRAFFIC SERVICE MERAK">VTS MERAK</option>
+                      <option value="VESSEL TRAFFIC SERVICE TANJUNG PRIOK">VTS TANJUNG PRIOK</option>
+                      <option value="VESSEL TRAFFIC SERVICE PANJANG">VTS PANJANG</option>
                     </select>
                   </div>
                 </div>

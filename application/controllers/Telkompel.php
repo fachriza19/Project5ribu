@@ -20,6 +20,8 @@ if (! defined('BASEPATH') ) exit('No direct script access allowed');
 
           function kelolatelkompel()
           {
+            $chart = $this->m_telkompel->getdata()->result();
+            $x['chart']= json_encode($chart);
             $x['data']=$this->m_telkompel->show_laporan();
             $this->load->view('Templates/header');
             $this->load->view('pages/sarpras/kelolatelkompel',$x);
@@ -84,7 +86,7 @@ if (! defined('BASEPATH') ) exit('No direct script access allowed');
             $tgl=$laporan['data'][0]['tanggal_akhir'];
             $tglindo=date_indo($tgl);
             $ins=$laporan['data'][0]['nama_instansi'];
-            $singkatanlist=array('STASIUN RADIO PANTAI CIREBON' => 'SROP Cirebon','VESSEL TRAFFIC SERVICE MERAK' => 'VTS Merak');
+            $singkatanlist=array('STASIUN RADIO PANTAI JAKARTA' => 'SROP JAKARTA','STASIUN RADIO PANTAI CIGADING' => 'SROP CIGADING','STASIUN RADIO PANTAI PANJANG'=>'SROP PANJANG','STASIUN RADIO PANTAI BENGKULU'=>'SROP BENGKULU','STASIUN RADIO PANTAI CIREBON' => 'SROP Cirebon','VESSEL TRAFFIC SERVICE MERAK' => 'VTS Merak','VESSEL TRAFFIC SERVICE TANJUNG PRIOK' => 'VTS TANJUNG PRIOK','VESSEL TRAFFIC SERVICE PANJANG' => 'VTS PANJANG');
             $singkatan=$singkatanlist[$ins];
             // print_r($laporan);
             // die();

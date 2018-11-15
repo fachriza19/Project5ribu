@@ -11,6 +11,7 @@
     <!-- Favicon icon -->
     <link rel="icon" type="image/png" sizes="16x16" href="<?php echo base_url('assets/images/logo.png') ?>">
     <title>Distrik Navigasi</title>
+    <link href="<?php echo base_url()?>/assets/plugins/morrisjs/morris.css" rel="stylesheet">
     <!-- Bootstrap Core CSS -->
     <link href="<?php echo base_url('assets/plugins/bootstrap/css/bootstrap.min.css') ?>" rel="stylesheet">
   <!-- Custom CSS -->
