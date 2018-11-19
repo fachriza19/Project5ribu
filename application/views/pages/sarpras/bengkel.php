@@ -53,7 +53,7 @@
                                         </div>
                                         <div id="collapseOne11" class="collapse show" role="tabpanel" aria-labelledby="headingOne11" style="">
                                             <div class="card-body text-dark">
-                                                <img src="<?php echo base_url('assets/images/AlatBengkel/1.jpg');?>">
+                                                <img src="<?php echo base_url('assets/images/AlatBengkel/1.jpg');?>" width="100%" width="100%">
                                             </div>
                                         </div>
                                     </div>
@@ -67,7 +67,7 @@
                                         </div>
                                         <div id="collapseTwo22" class="collapse" role="tabpanel" aria-labelledby="headingTwo22">
                                             <div class="card-body">
-                                               <img src="<?php echo base_url('assets/images/AlatBengkel/2.jpg');?>">
+                                               <img src="<?php echo base_url('assets/images/AlatBengkel/2.jpg');?>" width="100%">
                                             </div>
                                         </div>
                                     </div>
@@ -81,7 +81,7 @@
                                         </div>
                                         <div id="collapseThree33" class="collapse" role="tabpanel" aria-labelledby="headingThree33">
                                             <div class="card-body">
-                                                 <img src="<?php echo base_url('assets/images/AlatBengkel/3.jpg');?>">
+                                                 <img src="<?php echo base_url('assets/images/AlatBengkel/3.jpg');?>" width="100%">
                                             </div>
                                         </div>
                                     </div>
@@ -95,7 +95,7 @@
                                         </div>
                                         <div id="c4" class="collapse" role="tabpanel" aria-labelledby="heading4">
                                             <div class="card-body">
-                                                 <img src="<?php echo base_url('assets/images/AlatBengkel/4.jpg');?>">
+                                                 <img src="<?php echo base_url('assets/images/AlatBengkel/4.jpg');?>" width="100%">
                                             </div>
                                         </div>
                                     </div>
@@ -109,7 +109,7 @@
                                         </div>
                                         <div id="c5" class="collapse" role="tabpanel" aria-labelledby="heading5">
                                             <div class="card-body">
-                                                 <img src="<?php echo base_url('assets/images/AlatBengkel/5.jpg');?>">
+                                                 <img src="<?php echo base_url('assets/images/AlatBengkel/5.jpg');?>" width="100%">
                                             </div>
                                         </div>
                                     </div>
@@ -123,7 +123,7 @@
                                         </div>
                                         <div id="c6" class="collapse" role="tabpanel" aria-labelledby="heading6">
                                             <div class="card-body">
-                                                 <img src="<?php echo base_url('assets/images/AlatBengkel/6.jpg');?>">
+                                                 <img src="<?php echo base_url('assets/images/AlatBengkel/6.jpg');?>" width="100%">
                                             </div>
                                         </div>
                                     </div>
@@ -137,7 +137,7 @@
                                         </div>
                                         <div id="c7" class="collapse" role="tabpanel" aria-labelledby="heading7">
                                             <div class="card-body">
-                                                 <img src="<?php echo base_url('assets/images/AlatBengkel/7.jpg');?>">
+                                                 <img src="<?php echo base_url('assets/images/AlatBengkel/7.jpg');?>" width="100%">
                                             </div>
                                         </div>
                                     </div>
@@ -151,7 +151,7 @@
                                         </div>
                                         <div id="c8" class="collapse" role="tabpanel" aria-labelledby="heading8">
                                             <div class="card-body">
-                                                 <img src="<?php echo base_url('assets/images/AlatBengkel/8.jpg');?>">
+                                                 <img src="<?php echo base_url('assets/images/AlatBengkel/8.jpg');?>" width="100%">
                                             </div>
                                         </div>
                                     </div>
@@ -165,7 +165,7 @@
                                         </div>
                                         <div id="c9" class="collapse" role="tabpanel" aria-labelledby="heading9">
                                             <div class="card-body">
-                                                 <img src="<?php echo base_url('assets/images/AlatBengkel/9.jpg');?>">
+                                                 <img src="<?php echo base_url('assets/images/AlatBengkel/9.jpg');?>" width="100%">
                                             </div>
                                         </div>
                                     </div>
@@ -179,7 +179,7 @@
                                         </div>
                                         <div id="c10" class="collapse" role="tabpanel" aria-labelledby="heading10">
                                             <div class="card-body">
-                                                 <img src="<?php echo base_url('assets/images/AlatBengkel/10.jpg');?>">
+                                                 <img src="<?php echo base_url('assets/images/AlatBengkel/10.jpg');?>" width="100%">
                                             </div>
                                         </div>
                                     </div>
@@ -193,7 +193,7 @@
                                         </div>
                                         <div id="c11" class="collapse" role="tabpanel" aria-labelledby="heading11">
                                             <div class="card-body">
-                                                 <img src="<?php echo base_url('assets/images/AlatBengkel/11.jpg');?>">
+                                                 <img src="<?php echo base_url('assets/images/AlatBengkel/11.jpg');?>" width="100%">
                                             </div>
                                         </div>
                                     </div>
@@ -207,7 +207,7 @@
                                         </div>
                                         <div id="c12" class="collapse" role="tabpanel" aria-labelledby="heading12">
                                             <div class="card-body">
-                                                 <img src="<?php echo base_url('assets/images/AlatBengkel/12.jpg');?>">
+                                                 <img src="<?php echo base_url('assets/images/AlatBengkel/12.jpg');?>" width="100%">
                                             </div>
                                         </div>
                                     </div>
@@ -221,7 +221,7 @@
                                         </div>
                                         <div id="c13" class="collapse" role="tabpanel" aria-labelledby="heading13">
                                             <div class="card-body">
-                                                 <img src="<?php echo base_url('assets/images/AlatBengkel/13.jpg');?>">
+                                                 <img src="<?php echo base_url('assets/images/AlatBengkel/13.jpg');?>" width="100%">
                                             </div>
                                         </div>
                                     </div>
@@ -235,7 +235,7 @@
                                         </div>
                                         <div id="c14" class="collapse" role="tabpanel" aria-labelledby="heading14">
                                             <div class="card-body">
-                                                 <img src="<?php echo base_url('assets/images/AlatBengkel/14.jpg');?>">
+                                                 <img src="<?php echo base_url('assets/images/AlatBengkel/14.jpg');?>" width="100%">
                                             </div>
                                         </div>
                                     </div>
@@ -249,7 +249,7 @@
                                         </div>
                                         <div id="c15" class="collapse" role="tabpanel" aria-labelledby="heading15">
                                             <div class="card-body">
-                                                 <img src="<?php echo base_url('assets/images/AlatBengkel/15.jpg');?>">
+                                                 <img src="<?php echo base_url('assets/images/AlatBengkel/15.jpg');?>" width="100%">
                                             </div>
                                         </div>
                                     </div>
@@ -263,7 +263,7 @@
                                         </div>
                                         <div id="c16" class="collapse" role="tabpanel" aria-labelledby="heading16">
                                             <div class="card-body">
-                                                 <img src="<?php echo base_url('assets/images/AlatBengkel/16.jpg');?>">
+                                                 <img src="<?php echo base_url('assets/images/AlatBengkel/16.jpg');?>" width="100%">
                                             </div>
                                         </div>
                                     </div>
@@ -277,7 +277,7 @@
                                         </div>
                                         <div id="c17" class="collapse" role="tabpanel" aria-labelledby="heading17">
                                             <div class="card-body">
-                                                 <img src="<?php echo base_url('assets/images/AlatBengkel/17.jpg');?>">
+                                                 <img src="<?php echo base_url('assets/images/AlatBengkel/17.jpg');?>" width="100%">
                                             </div>
                                         </div>
                                     </div>
@@ -291,7 +291,7 @@
                                         </div>
                                         <div id="c18" class="collapse" role="tabpanel" aria-labelledby="heading18">
                                             <div class="card-body">
-                                                 <img src="<?php echo base_url('assets/images/AlatBengkel/18.jpg');?>">
+                                                 <img src="<?php echo base_url('assets/images/AlatBengkel/18.jpg');?>" width="100%">
                                             </div>
                                         </div>
                                     </div>
@@ -305,7 +305,7 @@
                                         </div>
                                         <div id="c19" class="collapse" role="tabpanel" aria-labelledby="heading19">
                                             <div class="card-body">
-                                                 <img src="<?php echo base_url('assets/images/AlatBengkel/19.jpg');?>">
+                                                 <img src="<?php echo base_url('assets/images/AlatBengkel/19.jpg');?>" width="100%">
                                             </div>
                                         </div>
                                     </div>
@@ -319,7 +319,7 @@
                                         </div>
                                         <div id="c20" class="collapse" role="tabpanel" aria-labelledby="heading20">
                                             <div class="card-body">
-                                                 <img src="<?php echo base_url('assets/images/AlatBengkel/20.jpg');?>">
+                                                 <img src="<?php echo base_url('assets/images/AlatBengkel/20.jpg');?>" width="100%">
                                             </div>
                                         </div>
                                     </div>
@@ -333,7 +333,7 @@
                                         </div>
                                         <div id="c21" class="collapse" role="tabpanel" aria-labelledby="heading21">
                                             <div class="card-body">
-                                                 <img src="<?php echo base_url('assets/images/AlatBengkel/21.jpg');?>">
+                                                 <img src="<?php echo base_url('assets/images/AlatBengkel/21.jpg');?>" width="100%">
                                             </div>
                                         </div>
                                     </div>
@@ -347,7 +347,7 @@
                                         </div>
                                         <div id="c22" class="collapse" role="tabpanel" aria-labelledby="heading22">
                                             <div class="card-body">
-                                                 <img src="<?php echo base_url('assets/images/AlatBengkel/22.jpg');?>">
+                                                 <img src="<?php echo base_url('assets/images/AlatBengkel/22.jpg');?>" width="100%">
                                             </div>
                                         </div>
                                     </div>
@@ -361,7 +361,7 @@
                                         </div>
                                         <div id="c23" class="collapse" role="tabpanel" aria-labelledby="heading23">
                                             <div class="card-body">
-                                                 <img src="<?php echo base_url('assets/images/AlatBengkel/23.jpg');?>">
+                                                 <img src="<?php echo base_url('assets/images/AlatBengkel/23.jpg');?>" width="100%">
                                             </div>
                                         </div>
                                     </div>
@@ -375,7 +375,7 @@
                                         </div>
                                         <div id="c24" class="collapse" role="tabpanel" aria-labelledby="heading24">
                                             <div class="card-body">
-                                                 <img src="<?php echo base_url('assets/images/AlatBengkel/24.jpg');?>">
+                                                 <img src="<?php echo base_url('assets/images/AlatBengkel/24.jpg');?>" width="100%">
                                             </div>
                                         </div>
                                     </div>
@@ -389,7 +389,7 @@
                                         </div>
                                         <div id="c25" class="collapse" role="tabpanel" aria-labelledby="heading25">
                                             <div class="card-body">
-                                                 <img src="<?php echo base_url('assets/images/AlatBengkel/25.jpg');?>">
+                                                 <img src="<?php echo base_url('assets/images/AlatBengkel/25.jpg');?>" width="100%">
                                             </div>
                                         </div>
                                     </div>
@@ -403,7 +403,7 @@
                                         </div>
                                         <div id="c26" class="collapse" role="tabpanel" aria-labelledby="heading26">
                                             <div class="card-body">
-                                                 <img src="<?php echo base_url('assets/images/AlatBengkel/26.jpg');?>">
+                                                 <img src="<?php echo base_url('assets/images/AlatBengkel/26.jpg');?>" width="100%">
                                             </div>
                                         </div>
                                     </div>
@@ -417,7 +417,7 @@
                                         </div>
                                         <div id="c27" class="collapse" role="tabpanel" aria-labelledby="heading27">
                                             <div class="card-body">
-                                                 <img src="<?php echo base_url('assets/images/AlatBengkel/27.jpg');?>">
+                                                 <img src="<?php echo base_url('assets/images/AlatBengkel/27.jpg');?>" width="100%">
                                             </div>
                                         </div>
                                     </div>
@@ -425,33 +425,33 @@
                                 </div>  
                                 <br>
            <!--  <h6><ol type="1">
-              <li></li><img src="<?php echo base_url('assets/images/AlatBengkel/1.jpg');?>"><br>
-              <li></li><img src="<?php echo base_url('assets/images/AlatBengkel/2.jpg');?>"><br>
-              <li></li><img src="<?php echo base_url('assets/images/AlatBengkel/3.jpg');?>"><br>
-              <li></li><img src="<?php echo base_url('assets/images/AlatBengkel/4.jpg');?>"><br>
-              <li></li><img src="<?php echo base_url('assets/images/AlatBengkel/5.jpg');?>"><br>
-              <li></li><img src="<?php echo base_url('assets/images/AlatBengkel/6.jpg');?>"><br>
-              <li></li><img src="<?php echo base_url('assets/images/AlatBengkel/7.jpg');?>"><br>
-              <li></li><img src="<?php echo base_url('assets/images/AlatBengkel/8.jpg');?>"><br>
-              <li></li><img src="<?php echo base_url('assets/images/AlatBengkel/9.jpg');?>"><br>
-              <li></li><img src="<?php echo base_url('assets/images/AlatBengkel/10.jpg');?>"><br>
-              <li></li><img src="<?php echo base_url('assets/images/AlatBengkel/11.jpg');?>"><br>
-              <li></li><img src="<?php echo base_url('assets/images/AlatBengkel/12.jpg');?>"><br>
-              <li></li><img src="<?php echo base_url('assets/images/AlatBengkel/13.jpg');?>"><br>
-              <li></li><img src="<?php echo base_url('assets/images/AlatBengkel/14.jpg');?>"><br>
-              <li></li><img src="<?php echo base_url('assets/images/AlatBengkel/15.jpg');?>"><br>
-              <li></li><img src="<?php echo base_url('assets/images/AlatBengkel/16.jpg');?>"><br>
-              <li></li><img src="<?php echo base_url('assets/images/AlatBengkel/17.jpg');?>"><br>
-              <li></li><img src="<?php echo base_url('assets/images/AlatBengkel/18.jpg');?>"><br>
-              <li></li><img src="<?php echo base_url('assets/images/AlatBengkel/19.jpg');?>"><br>
-              <li></li><img src="<?php echo base_url('assets/images/AlatBengkel/20.jpg');?>"><br>
-              <li></li><img src="<?php echo base_url('assets/images/AlatBengkel/21.jpg');?>"><br>
-              <li></li><img src="<?php echo base_url('assets/images/AlatBengkel/22.jpg');?>"><br>
-              <li></li><img src="<?php echo base_url('assets/images/AlatBengkel/23.jpg');?>"><br>
-              <li></li><img src="<?php echo base_url('assets/images/AlatBengkel/24.jpg');?>"><br>
-              <li></li><img src="<?php echo base_url('assets/images/AlatBengkel/25.jpg');?>"><br>
-              <li></li><img src="<?php echo base_url('assets/images/AlatBengkel/26.jpg');?>"><br>
-              <li></li><img src="<?php echo base_url('assets/images/AlatBengkel/27.jpg');?>"><br>
+              <li></li><img src="<?php echo base_url('assets/images/AlatBengkel/1.jpg');?>" width="100%"><br>
+              <li></li><img src="<?php echo base_url('assets/images/AlatBengkel/2.jpg');?>" width="100%"><br>
+              <li></li><img src="<?php echo base_url('assets/images/AlatBengkel/3.jpg');?>" width="100%"><br>
+              <li></li><img src="<?php echo base_url('assets/images/AlatBengkel/4.jpg');?>" width="100%"><br>
+              <li></li><img src="<?php echo base_url('assets/images/AlatBengkel/5.jpg');?>" width="100%"><br>
+              <li></li><img src="<?php echo base_url('assets/images/AlatBengkel/6.jpg');?>" width="100%"><br>
+              <li></li><img src="<?php echo base_url('assets/images/AlatBengkel/7.jpg');?>" width="100%"><br>
+              <li></li><img src="<?php echo base_url('assets/images/AlatBengkel/8.jpg');?>" width="100%"><br>
+              <li></li><img src="<?php echo base_url('assets/images/AlatBengkel/9.jpg');?>" width="100%"><br>
+              <li></li><img src="<?php echo base_url('assets/images/AlatBengkel/10.jpg');?>" width="100%"><br>
+              <li></li><img src="<?php echo base_url('assets/images/AlatBengkel/11.jpg');?>" width="100%"><br>
+              <li></li><img src="<?php echo base_url('assets/images/AlatBengkel/12.jpg');?>" width="100%"><br>
+              <li></li><img src="<?php echo base_url('assets/images/AlatBengkel/13.jpg');?>" width="100%"><br>
+              <li></li><img src="<?php echo base_url('assets/images/AlatBengkel/14.jpg');?>" width="100%"><br>
+              <li></li><img src="<?php echo base_url('assets/images/AlatBengkel/15.jpg');?>" width="100%"><br>
+              <li></li><img src="<?php echo base_url('assets/images/AlatBengkel/16.jpg');?>" width="100%"><br>
+              <li></li><img src="<?php echo base_url('assets/images/AlatBengkel/17.jpg');?>" width="100%"><br>
+              <li></li><img src="<?php echo base_url('assets/images/AlatBengkel/18.jpg');?>" width="100%"><br>
+              <li></li><img src="<?php echo base_url('assets/images/AlatBengkel/19.jpg');?>" width="100%"><br>
+              <li></li><img src="<?php echo base_url('assets/images/AlatBengkel/20.jpg');?>" width="100%"><br>
+              <li></li><img src="<?php echo base_url('assets/images/AlatBengkel/21.jpg');?>" width="100%"><br>
+              <li></li><img src="<?php echo base_url('assets/images/AlatBengkel/22.jpg');?>" width="100%"><br>
+              <li></li><img src="<?php echo base_url('assets/images/AlatBengkel/23.jpg');?>" width="100%"><br>
+              <li></li><img src="<?php echo base_url('assets/images/AlatBengkel/24.jpg');?>" width="100%"><br>
+              <li></li><img src="<?php echo base_url('assets/images/AlatBengkel/25.jpg');?>" width="100%"><br>
+              <li></li><img src="<?php echo base_url('assets/images/AlatBengkel/26.jpg');?>" width="100%"><br>
+              <li></li><img src="<?php echo base_url('assets/images/AlatBengkel/27.jpg');?>" width="100%"><br>
             </ol></h6> -->
             <h4 align="center">MESIN – MESIN BENGKEL YANG MENGGUNAKAN BAHAN BAKAR ELEKTRICAL</h4>
             <div id="accordion2" role="tablist" class="minimal-faq" aria-multiselectable="true">
@@ -464,7 +464,7 @@
                                         </div>
                                         <div id="c28" class="collapse show" role="tabpanel" aria-labelledby="heading28" style="">
                                             <div class="card-body text-dark">
-                                                <img src="<?php echo base_url('assets/images/AlatBengkel/28.jpg');?>">
+                                                <img src="<?php echo base_url('assets/images/AlatBengkel/28.jpg');?>" width="100%">
                                             </div>
                                         </div>
                                     </div>
@@ -478,7 +478,7 @@
                                         </div>
                                         <div id="c29" class="collapse" role="tabpanel" aria-labelledby="heading29">
                                             <div class="card-body">
-                                               <img src="<?php echo base_url('assets/images/AlatBengkel/29.jpg');?>">
+                                               <img src="<?php echo base_url('assets/images/AlatBengkel/29.jpg');?>" width="100%">
                                             </div>
                                         </div>
                                     </div>
@@ -492,7 +492,7 @@
                                         </div>
                                         <div id="c30" class="collapse" role="tabpanel" aria-labelledby="heading30">
                                             <div class="card-body">
-                                                 <img src="<?php echo base_url('assets/images/AlatBengkel/30.jpg');?>">
+                                                 <img src="<?php echo base_url('assets/images/AlatBengkel/30.jpg');?>" width="100%">
                                             </div>
                                         </div>
                                     </div>
@@ -506,7 +506,7 @@
                                         </div>
                                         <div id="c31" class="collapse" role="tabpanel" aria-labelledby="heading31">
                                             <div class="card-body">
-                                                 <img src="<?php echo base_url('assets/images/AlatBengkel/31.jpg');?>">
+                                                 <img src="<?php echo base_url('assets/images/AlatBengkel/31.jpg');?>" width="100%">
                                             </div>
                                         </div>
                                     </div>
@@ -520,7 +520,7 @@
                                         </div>
                                         <div id="c32" class="collapse" role="tabpanel" aria-labelledby="heading32">
                                             <div class="card-body">
-                                                 <img src="<?php echo base_url('assets/images/AlatBengkel/32.jpg');?>">
+                                                 <img src="<?php echo base_url('assets/images/AlatBengkel/32.jpg');?>" width="100%">
                                             </div>
                                         </div>
                                     </div>
@@ -534,7 +534,7 @@
                                         </div>
                                         <div id="c33" class="collapse" role="tabpanel" aria-labelledby="heading33">
                                             <div class="card-body">
-                                                 <img src="<?php echo base_url('assets/images/AlatBengkel/33.jpg');?>">
+                                                 <img src="<?php echo base_url('assets/images/AlatBengkel/33.jpg');?>" width="100%">
                                             </div>
                                         </div>
                                     </div>
@@ -548,7 +548,7 @@
                                         </div>
                                         <div id="c34" class="collapse" role="tabpanel" aria-labelledby="heading34">
                                             <div class="card-body">
-                                                 <img src="<?php echo base_url('assets/images/AlatBengkel/34.jpg');?>">
+                                                 <img src="<?php echo base_url('assets/images/AlatBengkel/34.jpg');?>" width="100%">
                                             </div>
                                         </div>
                                     </div>
@@ -562,7 +562,7 @@
                                         </div>
                                         <div id="c35" class="collapse" role="tabpanel" aria-labelledby="heading35">
                                             <div class="card-body">
-                                                 <img src="<?php echo base_url('assets/images/AlatBengkel/35.jpg');?>">
+                                                 <img src="<?php echo base_url('assets/images/AlatBengkel/35.jpg');?>" width="100%">
                                             </div>
                                         </div>
                                     </div>
@@ -576,7 +576,7 @@
                                         </div>
                                         <div id="c36" class="collapse" role="tabpanel" aria-labelledby="heading36">
                                             <div class="card-body">
-                                                 <img src="<?php echo base_url('assets/images/AlatBengkel/36.jpg');?>">
+                                                 <img src="<?php echo base_url('assets/images/AlatBengkel/36.jpg');?>" width="100%">
                                             </div>
                                         </div>
                                     </div>
@@ -590,7 +590,7 @@
                                         </div>
                                         <div id="c37" class="collapse" role="tabpanel" aria-labelledby="heading37">
                                             <div class="card-body">
-                                                 <img src="<?php echo base_url('assets/images/AlatBengkel/37.jpg');?>">
+                                                 <img src="<?php echo base_url('assets/images/AlatBengkel/37.jpg');?>" width="100%">
                                             </div>
                                         </div>
                                     </div>
@@ -604,7 +604,7 @@
                                         </div>
                                         <div id="c38" class="collapse" role="tabpanel" aria-labelledby="heading38">
                                             <div class="card-body">
-                                                 <img src="<?php echo base_url('assets/images/AlatBengkel/38.jpg');?>">
+                                                 <img src="<?php echo base_url('assets/images/AlatBengkel/38.jpg');?>" width="100%">
                                             </div>
                                         </div>
                                     </div>
@@ -618,7 +618,7 @@
                                         </div>
                                         <div id="c39" class="collapse" role="tabpanel" aria-labelledby="heading39">
                                             <div class="card-body">
-                                                 <img src="<?php echo base_url('assets/images/AlatBengkel/39.jpg');?>">
+                                                 <img src="<?php echo base_url('assets/images/AlatBengkel/39.jpg');?>" width="100%">
                                             </div>
                                         </div>
                                     </div>
@@ -632,7 +632,7 @@
                                         </div>
                                         <div id="c40" class="collapse" role="tabpanel" aria-labelledby="heading40">
                                             <div class="card-body">
-                                                 <img src="<?php echo base_url('assets/images/AlatBengkel/40.jpg');?>">
+                                                 <img src="<?php echo base_url('assets/images/AlatBengkel/40.jpg');?>" width="100%">
                                             </div>
                                         </div>
                                     </div>
@@ -646,7 +646,7 @@
                                         </div>
                                         <div id="c41" class="collapse" role="tabpanel" aria-labelledby="heading41">
                                             <div class="card-body">
-                                                 <img src="<?php echo base_url('assets/images/AlatBengkel/41.jpg');?>">
+                                                 <img src="<?php echo base_url('assets/images/AlatBengkel/41.jpg');?>" width="100%">
                                             </div>
                                         </div>
                                     </div>
@@ -660,7 +660,7 @@
                                         </div>
                                         <div id="c42" class="collapse" role="tabpanel" aria-labelledby="heading42">
                                             <div class="card-body">
-                                                 <img src="<?php echo base_url('assets/images/AlatBengkel/42.jpg');?>">
+                                                 <img src="<?php echo base_url('assets/images/AlatBengkel/42.jpg');?>" width="100%">
                                             </div>
                                         </div>
                                     </div>
@@ -674,7 +674,7 @@
                                         </div>
                                         <div id="c43" class="collapse" role="tabpanel" aria-labelledby="heading43">
                                             <div class="card-body">
-                                                 <img src="<?php echo base_url('assets/images/AlatBengkel/43.jpg');?>">
+                                                 <img src="<?php echo base_url('assets/images/AlatBengkel/43.jpg');?>" width="100%">
                                             </div>
                                         </div>
                                     </div>
@@ -688,7 +688,7 @@
                                         </div>
                                         <div id="c44" class="collapse" role="tabpanel" aria-labelledby="heading44">
                                             <div class="card-body">
-                                                 <img src="<?php echo base_url('assets/images/AlatBengkel/44.jpg');?>">
+                                                 <img src="<?php echo base_url('assets/images/AlatBengkel/44.jpg');?>" width="100%">
                                             </div>
                                         </div>
                                     </div>
@@ -702,7 +702,7 @@
                                         </div>
                                         <div id="c45" class="collapse" role="tabpanel" aria-labelledby="heading45">
                                             <div class="card-body">
-                                                 <img src="<?php echo base_url('assets/images/AlatBengkel/45.jpg');?>">
+                                                 <img src="<?php echo base_url('assets/images/AlatBengkel/45.jpg');?>" width="100%">
                                             </div>
                                         </div>
                                     </div>
@@ -716,7 +716,7 @@
                                         </div>
                                         <div id="c46" class="collapse" role="tabpanel" aria-labelledby="heading46">
                                             <div class="card-body">
-                                                 <img src="<?php echo base_url('assets/images/AlatBengkel/46.jpg');?>">
+                                                 <img src="<?php echo base_url('assets/images/AlatBengkel/46.jpg');?>" width="100%">
                                             </div>
                                         </div>
                                     </div>
@@ -730,7 +730,7 @@
                                         </div>
                                         <div id="c47" class="collapse" role="tabpanel" aria-labelledby="heading47">
                                             <div class="card-body">
-                                                 <img src="<?php echo base_url('assets/images/AlatBengkel/47.jpg');?>">
+                                                 <img src="<?php echo base_url('assets/images/AlatBengkel/47.jpg');?>" width="100%">
                                             </div>
                                         </div>
                                     </div>
@@ -744,7 +744,7 @@
                                         </div>
                                         <div id="c48" class="collapse" role="tabpanel" aria-labelledby="heading48">
                                             <div class="card-body">
-                                                 <img src="<?php echo base_url('assets/images/AlatBengkel/48.jpg');?>">
+                                                 <img src="<?php echo base_url('assets/images/AlatBengkel/48.jpg');?>" width="100%">
                                             </div>
                                         </div>
                                     </div>
@@ -758,7 +758,7 @@
                                         </div>
                                         <div id="c49" class="collapse" role="tabpanel" aria-labelledby="heading49">
                                             <div class="card-body">
-                                                 <img src="<?php echo base_url('assets/images/AlatBengkel/49.jpg');?>">
+                                                 <img src="<?php echo base_url('assets/images/AlatBengkel/49.jpg');?>" width="100%">
                                             </div>
                                         </div>
                                     </div>
@@ -772,7 +772,7 @@
                                         </div>
                                         <div id="c50" class="collapse" role="tabpanel" aria-labelledby="heading50">
                                             <div class="card-body">
-                                                 <img src="<?php echo base_url('assets/images/AlatBengkel/50.jpg');?>">
+                                                 <img src="<?php echo base_url('assets/images/AlatBengkel/50.jpg');?>" width="100%">
                                             </div>
                                         </div>
                                     </div>
@@ -786,7 +786,7 @@
                                         </div>
                                         <div id="c51" class="collapse" role="tabpanel" aria-labelledby="heading51">
                                             <div class="card-body">
-                                                 <img src="<?php echo base_url('assets/images/AlatBengkel/51.jpg');?>">
+                                                 <img src="<?php echo base_url('assets/images/AlatBengkel/51.jpg');?>" width="100%">
                                             </div>
                                         </div>
                                     </div>
@@ -800,7 +800,7 @@
                                         </div>
                                         <div id="c52" class="collapse" role="tabpanel" aria-labelledby="heading52">
                                             <div class="card-body">
-                                                 <img src="<?php echo base_url('assets/images/AlatBengkel/52.jpg');?>">
+                                                 <img src="<?php echo base_url('assets/images/AlatBengkel/52.jpg');?>" width="100%">
                                             </div>
                                         </div>
                                     </div>
@@ -814,7 +814,7 @@
                                         </div>
                                         <div id="c53" class="collapse" role="tabpanel" aria-labelledby="heading53">
                                             <div class="card-body">
-                                                 <img src="<?php echo base_url('assets/images/AlatBengkel/53.jpg');?>">
+                                                 <img src="<?php echo base_url('assets/images/AlatBengkel/53.jpg');?>" width="100%">
                                             </div>
                                         </div>
                                     </div>
@@ -828,7 +828,7 @@
                                         </div>
                                         <div id="c54" class="collapse" role="tabpanel" aria-labelledby="heading54">
                                             <div class="card-body">
-                                                 <img src="<?php echo base_url('assets/images/AlatBengkel/54.jpg');?>">
+                                                 <img src="<?php echo base_url('assets/images/AlatBengkel/54.jpg');?>" width="100%">
                                             </div>
                                         </div>
                                     </div>
@@ -842,7 +842,7 @@
                                         </div>
                                         <div id="c55" class="collapse" role="tabpanel" aria-labelledby="heading55">
                                             <div class="card-body">
-                                                 <img src="<?php echo base_url('assets/images/AlatBengkel/55.jpg');?>">
+                                                 <img src="<?php echo base_url('assets/images/AlatBengkel/55.jpg');?>" width="100%">
                                             </div>
                                         </div>
                                     </div>
@@ -856,7 +856,7 @@
                                         </div>
                                         <div id="c56" class="collapse" role="tabpanel" aria-labelledby="heading56">
                                             <div class="card-body">
-                                                 <img src="<?php echo base_url('assets/images/AlatBengkel/56.jpg');?>">
+                                                 <img src="<?php echo base_url('assets/images/AlatBengkel/56.jpg');?>" width="100%">
                                             </div>
                                         </div>
                                     </div>
@@ -870,7 +870,7 @@
                                         </div>
                                         <div id="c57" class="collapse" role="tabpanel" aria-labelledby="heading57">
                                             <div class="card-body">
-                                                 <img src="<?php echo base_url('assets/images/AlatBengkel/57.jpg');?>">
+                                                 <img src="<?php echo base_url('assets/images/AlatBengkel/57.jpg');?>" width="100%">
                                             </div>
                                         </div>
                                     </div>
@@ -884,7 +884,7 @@
                                         </div>
                                         <div id="c58" class="collapse" role="tabpanel" aria-labelledby="heading58">
                                             <div class="card-body">
-                                                 <img src="<?php echo base_url('assets/images/AlatBengkel/58.jpg');?>">
+                                                 <img src="<?php echo base_url('assets/images/AlatBengkel/58.jpg');?>" width="100%">
                                             </div>
                                         </div>
                                     </div>
@@ -898,7 +898,7 @@
                                         </div>
                                         <div id="c59" class="collapse" role="tabpanel" aria-labelledby="heading59">
                                             <div class="card-body">
-                                                 <img src="<?php echo base_url('assets/images/AlatBengkel/59.jpg');?>">
+                                                 <img src="<?php echo base_url('assets/images/AlatBengkel/59.jpg');?>" width="100%">
                                             </div>
                                         </div>
                                     </div>
@@ -912,7 +912,7 @@
                                         </div>
                                         <div id="c60" class="collapse" role="tabpanel" aria-labelledby="heading60">
                                             <div class="card-body">
-                                                 <img src="<?php echo base_url('assets/images/AlatBengkel/60.jpg');?>">
+                                                 <img src="<?php echo base_url('assets/images/AlatBengkel/60.jpg');?>" width="100%">
                                             </div>
                                         </div>
                                     </div>
@@ -926,47 +926,47 @@
                                         </div>
                                         <div id="c61" class="collapse" role="tabpanel" aria-labelledby="heading61">
                                             <div class="card-body">
-                                                 <img src="<?php echo base_url('assets/images/AlatBengkel/61.jpg');?>">
+                                                 <img src="<?php echo base_url('assets/images/AlatBengkel/61.jpg');?>" width="100%">
                                             </div>
                                         </div>
                                     </div>
                                     
                                 </div>
             <!-- <h6><ol>
-              <li></li><img src="<?php echo base_url('assets/images/AlatBengkel/28.jpg');?>"><br>
-              <li></li><img src="<?php echo base_url('assets/images/AlatBengkel/29.jpg');?>"><br>
-              <li></li><img src="<?php echo base_url('assets/images/AlatBengkel/30.jpg');?>"><br>
-              <li></li><img src="<?php echo base_url('assets/images/AlatBengkel/31.jpg');?>"><br>
-              <li></li><img src="<?php echo base_url('assets/images/AlatBengkel/32.jpg');?>"><br>
-              <li></li><img src="<?php echo base_url('assets/images/AlatBengkel/33.jpg');?>"><br>
-              <li></li><img src="<?php echo base_url('assets/images/AlatBengkel/34.jpg');?>"><br>
-              <li></li><img src="<?php echo base_url('assets/images/AlatBengkel/35.jpg');?>"><br>
-              <li></li><img src="<?php echo base_url('assets/images/AlatBengkel/36.jpg');?>"><br>
-              <li></li><img src="<?php echo base_url('assets/images/AlatBengkel/37.jpg');?>"><br>
-              <li></li><img src="<?php echo base_url('assets/images/AlatBengkel/38.jpg');?>"><br>
-              <li></li><img src="<?php echo base_url('assets/images/AlatBengkel/39.jpg');?>"><br>
-              <li></li><img src="<?php echo base_url('assets/images/AlatBengkel/40.jpg');?>"><br>
-              <li></li><img src="<?php echo base_url('assets/images/AlatBengkel/41.jpg');?>"><br>
-              <li></li><img src="<?php echo base_url('assets/images/AlatBengkel/42.jpg');?>"><br>
-              <li></li><img src="<?php echo base_url('assets/images/AlatBengkel/43.jpg');?>"><br>
-              <li></li><img src="<?php echo base_url('assets/images/AlatBengkel/44.jpg');?>"><br>
-              <li></li><img src="<?php echo base_url('assets/images/AlatBengkel/45.jpg');?>"><br>
-              <li></li><img src="<?php echo base_url('assets/images/AlatBengkel/46.jpg');?>"><br>
-              <li></li><img src="<?php echo base_url('assets/images/AlatBengkel/47.jpg');?>"><br>
-              <li></li><img src="<?php echo base_url('assets/images/AlatBengkel/48.jpg');?>"><br>
-              <li></li><img src="<?php echo base_url('assets/images/AlatBengkel/49.jpg');?>"><br>
-              <li></li><img src="<?php echo base_url('assets/images/AlatBengkel/50.jpg');?>"><br>
-              <li></li><img src="<?php echo base_url('assets/images/AlatBengkel/51.jpg');?>"><br>
-              <li></li><img src="<?php echo base_url('assets/images/AlatBengkel/52.jpg');?>"><br>
-              <li></li><img src="<?php echo base_url('assets/images/AlatBengkel/53.jpg');?>"><br>
-              <li></li><img src="<?php echo base_url('assets/images/AlatBengkel/54.jpg');?>"><br>
-              <li></li><img src="<?php echo base_url('assets/images/AlatBengkel/55.jpg');?>"><br>
-              <li></li><img src="<?php echo base_url('assets/images/AlatBengkel/56.jpg');?>"><br>
-              <li></li><img src="<?php echo base_url('assets/images/AlatBengkel/57.jpg');?>"><br>
-              <li></li><img src="<?php echo base_url('assets/images/AlatBengkel/58.jpg');?>"><br>
-              <li></li><img src="<?php echo base_url('assets/images/AlatBengkel/59.jpg');?>"><br>
-              <li></li><img src="<?php echo base_url('assets/images/AlatBengkel/60.jpg');?>"><br>
-              <li></li><img src="<?php echo base_url('assets/images/AlatBengkel/61.jpg');?>"><br>
+              <li></li><img src="<?php echo base_url('assets/images/AlatBengkel/28.jpg');?>" width="100%"><br>
+              <li></li><img src="<?php echo base_url('assets/images/AlatBengkel/29.jpg');?>" width="100%"><br>
+              <li></li><img src="<?php echo base_url('assets/images/AlatBengkel/30.jpg');?>" width="100%"><br>
+              <li></li><img src="<?php echo base_url('assets/images/AlatBengkel/31.jpg');?>" width="100%"><br>
+              <li></li><img src="<?php echo base_url('assets/images/AlatBengkel/32.jpg');?>" width="100%"><br>
+              <li></li><img src="<?php echo base_url('assets/images/AlatBengkel/33.jpg');?>" width="100%"><br>
+              <li></li><img src="<?php echo base_url('assets/images/AlatBengkel/34.jpg');?>" width="100%"><br>
+              <li></li><img src="<?php echo base_url('assets/images/AlatBengkel/35.jpg');?>" width="100%"><br>
+              <li></li><img src="<?php echo base_url('assets/images/AlatBengkel/36.jpg');?>" width="100%"><br>
+              <li></li><img src="<?php echo base_url('assets/images/AlatBengkel/37.jpg');?>" width="100%"><br>
+              <li></li><img src="<?php echo base_url('assets/images/AlatBengkel/38.jpg');?>" width="100%"><br>
+              <li></li><img src="<?php echo base_url('assets/images/AlatBengkel/39.jpg');?>" width="100%"><br>
+              <li></li><img src="<?php echo base_url('assets/images/AlatBengkel/40.jpg');?>" width="100%"><br>
+              <li></li><img src="<?php echo base_url('assets/images/AlatBengkel/41.jpg');?>" width="100%"><br>
+              <li></li><img src="<?php echo base_url('assets/images/AlatBengkel/42.jpg');?>" width="100%"><br>
+              <li></li><img src="<?php echo base_url('assets/images/AlatBengkel/43.jpg');?>" width="100%"><br>
+              <li></li><img src="<?php echo base_url('assets/images/AlatBengkel/44.jpg');?>" width="100%"><br>
+              <li></li><img src="<?php echo base_url('assets/images/AlatBengkel/45.jpg');?>" width="100%"><br>
+              <li></li><img src="<?php echo base_url('assets/images/AlatBengkel/46.jpg');?>" width="100%"><br>
+              <li></li><img src="<?php echo base_url('assets/images/AlatBengkel/47.jpg');?>" width="100%"><br>
+              <li></li><img src="<?php echo base_url('assets/images/AlatBengkel/48.jpg');?>" width="100%"><br>
+              <li></li><img src="<?php echo base_url('assets/images/AlatBengkel/49.jpg');?>" width="100%"><br>
+              <li></li><img src="<?php echo base_url('assets/images/AlatBengkel/50.jpg');?>" width="100%"><br>
+              <li></li><img src="<?php echo base_url('assets/images/AlatBengkel/51.jpg');?>" width="100%"><br>
+              <li></li><img src="<?php echo base_url('assets/images/AlatBengkel/52.jpg');?>" width="100%"><br>
+              <li></li><img src="<?php echo base_url('assets/images/AlatBengkel/53.jpg');?>" width="100%"><br>
+              <li></li><img src="<?php echo base_url('assets/images/AlatBengkel/54.jpg');?>" width="100%"><br>
+              <li></li><img src="<?php echo base_url('assets/images/AlatBengkel/55.jpg');?>" width="100%"><br>
+              <li></li><img src="<?php echo base_url('assets/images/AlatBengkel/56.jpg');?>" width="100%"><br>
+              <li></li><img src="<?php echo base_url('assets/images/AlatBengkel/57.jpg');?>" width="100%"><br>
+              <li></li><img src="<?php echo base_url('assets/images/AlatBengkel/58.jpg');?>" width="100%"><br>
+              <li></li><img src="<?php echo base_url('assets/images/AlatBengkel/59.jpg');?>" width="100%"><br>
+              <li></li><img src="<?php echo base_url('assets/images/AlatBengkel/60.jpg');?>" width="100%"><br>
+              <li></li><img src="<?php echo base_url('assets/images/AlatBengkel/61.jpg');?>" width="100%"><br>
             </ol></h6> -->
           </div>
         </div>

@@ -19,7 +19,9 @@
       <div class="col-12">
         <div class="card">
           <div class="card-body">
-            <h1 class="card-title text-center">TUGAS POKOK & FUNGSI</h1><br/><br/>
+          <img src="<?php echo base_url('assets/images/logtupoksi.png'); ?>" width="100%">
+            <!-- <h1 class="card-title text-center">TUGAS POKOK & FUNGSI</h1> -->
+            <br/><br/>
           <h4 class="card-title">TUGAS POKOK</h4>
             <h5 class="text-justify">Sesuai UU RI No.17 Tahun 2008 tentang Pelayaran “Kenavigasian” adalah segala sesuatu yang berkaitan dengan Sarana Bantu Navigasi Pelayaran, Telekomunikasi Pelayaran, Hidrografi dan Meteorolgy, alur dan pelintasan, pengerukan dan reklamasi, pemanduan, penanganan kerangka kapal, salvage dan pekerjaan bawah air untuk kepentingan keselamatan pelayaran kapal, sedangkan “Navigasi”  adalah proses mengarahkan gerak kapal dari satu titik ke titik yang lain dengan aman dan lancar serta untuk menghindari bahaya dan/atau rintangan pelayaran.</h5>
             <h5 class="text-justify">Sebagaimana Peraturan Menteri Perhubungan No.KM.30 Tahun 2006 tentang Organisasi dan Tata Kerja Distrik Navigasi,Distrik Navigasi adalah Unit Pelaksana Teknis (UPT) dibidang Kenavigasian dilingkungan Direktorat Jenderal Perhubungan Laut Kementerian Perhubungan yang berada dibawah dan bertanggung jawab kepada Direktur Jenderal Perhubungan Laut.</h5>
@@ -51,7 +53,7 @@
               </li>
             </ul><br><br>
             <h4 class="card-title">STRUKTUR ORGANISASI</h4><br>
-            <center><img src="<?php echo base_url('assets/images/SO.png'); ?>" width="1024px" height="768px" ></center><br><br>
+            <center><img src="<?php echo base_url('assets/images/SO.png'); ?>" width="100%"></center><br><br>
 
             <h5 class="text-justify">Distrik Navigasi Kelas I Tanjung Priok merupakan Distrik Navigasi Kelas I yang mempunyai Susunan Organisasi sebagai berikut :</h5>
             <ol class="list-icons" type="1">
