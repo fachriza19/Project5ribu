@@ -17,10 +17,12 @@ if (! defined('BASEPATH') ) exit('No direct script access allowed');
 
           function Index()
           { 
+
+
             $config = array();
             $config["base_url"] = base_url() . "daftarberita/Index";
             $config["total_rows"] = $this->m_berita->record_count();
-            $config["per_page"] = 2;
+            $config["per_page"] = 5;
             $config["uri_segment"] = 3;
 
             $this->pagination->initialize($config);

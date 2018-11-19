@@ -44,6 +44,18 @@
                       <option value="VESSEL TRAFFIC SERVICE PANJANG">VTS PANJANG</option>
                     </select>
                   </div>
+                <div class="col-md-3">
+                    <select class="form-control custom-select" name="kategori">
+                      <option value="JAKARTA">SROP JAKARTA</option>
+                      <option value="CIGADING">SROP CIGADING</option>
+                      <option value="PANJANG">SROP PANJANG</option>
+                      <option value="BENGKULU">SROP BENGKULU</option>
+                      <option value="CIREBON">SROP CIREBON</option>
+                      <option value="VTS MERAK">VTS MERAK</option>
+                      <option value="VTS TJPRIOK">VTS TANJUNG PRIOK</option>
+                      <option value="VTS PANJANG">VTS PANJANG</option>
+                    </select>
+                  </div>
                 </div>
                 <div class="form-group row">
                   <h5 class="control-label text-left col-md-3">Tanggal</h5>

@@ -26,7 +26,8 @@
 							Morris.Bar({
 								element: 'graph',
 								data: <?php echo $chart;?>,
-								xkey: 'nama_instansi',
+								barColors: ["#B21516", "#1531B2", "#1AB244", "#B29215", "#B29215"],
+								xkey: 'kategori',
 								ykeys: ['kapal_masuk', 'kapal_keluar', 'kapal_melintas', 'kapal_labuh', 'kapal_sandar'],
 								labels: ['kapal_masuk', 'kapal_keluar', 'kapal_melintas', 'kapal_labuh', 'kapal_sandar']
 							});

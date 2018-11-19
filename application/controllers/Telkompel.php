@@ -31,6 +31,7 @@ if (! defined('BASEPATH') ) exit('No direct script access allowed');
           function simpanlaporan()
           {
             $instansi = $this->input->post('instansi');
+            $kategori = $this->input->post('kategori');
             // $hari1 = $this->input->post('hari1');
             // $hari2 = $this->input->post('hari2');
             $tgl1 = $this->input->post('tgl1');
@@ -75,7 +76,7 @@ if (! defined('BASEPATH') ) exit('No direct script access allowed');
             $petugas1 = $this->input->post('petugas1');
             $petugas2 = $this->input->post('petugas2');
 
-            $this->m_telkompel->simpan_telkompel($instansi,$hari1,$hari2,$tgl1,$tgl2,$jam1,$jam2,$kplmasuk,$kplkeluar,$kpllintas,$kpllabuh,$kplsandar,$cuaca,$arah,$kecepatan,$jrkpandang,$tinggigel,$suhumax,$suhumin,$pasangmax,$alur,$sbnp,$peralatan,$notavts,$mastervts,$notatr,$mastertr,$lain,$petugas1,$petugas2);
+            $this->m_telkompel->simpan_telkompel($instansi,$kategori,$hari1,$hari2,$tgl1,$tgl2,$jam1,$jam2,$kplmasuk,$kplkeluar,$kpllintas,$kpllabuh,$kplsandar,$cuaca,$arah,$kecepatan,$jrkpandang,$tinggigel,$suhumax,$suhumin,$pasangmax,$alur,$sbnp,$peralatan,$notavts,$mastervts,$notatr,$mastertr,$lain,$petugas1,$petugas2);
             $this->session->set_flashdata('success', 'true');
             redirect('Telkompel');
           }
