@@ -13,6 +13,31 @@
 		</div>
 
 		<div class="row">
+			<div class="col-lg-12">
+				<div class="card">
+					<div class="col-lg-12">
+						<h2>Grafik Informasi Kapal, Menurut masing-masing laporan SROP dan VTS perHari</h2>
+ 							<div id="graph"></div>
+ 						<!--Morris JavaScript -->
+ 						<script src="<?php echo base_url()?>/assets/plugins/raphael/raphael-min.js"></script>
+ 						<script src="<?php echo base_url()?>/assets/plugins/morrisjs/morris.js"></script>
+ 						<script src="<?php echo base_url()?>/js/morris-data.js"></script>
+						<script>
+							Morris.Bar({
+								element: 'graph',
+								data: <?php echo $chart;?>,
+								barColors: ["#B21516", "#1531B2", "#1AB244", "#B29215", "#B29215"],
+								xkey: 'kategori',
+								ykeys: ['kapal_masuk', 'kapal_keluar', 'kapal_melintas', 'kapal_labuh', 'kapal_sandar'],
+								labels: ['kapal_masuk', 'kapal_keluar', 'kapal_melintas', 'kapal_labuh', 'kapal_sandar']
+							});
+						</script>		
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="row">
 			<!-- Column -->
 			<div class="col-lg-12">
 				<div class="card">

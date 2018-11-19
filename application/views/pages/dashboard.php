@@ -118,7 +118,7 @@
                     </div>
                   </div>
 
-                    <div class="col-lg-12">
+                  <!--   <div class="col-lg-12">
                       <div class="card">
                         <div class="card-body">
                           <div class="row">
@@ -126,7 +126,7 @@
                           </div>
                         </div>
                       </div>
-                    </div>
+                    </div> -->
                     <div class="col-lg-12">
                       <div class="card">
                         <div class="card-body">
@@ -151,7 +151,7 @@
                           </div>
                           <div class="row">
                             <div class="col-lg-12" align="center">
-                                <a href="https://www.instagram.com/explore/locations/283620335095207/distrik-navigasi-klas-1-tanjung-priok-jakarta-utara/" target="blank"><i class="fa fa-instagram fa-2x"></i><span class="hide-menu"></span></a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <a href=https://www.instagram.com/disnavtanjungpriok/ target="blank"><i class="fa fa-instagram fa-2x"></i><span class="hide-menu"></span></a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                                 <a href="https://web.facebook.com/disnavtanjung.priok?_rdc=1&_rdr" target="blank"><i class="fa fa-facebook fa-2x"></i><span class="hide-menu"></span></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                                 <a href="https://www.youtube.com/channel/UCo0YNpVnsGIibgm7tDHaCOQ" target="blank"><i class="fa fa-youtube-play fa-2x"></i><span class="hide-menu"></span></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                             </div><br>

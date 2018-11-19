@@ -22,7 +22,7 @@ class M_berita extends CI_Model{
 	public function cari()
 	{
 		$cari = $this->input->GET('cari', TRUE);
-		$cari = $this->db->query("SELECT * from berita where berita_judul like '%$cari%' ");
+		$cari = $this->db->query("SELECT * from berita where berita_judul like '%$cari%' or berita_tanggal like '%$cari%'");
 		return $cari->result();
 	}
 
@@ -32,6 +32,7 @@ class M_berita extends CI_Model{
 
     public function fetch_countries($limit, $start) {
         $this->db->limit($limit, $start);
+        $this->db->order_by('berita_id DESC');
         $query = $this->db->get("berita");
 
         if ($query->num_rows() > 0) {

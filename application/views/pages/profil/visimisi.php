@@ -19,7 +19,7 @@
       <div class="col-12">
         <div class="card">
           <div class="card-body">
-            <img src="<?php echo base_url('assets/images/logo-visi-misi.png'); ?>">
+            <img src="<?php echo base_url('assets/images/logvimi.png'); ?>" width="100%">
             <h4 class="card-title">VISI</h4>
             <p class="text-justify text-dark">Terwujudnya kecukupan dan kehandalan sarana dan prasarana kenavigasian untuk meningkatkan keselamatan dan keamanan bernavigasi di perairan Indonesia.</p><br />
 

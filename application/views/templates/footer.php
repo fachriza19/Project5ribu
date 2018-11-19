@@ -39,6 +39,7 @@
 <script src="<?php echo base_url('assets/plugins/bootstrap-material-datetimepicker/js/bootstrap-material-datetimepicker.js') ?>"></script>
 <!-- Clock Plugin JavaScript -->
 <script src="<?php echo base_url('assets/plugins/clockpicker/dist/jquery-clockpicker.min.js') ?>"></script>
+    
 
 <script>
     // MAterial Date picker
