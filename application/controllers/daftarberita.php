@@ -22,7 +22,7 @@ if (! defined('BASEPATH') ) exit('No direct script access allowed');
             $config = array();
             $config["base_url"] = base_url() . "daftarberita/Index";
             $config["total_rows"] = $this->m_berita->record_count();
-            $config["per_page"] = 5;
+            $config["per_page"] = 3;
             $config["uri_segment"] = 3;
 
             // Membuat Style pagination untuk BootStrap v4
@@ -66,7 +66,9 @@ if (! defined('BASEPATH') ) exit('No direct script access allowed');
           }
 
           function cari() {
-            $data2['cari'] = $this->m_berita->cari();
+            $keyword = $this->input->post('cari');
+            $data2['cari']=$this->m_berita->cari($keyword);
+            //$data2['cari'] = $this->m_berita->cari();
             $this->load->view('Templates/header');
             $this->load->view('pages/berita/search', $data2);
             $this->load->view('Templates/footer');
