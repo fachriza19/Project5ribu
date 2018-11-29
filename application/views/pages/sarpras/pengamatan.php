@@ -7,8 +7,9 @@
       <div class="col-md-5 col-8 align-self-center">
         <h3 class="text-themecolor">Pengamatan Laut</h3>
         <ol class="breadcrumb">
-          <li class="breadcrumb-item"><a href="javascript:void(0)">Home</a></li>
-          <li class="breadcrumb-item active">Pengamatan Laut</li>
+          <li class="breadcrumb-item">Home</a></li>
+          <li class="breadcrumb-item active">Sarana Dan Prasarana</li>
+          <li class="breadcrumb-item active">pengamatan laut</li>
         </ol>
       </div>
     </div>

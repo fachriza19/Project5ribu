@@ -21,7 +21,7 @@ class m_telkompel extends CI_Model{
   	//$this->db->select("kategori,kapal_masuk,kapal_keluar,kapal_melintas,kapal_labuh,kapal_sandar");
   	$this->db->select("kategori,kapal_masuk,kapal_keluar,kapal_melintas,kapal_labuh,kapal_sandar");
   	$this->db->FROM("laporan_telkompel");
-  	//$this->db->where("tanggal_akhir = '$tgl'");
+  	$this->db->where("tanggal_akhir = '$tgl'");
   	return $this->db->get();
   	
   }

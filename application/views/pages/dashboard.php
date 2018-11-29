@@ -77,7 +77,7 @@
                               <div class="col-lg-4 text-center m-b-30">
                                         <h4 class="card-title">PENGAMATAN LAUT</h4>
                                         <h6 class="card-subtitle">Pengamatan Laut</h6>
-                                        <a href="<?php echo base_url('Sarpras/Pengamatan') ?>"><img src="<?php echo base_url('assets/images/icon/teropong1.png') ?>" alt="image" class="img-circle" width="300"></a>
+                                        <a href="<?php echo base_url('Sarpras/Pengamatan') ?>"><img src="<?php echo base_url('assets/images/icon/PENGLA.png') ?>" alt="image" class="" width="300"></a>
                                         <p class="m-t-15 m-b-0">
                                         <a href="<?php echo base_url('Sarpras/Pengamatan') ?>" class="btn btn-primary">Info Detail</a></p>
                               </div>
@@ -140,7 +140,7 @@
                                   <h6>Email</h6><br>
                                   <a href="#!"><i class="fa fa-envelope fa-3x" aria-hidden="true">
                                   </i></a>
-                                  <a href="#!"><p>Email@email.com</p></a>
+                                  <a href="#!"><p>disnav.tpk@gmail.com</p></a>
                                 </div>
                                 <div class="col-lg-4 text-center m-b-30">
                                   <h6>Contact </h6><br>
