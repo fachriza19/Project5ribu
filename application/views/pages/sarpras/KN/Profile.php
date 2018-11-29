@@ -20,7 +20,7 @@
       <div class="col-12">
         <div class="card">
           <div class="card-body">
-                            <img src="<?php echo base_url('assets/images/icon/kn.png'); ?>" width="55%" height="5%">
+                            <center><img src="<?php echo base_url('assets/images/icon/kn.png'); ?>" width="55%" height="5%"></center><br>
                             <h6>Dasar Hukum Penyelenggaraan KAPAL NEGARA KENAVIGASIAN:</h6>
                             <h6><ol>
                               <li><h6>Mapel DITJENHUBLA Nomor 392 tanggal 25 Nopember 1993 tentang kewajiban Nakhoda Kapal Negara untuk melaporkan dan memperbaiki Sarana  Bantu Navigasi Pelayaran sepanjang route yang dilalui.</h6></li>

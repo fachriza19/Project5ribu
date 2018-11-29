@@ -21,7 +21,7 @@
         <div class="card">
           <div class="card-body">
                              <blockquote>
-                              <img src="<?php echo base_url('assets/images/icon/telkompel.png'); ?>" width="75%" height="5%">
+                              <center><img src="<?php echo base_url('assets/images/icon/telkompel.png'); ?>" width="75%" height="5%"></center>
                              </blockquote>
                              <h6>Adalah Telekomunikasi khusus untuk keperluan dinas pelayaran  yang berupa pemancaran, pengiriman atau penerimaan tiap tanda, gambar, suara dan informasi dalam bentuk apapun melalui  sistem kawat, optik, radio atau sistem elektromagtik lainnya dalam dinas bergerak pelayaran yang merupakan bagian dari keselamatan pelayaran.
                              </h6><br>

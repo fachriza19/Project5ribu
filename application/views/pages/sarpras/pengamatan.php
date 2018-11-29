@@ -21,7 +21,7 @@
         <div class="card">
           <div class="card-body">
             <blockquote>
-              <img src="<?php echo base_url('assets/images/icon/pl.png'); ?>" width="65%" height="5%">
+              <center><img src="<?php echo base_url('assets/images/icon/pl.png'); ?>" width="65%" height="5%"></center>
             </blockquote>
               <h6>Dasar Hukum:</h6>
               <ol><h6>
