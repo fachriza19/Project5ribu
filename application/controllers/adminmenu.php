@@ -64,7 +64,6 @@ if (! defined('BASEPATH') ) exit('No direct script access allowed');
             $this->load->view('pages/berita/list',$x);
             $this->load->view('templates/footer');
           }
-          
           function helpdesk()
           {
             $this->load->view('templates/header');
@@ -388,7 +387,7 @@ if (! defined('BASEPATH') ) exit('No direct script access allowed');
         }
       }
 
-      
+
 
 
 } //END CONTROLLER
