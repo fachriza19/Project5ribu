@@ -78,7 +78,7 @@ if (! defined('BASEPATH') ) exit('No direct script access allowed');
 
             $this->m_telkompel->simpan_telkompel($instansi,$kategori,$hari1,$hari2,$tgl1,$tgl2,$jam1,$jam2,$kplmasuk,$kplkeluar,$kpllintas,$kpllabuh,$kplsandar,$cuaca,$arah,$kecepatan,$jrkpandang,$tinggigel,$suhumax,$suhumin,$pasangmax,$alur,$sbnp,$peralatan,$notavts,$mastervts,$notatr,$mastertr,$lain,$petugas1,$petugas2);
             $this->session->set_flashdata('success', 'true');
-            redirect('Telkompel');
+            redirect('Telkompel/kelolatelkompel');
           }
 
           function printlaporan($idlap)

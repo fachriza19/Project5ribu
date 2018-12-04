@@ -74,7 +74,9 @@ body {
 html {
   position: relative;
   min-height: 100%;
-  background: #ffffff; }
+  background: #ffffff;
+  /*font-size: 17px; */
+  }
 
 a:hover, a:focus {
   text-decoration: none; }

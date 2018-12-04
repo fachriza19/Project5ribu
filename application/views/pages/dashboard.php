@@ -12,7 +12,7 @@
                                       <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
                                         <ol class="carousel-indicators">
                                           <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                                          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                                          <!-- <li data-target="#carouselExampleIndicators" data-slide-to="1"></li> -->
                                           <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
                                           <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
                                         </ol>
@@ -20,9 +20,9 @@
                                             <div class="carousel-item active">
                                               <img class="d-block w-100" src="<?php echo base_url('assets/images/slide/1.jpg') ?>" alt="First slide">
                                             </div>
-                                            <div class="carousel-item">
-                                              <img class="d-block w-100" src="<?php echo base_url('assets/images/slide/2.jpg') ?>" alt="Second slide">
-                                            </div>
+                                            <!-- <div class="carousel-item">
+                                              <img class="d-block w-100" src="<?php //echo base_url('assets/images/slide/2.jpg') ?>" alt="Second slide">
+                                            </div> -->
                                             <div class="carousel-item">
                                               <img class="d-block w-100" src="<?php echo base_url('assets/images/slide/3.jpg') ?>" alt="Third slide">
                                             </div>
@@ -77,21 +77,21 @@
                               <div class="col-lg-4 text-center m-b-30">
                                         <h4 class="card-title">PENGAMATAN LAUT</h4>
                                         <h6 class="card-subtitle">Pengamatan Laut</h6>
-                                        <a href="<?php echo base_url('Sarpras/Pengamatan') ?>"><img src="<?php echo base_url('assets/images/icon/teropong1.png') ?>" alt="image" class="img-circle" width="300"></a>
+                                        <a href="<?php echo base_url('Sarpras/Pengamatan') ?>"><img src="<?php echo base_url('assets/images/icon/PENGLA.png') ?>" alt="image" class="" width="300"></a>
                                         <p class="m-t-15 m-b-0">
                                         <a href="<?php echo base_url('Sarpras/Pengamatan') ?>" class="btn btn-primary">Info Detail</a></p>
                               </div>
                               <div class="col-lg-4 text-center m-b-30">
                                         <h4 class="card-title">Kapal Negara</h4>
                                         <h6 class="card-subtitle">Kapal Negara</h6>
-                                        <a href="<?php echo base_url('Sarpras/ProfileKN') ?>"><img src="<?php echo base_url('assets/images/icon/kapal.png') ?>" alt="image" class="img-circle" width="300"></a>
+                                        <a href="<?php echo base_url('Sarpras/ProfileKN') ?>"><img src="<?php echo base_url('assets/images/icon/k1.png') ?>" alt="image" class="" width="300"></a>
                                         <p class="m-t-15 m-b-0">
                                         <a href="<?php echo base_url('Sarpras/ProfileKN') ?>" class="btn btn-primary">Info Detail</a></p>
                               </div>
                               <div class="col-lg-4 text-center m-b-30">
                                         <h4 class="card-title">SBNP</h4>
                                         <h6 class="card-subtitle">Sarana Bantu Navigasi Pelayaran</h6>
-                                        <a href="<?php echo base_url('Sarpras/SBNP') ?>"><img src="<?php echo base_url('assets/images/icon/menara.png') ?>" alt="image" class="img-circle" width="300"></a>
+                                        <a href="<?php echo base_url('Sarpras/SBNP') ?>"><img src="<?php echo base_url('assets/images/icon/s1.png') ?>" alt="image" class="" width="300"></a>
                                         <p class="m-t-15 m-b-0">
                                         <a href="<?php echo base_url('Sarpras/SBNP') ?>" class="btn btn-primary">Info Detail</a></p>
                               </div>
@@ -100,14 +100,14 @@
                               <div class="col-lg-4 text-center m-b-30">
                                         <h4 class="card-title">TELKOMPEL</h4>
                                         <h6 class="card-subtitle">Telekomunikasi Pelayaran</h6>
-                                        <a href="<?php echo base_url('Sarpras/Telkompel') ?>"><img src="<?php echo base_url('assets/images/icon/tower.png') ?>" alt="image" class="img-circle" width="300"></a>
+                                        <a href="<?php echo base_url('Sarpras/Telkompel') ?>"><img src="<?php echo base_url('assets/images/icon/t1.png') ?>" alt="image" class="" width="300"></a>
                                         <p class="m-t-15 m-b-0">
                                         <a href="<?php echo base_url('Sarpras/Telkompel') ?>" class="btn btn-primary">Info Detail</a></p>
                               </div>
                               <div class="col-lg-4 text-center m-b-30">
                                         <h4 class="card-title">Bengkel</h4>
                                         <h6 class="card-subtitle">Bengkel</h6>
-                                        <a href="<?php echo base_url('Sarpras/Bengkel') ?>"><img src="<?php echo base_url('assets/images/icon/gear.jpg') ?>" alt="image" class="img-circle" width="300"></a>
+                                        <a href="<?php echo base_url('Sarpras/Bengkel') ?>"><img src="<?php echo base_url('assets/images/icon/b1.png') ?>" alt="image" class="" width="300"></a>
                                         <p class="m-t-15 m-b-0">
                                         <a href="<?php echo base_url('Sarpras/Bengkel') ?>" class="btn btn-primary">Info Detail</a></p>
                               </div>
@@ -140,7 +140,7 @@
                                   <h6>Email</h6><br>
                                   <a href="#!"><i class="fa fa-envelope fa-3x" aria-hidden="true">
                                   </i></a>
-                                  <a href="#!"><p>Email@email.com</p></a>
+                                  <a href="#!"><p>disnav.tpk@gmail.com</p></a>
                                 </div>
                                 <div class="col-lg-4 text-center m-b-30">
                                   <h6>Contact </h6><br>

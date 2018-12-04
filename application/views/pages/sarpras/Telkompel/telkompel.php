@@ -7,7 +7,8 @@
       <div class="col-md-5 col-8 align-self-center">
         <h3 class="text-themecolor">Telkompel</h3>
         <ol class="breadcrumb">
-          <li class="breadcrumb-item"><a href="javascript:void(0)">Home</a></li>
+          <li class="breadcrumb-item">Home</a></li>
+          <li class="breadcrumb-item active">Sarana Dan Prasarana</li>
           <li class="breadcrumb-item active">Telkompel</li>
         </ol>
       </div>
@@ -20,7 +21,7 @@
         <div class="card">
           <div class="card-body">
                              <blockquote>
-                              <img src="<?php echo base_url('assets/images/icon/telkompel.png'); ?>" width="75%" height="5%">
+                              <center><img src="<?php echo base_url('assets/images/icon/telkompel.png'); ?>" width="75%" height="5%"></center>
                              </blockquote>
                              <h6>Adalah Telekomunikasi khusus untuk keperluan dinas pelayaran  yang berupa pemancaran, pengiriman atau penerimaan tiap tanda, gambar, suara dan informasi dalam bentuk apapun melalui  sistem kawat, optik, radio atau sistem elektromagtik lainnya dalam dinas bergerak pelayaran yang merupakan bagian dari keselamatan pelayaran.
                              </h6><br>

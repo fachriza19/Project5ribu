@@ -43,9 +43,9 @@
             <?php echo form_open('Auth/proses_login'); ?>
 
             <?php if(isset($pesan)):?>
-              <div class="alert alert-danger mb-2">
+              <div class="alert alert-warning mb-2">
                 <button type="button" class="close" data-dismiss="alert" aria-label="Close"> <span aria-hidden="true">×</span> </button>
-                <h3 class="text-danger"><i class="fa fa-exclamation-triangle"></i> GAGAL</h3><strong><?php echo $pesan ?></strong>
+                <h3 class="text-warning"><i class="fa fa-exclamation-triangle"></i> GAGAL</h3><strong><?php echo $pesan ?></strong>
               </div>
             <?php endif  ?>
             <h3 class="box-title m-b-20">Sign In</h3>
@@ -77,11 +77,11 @@
               </div>
             </div>
           </div> -->
-          <div class="form-group m-b-0">
+          <!-- <div class="form-group m-b-0">
             <div class="col-sm-12 text-center">
               <p>Don't have an account? <a href="register.html" class="text-info m-l-5"><b>Sign Up</b></a></p>
             </div>
-          </div>
+          </div> -->
         </form>
         <form class="form-horizontal" id="recoverform" action="index.html">
           <div class="form-group ">

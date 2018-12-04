@@ -39,6 +39,25 @@ if (! defined('BASEPATH') ) exit('No direct script access allowed');
             $this->load->view('templates/footer');
           }
 
+          function tatausaha()
+          {
+            $this->load->view('templates/header');
+            $this->load->view('pages/profil/TU');
+            $this->load->view('templates/footer');
+          } 
+          function logistik()
+          {
+            $this->load->view('templates/header');
+            $this->load->view('pages/profil/logistik');
+            $this->load->view('templates/footer');
+          }
+          function Operasi()
+          {
+            $this->load->view('templates/header');
+            $this->load->view('pages/profil/operasi');
+            $this->load->view('templates/footer');
+          }
+
 
 
         }

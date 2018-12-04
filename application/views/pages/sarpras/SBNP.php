@@ -5,10 +5,11 @@
 
     <div class="row page-titles">
       <div class="col-md-5 col-8 align-self-center">
-        <h3 class="text-themecolor">Pengamatan Laut</h3>
+        <h3 class="text-themecolor">Sarana Bantu Navigasi Pelayaran</h3>
         <ol class="breadcrumb">
-          <li class="breadcrumb-item"><a href="javascript:void(0)">Home</a></li>
-          <li class="breadcrumb-item active">Pengamatan Laut</li>
+          <li class="breadcrumb-item">Home</a></li>
+          <li class="breadcrumb-item active">Sarana Dan Prasarana</li>
+          <li class="breadcrumb-item active">Sarana Bantu Navigasi Pelayaran</li>
         </ol>
       </div>
     </div>
@@ -20,7 +21,7 @@
         <div class="card">
           <div class="card-body">
             <blockquote>
-              <img src="<?php echo base_url('assets/images/icon/sbnp.png'); ?>" width="90%" height="5%">
+              <center><img src="<?php echo base_url('assets/images/icon/sbnp.png'); ?>" width="90%" height="5%"></center>
             </blockquote>
               <h6><b>Sarana Bantu Navigasi Pelayaran adalah peralatan atau system yang berada di luar kapal yang didesain dan dioperasikan untuk meningkatkan keselamatan dan efisiensi bernavigasi kapal/atau lalu lintas kapal. (PP No 5 2010).</b></h6><br>
               <h6>BAB VIII Pasal 119 UU 17 2008:</h6>

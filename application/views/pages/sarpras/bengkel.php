@@ -7,7 +7,8 @@
       <div class="col-md-5 col-8 align-self-center">
         <h3 class="text-themecolor">Bengkel</h3>
         <ol class="breadcrumb">
-          <li class="breadcrumb-item"><a href="javascript:void(0)">Home</a></li>
+          <li class="breadcrumb-item">Home</a></li>
+          <li class="breadcrumb-item active">Sarana Dan Prasarana</li>
           <li class="breadcrumb-item active">Bengkel</li>
         </ol>
       </div>
@@ -19,7 +20,7 @@
       <div class="col-12">
         <div class="card">
           <div class="card-body">
-            <<img src="<?php echo base_url('assets/images/icon/bengkel.png'); ?>" width="47%" height="5%">
+            <center><img src="<?php echo base_url('assets/images/icon/bengkel.png'); ?>" width="47%" height="5%"></center></br>
             <h6>Bengkel merupakan instalasi yang berfungsi untuk melaksanakan pemeliharaan, perawatan dan perbaikan Sarana Bantu Navigasi Pelayaran, Telekomunikasi Pelayaran, Kapal Negara Kenavigasian, Pengamatan Laut dan Fasilitas Pangkalan Kenavigasian.</h6><br>
             <h6>Guna menyelenggarakan tugas pemeliharaan, perawatan dan perbaikan Sarana dan Prasarana Kenavigasian, Bengkel terbagi atas beberapa unit kerja, yaitu :</h6><br>
 

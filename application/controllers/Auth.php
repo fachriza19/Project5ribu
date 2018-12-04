@@ -29,9 +29,12 @@ class Auth extends CI_Controller {
   function proses_login(){
     $user=$this->input->post('username');
     $pass=$this->input->post('password');
-    $query = $this->db->get('users');
-
-    $ceklogin= $this->M_login->login($user,$pass);
+   // $query = $this->db->get('users');
+     $where = array(
+            'username' => $user,
+            'password' => md5($pass)
+            );
+    $ceklogin= $this->M_login->login("users",$where);
     // die(print_r($ceklogin));
     if($ceklogin){
       foreach($ceklogin as $row);

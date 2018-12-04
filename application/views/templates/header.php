@@ -185,9 +185,11 @@
                         <li>
                             <a class="has-arrow " href="#" aria-expanded="false"><i class="mdi mdi-account"></i><span class="hide-menu">Profile</span></a>
                             <ul aria-expanded="false" class="collapse">
-                                <li><a href="<?php echo base_url('profil/index') ?>">Visi & misi</a></li>
                                 <li><a href="<?php echo base_url('profil/wilker') ?>">Wilayah Kerja</a></li>
                                 <li><a href="<?php echo base_url('profil/tupoksi') ?>">Tupoksi</a></li>
+                                <li><a href="<?php echo base_url('profil/Struktur') ?>">Struktur Organisasi</a></li>
+                                <li><a href="<?php echo base_url('profil/tatausaha') ?>">Bidang Tata Usaha</a></li>
+                                <li><a href="<?php echo base_url('profil/logistik') ?>">Bidang Logistik</a></li><li><a href="<?php echo base_url('profil/Operasi') ?>">Bidang Operasi</a></li>
                             </ul>
                         </li>
                         <li>
